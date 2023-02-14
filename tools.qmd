@@ -1,0 +1,28 @@
+---
+title: "Software I Use"
+---
+
+## R
+I use [R](https://www.r-project.org/) professionally in my daily work, but I
+have also obtained advanced knowledge of R via an advanced course in R,
+personal projects, and reading various books from [The Big Book of
+R](https://www.bigbookofr.com/)
+
+## Git
+I am experienced using [Git](https://git-scm.com) for professional, academic,
+and personal projects. I primarily use the [Pro
+Git](https://git-scm.com/book/en/v2) book for learning more about Git.
+
+## LaTeX 
+My favorite markup language is [LaTeX](https://www.latex-project.org/), which I
+use to make presentations and other types of documents.
+
+## Markdown
+For quick notes and short reports, I use Markdown, R Markdown, and quarto. The
+simple Markdown syntax enables quick typesetting, at the cost of the more
+advanced features from LaTex.
+
+## Shell
+I prefer to manage most things via the command line. When working on machines
+running windows, I use powershell. For Linux machines, I have experience with
+bash, fish, but currently use [mksh](http://www.mirbsd.org/mksh.htm)

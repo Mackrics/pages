@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "Markus Ljungqvist"
+  navbar:
+    background: primary
+    search: false
+    collapse: false
+    left:
+      - href: index.qmd
+        text: Home
+      - tools.qmd
+      - blog.qmd
+      - theses.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
