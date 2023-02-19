@@ -2,23 +2,25 @@ project:
   type: website
 
 website:
-  title: "Markus Ljungqvist"
+  title: "Test Page"
+  search: false
   navbar:
     background: primary
-    search: false
+    pinned: true
     collapse: false
     left:
       - href: index.qmd
         text: Home
-      - tools.qmd
-      - blog.qmd
-      - theses.qmd
+      - href: blog.qmd
+        text: Blog
+      - href: tools.qmd
+        text: Tools
+      - href: theses.qmd
+        text: Theses
 
 format:
   html:
+    minimal: true
     theme: cosmo
     css: styles.css
-    toc: true
-
-
-
+    toc: false

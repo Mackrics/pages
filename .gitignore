@@ -49,5 +49,10 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
-# mksh 
+# mksh
 :
+
+# vim session
+*.vim
+
+/.quarto/
