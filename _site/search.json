@@ -47,5 +47,12 @@
     "title": "Software I Use",
     "section": "Shell",
     "text": "Shell\nI prefer to manage most things via the command line. When working on machines running windows, I use powershell. For Linux machines, I have experience with bash, fish, but currently use mksh"
+  },
+  {
+    "objectID": "theses.html",
+    "href": "theses.html",
+    "title": "Markus Ljungqvist",
+    "section": "",
+    "text": "My Theses\nMaster Thesis in Economics (2022)\nMedical Markup: A Check-Up on the Quality-Competition in Primary Care\nBachelor Thesis in Economics (2020)\nHow have the sanctions against Russia and their counter sanctions affected the Russian trade?\nBachelor Thesis in European Studies (2020) Finns det en euroeffekt på handeln?"
   }
 ]
