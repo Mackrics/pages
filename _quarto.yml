@@ -21,6 +21,8 @@ website:
 format:
   html:
     minimal: true
-    theme: cosmo
+    theme:
+      - darkly
+      - style.scss
     css: styles.css
     toc: false
