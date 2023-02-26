@@ -5,12 +5,13 @@ website:
   title: "Markus Ljungqvist"
   search: false
   navbar:
-    background: primary
+    background: $black
+    foreground: $white
     pinned: true
     collapse: false
     left:
       - href: index.qmd
-        text: Home
+        text: About
       - href: blog.qmd
         text: Blog
       - href: tools.qmd

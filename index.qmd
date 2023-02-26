@@ -1,5 +1,6 @@
 ---
 title: "About me"
+title-block-style: none
 page-layout: article
 ---
 
@@ -7,10 +8,18 @@ page-layout: article
 
 ::: {.g-col-4}
 ![](./media/profile_picture.png){width=100%}
-[Markus@Ljungqvist.xyz](mailto:markus@Ljungqvist.xyz)
+:::
+
+::: {.g-col-4}
+- [Markus@Ljungqvist.xyz](mailto:markus@Ljungqvist.xyz)
+
+- [PGP Key](./publickey.txt)
 :::
 
 ::: {.g-col-8}
+
+{{< meta title >}}
+
 I am an quantitative analyst at Copenhagen Economics, where I help clients
 with quantitative analyses related to competition economics. I enjoy
 solving complex quantitative problems creatively, where I am able to
