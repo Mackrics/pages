@@ -1,13 +1,15 @@
-# My Theses 
+---
+title: My theses
+---
 
-**Master Thesis in Economics (2022)**
+# Master Thesis in Economics (2022)
 
 [Medical Markup: A Check-Up on the Quality-Competition in Primary Care](https://gupea.ub.gu.se/bitstream/handle/2077/72465/2022-118.pdf?sequence=1&isAllowed=y)
 
 
-**Bachelor Thesis in Economics (2020)**
+# Bachelor Thesis in Economics (2020)
 
 [How have the sanctions against Russia and their counter sanctions affected the Russian trade?](https://gupea.ub.gu.se/bitstream/handle/2077/65246/gupea_2077_65246_1.pdf;jsessionid=979110E2FF0AB8E078100887BB0A4C34?sequence=1")
 
-**Bachelor Thesis in European Studies (2020)**
+# Bachelor Thesis in European Studies (2020)
 [Finns det en euroeffekt på handeln?](https://gupea.ub.gu.se/bitstream/handle/2077/64106/gupea_2077_64106_1.pdf?sequence=1")

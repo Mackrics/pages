@@ -1,24 +1,23 @@
 ---
-title: "About me"
 title-block-style: none
 page-layout: article
 ---
 
 ::: {.grid}
 
-::: {.g-col-4}
+::: {.g-col-3}
 ![](./media/profile_picture.png){width=100%}
 :::
 
 ::: {.g-col-4}
 - [Markus@Ljungqvist.xyz](mailto:markus@Ljungqvist.xyz)
-
 - [PGP Key](./publickey.txt)
+- [RSS Feed](https://www.markusljungqvist.com/blog/rss.xml)
+- [Codeberg](https://codeberg.org/mackan)
 :::
 
 ::: {.g-col-8}
-
-{{< meta title >}}
+# About
 
 I am an quantitative analyst at Copenhagen Economics, where I help clients
 with quantitative analyses related to competition economics. I enjoy

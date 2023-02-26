@@ -1,5 +1,14 @@
 ---
 title: Blog
+listing: 
+  contents: blog
+  type: table
+  sort: date
+  date-format: "YYYY-M-D"
+  fields: [date, title]
+  feed: true
+  sort-ui: false
+  filter-ui: false
 ---
 
 This page is still a work in progress
