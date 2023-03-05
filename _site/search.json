@@ -51,9 +51,9 @@
   {
     "objectID": "theses.html",
     "href": "theses.html",
-    "title": "My theses",
+    "title": "Theses",
     "section": "",
-    "text": "Master Thesis in Economics (2022)\nMedical Markup: A Check-Up on the Quality-Competition in Primary Care\n\n\nBachelor Thesis in Economics (2020)\nHow have the sanctions against Russia and their counter sanctions affected the Russian trade?\n\n\nBachelor Thesis in European Studies (2020)\nFinns det en euroeffekt på handeln?"
+    "text": "Year\n\n\nTitle\n\n\n\n\n\n\n2022\n\n\nMedical Markup: A Check-Up on the Quality-Competition in Primary Care\n\n\n\n\n2020\n\n\nFinns det en euroeffekt på handeln?\n\n\n\n\n2020\n\n\nHow have the sanctions against Russia and their counter sanctions affected the Russian trade?\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "bloq.html",
@@ -75,5 +75,26 @@
     "title": "Thesis award from the Swedish Competition Authority",
     "section": "",
     "text": "I’m proud to announce that the masters thesis I coauthored placed second in the Swedish Competition Authority’s thesis competition. The SCA published the thesis, their motivation, and interview"
+  },
+  {
+    "objectID": "theses/master-thesis.html",
+    "href": "theses/master-thesis.html",
+    "title": "Medical Markup: A Check-Up on the Quality-Competition in Primary Care",
+    "section": "",
+    "text": "Link to thesis\nWe show that quality-competition among private firms in the Swedish primary care have worsened during the last 15 years. As a result, public funds turn into profits, rather than quality care for patients. Our interpretation is that providers have not increased their (cost of) quality at the same rate as the compensation has increased. We measure the intensity of quality-competition with markups, which we retrieve from a production function, as De Loecker and Warzynski (2012). Since this is the first application of this methodology to estimate quality competition, we adapt the method by including quality in the Ackerberg, Caves, and Frazer (2015) two-stage estimator to control for time-variant unobserved firm quality and productiviy"
+  },
+  {
+    "objectID": "theses/bachelor-european-studies.html",
+    "href": "theses/bachelor-european-studies.html",
+    "title": "Finns det en euroeffekt på handeln?",
+    "section": "",
+    "text": "Link to thesis\nThis Bachelor thesis’s purpose was to clarify recent questions on the euro effect, the effect that says that two countries who share the euro will trade more with each other, compared to countries that do not share the euro. Some authors have suggested that the euro effect in recent years has been significantly weaker than earlier studies have suggested. In recent years most studies conducted have used different types of simulation models to assess the effects of the euro, however this thesis uses the gravity model. The results are that the euro effect probably is stronger than ever."
+  },
+  {
+    "objectID": "theses/bachelor-economics.html",
+    "href": "theses/bachelor-economics.html",
+    "title": "How have the sanctions against Russia and their counter sanctions affected the Russian trade?",
+    "section": "",
+    "text": "Link to thesis\nEconomic sanctions are prevalent in the modern world as an alternative to war, instead aiming to maim economic growth and power by hindering trade. In recent times, sanctions have been imposed against many countries, Russia being one of them. Often seen as a response to questionable political and economic acts. The western countries and the UN being the main actors behind recent sanctions have faced relatively small negative effects of their imposed sanctions. The receiving countries however, often faced large consequences. With this thesis we aim to explain how Russia was affected and possibly still is affected by the sanctions imposed by the EU, the US, and their own counter sanctions. Searching for patterns to see if trade was diverted and if the sanctions have had lasting effects in a longer term. To research the question, we use descriptive statistics and regression analysis to explain and predict the effects over time. Our conclusions are that sanctions had a great immediate impact on trade. In the first year a decrease of up to 31.75% in bilateral trade between Russia and the EU and US was observed. As time passed, all parties significantly diverted their trade to a degree. The initial trade diversion of Russia being 42.48% in the first year"
   }
 ]

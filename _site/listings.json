@@ -4,5 +4,13 @@
     "items": [
       "/blog/sca-award.html"
     ]
+  },
+  {
+    "listing": "/theses.html",
+    "items": [
+      "/theses/master-thesis.html",
+      "/theses/bachelor-european-studies.html",
+      "/theses/bachelor-economics.html"
+    ]
   }
 ]

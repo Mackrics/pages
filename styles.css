@@ -12,7 +12,11 @@ img {
   font-style: normal;
 }
 
-
 body {
 		font-family: 'IBM Plex Mono', monospace;
+}
+
+a { 
+	color:#8aadf4;
+	text-decoration: none;
 }

@@ -5,6 +5,11 @@ website:
   title: "Markus Ljungqvist"
   site-url: https://MarkusLjungqvist.com
   search: false
+  page-footer: 
+    border: false
+    background: $black
+    foreground: $blue
+    left: "[Source Code](https://codeberg.org/mackan/pages)"
   navbar:
     background: $black
     foreground: $white

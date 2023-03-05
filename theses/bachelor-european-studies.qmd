@@ -1,0 +1,16 @@
+---
+title: "Finns det en euroeffekt på handeln?"
+date: "2020"
+date-format: "YYYY"
+---
+
+[Link to thesis](https://gupea.ub.gu.se/bitstream/handle/2077/64106/gupea_2077_64106_1.pdf?sequence=1)
+
+This Bachelor thesis’s purpose was to clarify recent questions on the euro
+effect, the effect that says that two countries who share the euro will trade
+more with each other, compared to countries that do not share the euro. Some
+authors have suggested that the euro effect in recent years has been
+significantly weaker than earlier studies have suggested. In recent years most
+studies conducted have used different types of simulation models to assess the
+effects of the euro, however this thesis uses the gravity model. The results
+are that the euro effect probably is stronger than ever.

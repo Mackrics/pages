@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Markus Ljungqvist - My theses</title>
+<title>Markus Ljungqvist - Theses</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,6 +24,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
@@ -43,7 +45,37 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -90,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">My theses</h1>
+<h1 class="title">Theses</h1>
 </div>
 
 
@@ -105,22 +137,55 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="master-thesis-in-economics-2022" class="level1">
-<h1>Master Thesis in Economics (2022)</h1>
-<p><a href="https://gupea.ub.gu.se/bitstream/handle/2077/72465/2022-118.pdf?sequence=1&amp;isAllowed=y">Medical Markup: A Check-Up on the Quality-Competition in Primary Care</a></p>
-</section>
-<section id="bachelor-thesis-in-economics-2020" class="level1">
-<h1>Bachelor Thesis in Economics (2020)</h1>
-<p><a href="https://gupea.ub.gu.se/bitstream/handle/2077/65246/gupea_2077_65246_1.pdf;jsessionid=979110E2FF0AB8E078100887BB0A4C34?sequence=1%22">How have the sanctions against Russia and their counter sanctions affected the Russian trade?</a></p>
-</section>
-<section id="bachelor-thesis-in-european-studies-2020" class="level1">
-<h1>Bachelor Thesis in European Studies (2020)</h1>
-<p><a href="https://gupea.ub.gu.se/bitstream/handle/2077/64106/gupea_2077_64106_1.pdf?sequence=1%22">Finns det en euroeffekt på handeln?</a></p>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Year
+</th>
+<th>
+Title
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1678020529169" data-listing-reading-time-sort="0.53" data-listing-title-sort="Medical Markup: A Check-Up on the Quality-Competition in Primary Care" data-listing-filename-sort="master-thesis.qmd">
+<td class="listing-date">
+2022
+</td>
+<td class="listing-title">
+<a href="./theses/master-thesis.html" class="title">Medical Markup: A Check-Up on the Quality-Competition in Primary Care</a>
+</td>
+</tr>
+<tr data-index="1" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1678020597653" data-listing-reading-time-sort="0.465" data-listing-title-sort="Finns det en euroeffekt på handeln?" data-listing-filename-sort="bachelor-european-studies.qmd">
+<td class="listing-date">
+2020
+</td>
+<td class="listing-title">
+<a href="./theses/bachelor-european-studies.html" class="title">Finns det en euroeffekt på handeln?</a>
+</td>
+</tr>
+<tr data-index="2" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1678021262659" data-listing-reading-time-sort="0.975" data-listing-title-sort="How have the sanctions against Russia and their counter sanctions affected the Russian trade?" data-listing-filename-sort="bachelor-economics.qmd">
+<td class="listing-date">
+2020
+</td>
+<td class="listing-title">
+<a href="./theses/bachelor-economics.html" class="title">How have the sanctions against Russia and their counter sanctions affected the Russian trade?</a>
+</td>
+</tr>
+</tbody>
+
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 </div> <!-- /content -->
 
 
