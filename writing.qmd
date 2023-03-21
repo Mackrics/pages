@@ -1,0 +1,32 @@
+---
+title: Writing
+listing: 
+  - id: theses
+    contents: theses
+    type: table
+    sort: "date desc"
+    date-format: "YYYY"
+    fields: [date, title]
+    sort-ui: false
+    filter-ui: false
+    field-display-names:
+      date: "Year"
+  - id: blog
+    contents: blog
+    type: table
+    sort: date
+    date-format: "YYYY-M-D"
+    fields: [date, title]
+    feed: true
+    sort-ui: false
+    filter-ui: false
+---
+
+## Blog
+:::{#blog}
+:::
+
+## Theses
+:::{#theses}
+:::
+

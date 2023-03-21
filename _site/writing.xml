@@ -6,8 +6,8 @@
       version="2.0">
 <channel>
 <title>Markus Ljungqvist</title>
-<link>https://MarkusLjungqvist.com/theses.html</link>
-<atom:link href="https://MarkusLjungqvist.com/theses.xml" rel="self" type="application/rss+xml"/>
+<link>https://MarkusLjungqvist.com/writing.html</link>
+<atom:link href="https://MarkusLjungqvist.com/writing.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.2.335</generator>
 <lastBuildDate>Sat, 17 Dec 2022 23:00:00 GMT</lastBuildDate>

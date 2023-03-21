@@ -10,5 +10,3 @@ listing:
   sort-ui: false
   filter-ui: false
 ---
-
-This page is still a work in progress

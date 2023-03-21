@@ -18,12 +18,10 @@ website:
     left:
       - href: index.qmd
         text: About
-      - href: blog.qmd
-        text: Blog
       - href: tools.qmd
         text: Tools
-      - href: theses.qmd
-        text: Theses
+      - href: writing.qmd
+        text: Writing
 
 format:
   html:

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Markus Ljungqvist - Blog</title>
+<title>Markus Ljungqvist - Writing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -48,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-theses .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -61,7 +61,35 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-theses'] = new List('listing-theses', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-blog .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-blog'] = new List('listing-blog', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -78,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Markus Ljungqvist" href="blog.xml"></head>
+<link rel="alternate" type="application/rss+xml" title="Markus Ljungqvist" href="writing.xml"></head>
 
 <body class="nav-fixed fullcontent">
 
@@ -101,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Tools</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./writing.html">
+    <a class="nav-link active" href="./writing.html" aria-current="page">
  <span class="menu-text">Writing</span></a>
   </li>  
 </ul>
@@ -118,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Writing</h1>
 </div>
 
 
@@ -133,11 +161,9 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<section id="blog" class="level2">
+<h2 data-anchor-id="blog">Blog</h2>
+<div id="listing-blog" class="quarto-listing quarto-listing-container-table">
 
 <table class="quarto-listing-table table">
 <thead>
@@ -165,7 +191,61 @@ Title
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+</section>
+<section id="theses" class="level2">
+<h2 data-anchor-id="theses">Theses</h2>
+<div id="listing-theses" class="quarto-listing quarto-listing-container-table">
+
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Year
+</th>
+<th>
+Title
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1678020529169" data-listing-reading-time-sort="0.53" data-listing-title-sort="Medical Markup: A Check-Up on the Quality-Competition in Primary Care" data-listing-filename-sort="master-thesis.qmd">
+<td class="listing-date">
+2022
+</td>
+<td class="listing-title">
+<a href="./theses/master-thesis.html" class="title">Medical Markup: A Check-Up on the Quality-Competition in Primary Care</a>
+</td>
+</tr>
+<tr data-index="1" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1678020597653" data-listing-reading-time-sort="0.465" data-listing-title-sort="Finns det en euroeffekt på handeln?" data-listing-filename-sort="bachelor-european-studies.qmd">
+<td class="listing-date">
+2020
+</td>
+<td class="listing-title">
+<a href="./theses/bachelor-european-studies.html" class="title">Finns det en euroeffekt på handeln?</a>
+</td>
+</tr>
+<tr data-index="2" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1678021262659" data-listing-reading-time-sort="0.975" data-listing-title-sort="How have the sanctions against Russia and their counter sanctions affected the Russian trade?" data-listing-filename-sort="bachelor-economics.qmd">
+<td class="listing-date">
+2020
+</td>
+<td class="listing-title">
+<a href="./theses/bachelor-economics.html" class="title">How have the sanctions against Russia and their counter sanctions affected the Russian trade?</a>
+</td>
+</tr>
+</tbody>
+
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
+
+
+</section>
+
+</main> <!-- /main -->
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
