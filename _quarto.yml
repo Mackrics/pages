@@ -17,8 +17,6 @@ website:
     pinned: true
     collapse: false
     left:
-      - href: index.qmd
-        text: About
       - href: tools.qmd
         text: Tools
       - href: writing.qmd
