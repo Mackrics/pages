@@ -15,4 +15,4 @@ with markups, which we retrieve from a production function, as De Loecker and
 Warzynski (2012). Since this is the first application of this methodology to
 estimate quality competition, we adapt the method by including quality in the
 Ackerberg, Caves, and Frazer (2015) two-stage estimator to control for
-time-variant unobserved firm quality and productiviy
+time-variant unobserved firm quality and productivity.

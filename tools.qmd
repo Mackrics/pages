@@ -6,7 +6,7 @@ title: "Software I Use"
 I use [R](https://www.r-project.org/) professionally in my daily work, but I
 have also obtained advanced knowledge of R via an advanced course in R,
 personal projects, and reading various books from [The Big Book of
-R](https://www.bigbookofr.com/)
+R](https://www.bigbookofr.com/).
 
 ## Git
 I am experienced using [Git](https://git-scm.com) for professional, academic,

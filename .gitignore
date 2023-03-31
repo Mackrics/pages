@@ -56,3 +56,6 @@ rsconnect/
 *.vim
 
 /.quarto/
+
+/_site/
+/_site/*

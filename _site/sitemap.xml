@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://MarkusLjungqvist.com/tools.html</loc>
-    <lastmod>2023-03-21T11:46:04.208Z</lastmod>
-  </url>
-  <url>
     <loc>https://MarkusLjungqvist.com/blog/sca-award.html</loc>
-    <lastmod>2023-03-21T11:46:04.600Z</lastmod>
-  </url>
-  <url>
-    <loc>https://MarkusLjungqvist.com/theses/master-thesis.html</loc>
-    <lastmod>2023-03-21T11:46:05.020Z</lastmod>
+    <lastmod>2023-03-31T05:50:54.652Z</lastmod>
   </url>
   <url>
     <loc>https://MarkusLjungqvist.com/theses/bachelor-european-studies.html</loc>
-    <lastmod>2023-03-21T11:46:05.398Z</lastmod>
+    <lastmod>2023-03-31T05:50:55.049Z</lastmod>
   </url>
   <url>
     <loc>https://MarkusLjungqvist.com/theses/bachelor-economics.html</loc>
-    <lastmod>2023-03-21T11:46:05.792Z</lastmod>
+    <lastmod>2023-03-31T05:50:55.458Z</lastmod>
+  </url>
+  <url>
+    <loc>https://MarkusLjungqvist.com/theses/master-thesis.html</loc>
+    <lastmod>2023-03-31T05:50:55.827Z</lastmod>
   </url>
   <url>
     <loc>https://MarkusLjungqvist.com/blog.html</loc>
-    <lastmod>2023-03-21T11:46:06.188Z</lastmod>
-  </url>
-  <url>
-    <loc>https://MarkusLjungqvist.com/index.html</loc>
-    <lastmod>2023-03-21T11:46:06.977Z</lastmod>
+    <lastmod>2023-03-31T05:50:56.207Z</lastmod>
   </url>
   <url>
     <loc>https://MarkusLjungqvist.com/writing.html</loc>
-    <lastmod>2023-03-21T11:46:07.801Z</lastmod>
+    <lastmod>2023-03-31T05:50:56.637Z</lastmod>
+  </url>
+  <url>
+    <loc>https://MarkusLjungqvist.com/tools.html</loc>
+    <lastmod>2023-03-31T05:50:57.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://MarkusLjungqvist.com/index.html</loc>
+    <lastmod>2023-03-31T05:50:57.766Z</lastmod>
   </url>
 </urlset>

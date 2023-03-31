@@ -1,22 +1,22 @@
 ---
 title-block-style: none
-page-layout: article
 ---
 
 ::: {.grid}
 
-::: {.g-col-3}
+::: {.g-col-4}
 ![](./media/profile_picture.png){width=100%}
 :::
 
-::: {.g-col-4}
+::: {.g-col-8}
 - [Markus@Ljungqvist.xyz](mailto:markus@Ljungqvist.xyz)
 - [PGP Key](./publickey.txt)
 - [RSS Feed](https://www.markusljungqvist.com/blog/rss.xml)
 - [Codeberg](https://codeberg.org/mackan)
+- [Linkedin](https://www.linkedin.com/in/markusjsl/)
+:::
 :::
 
-::: {.g-col-8}
 # About
 
 I am an quantitative analyst at Copenhagen Economics, where I help clients
@@ -28,6 +28,4 @@ Prior to joining Copenhagen Economics, I obtained Bachelor degrees in
 both Economics and European Studies, and a Masters degree in Economics from
 the University of Gothenburg. I specialize in applied	microeconomics and
 econometrics, more specifically empirical industrial organization.
-:::
 
-:::
