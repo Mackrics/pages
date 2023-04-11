@@ -1,8 +1,9 @@
 project:
   type: website
+  output-dir: _site
 
 website:
-  title: "Ljungqvist"
+  title: "Markus Ljungqvist"
   site-url: https://MarkusLjungqvist.com
   search: false
   page-footer: 
@@ -11,12 +12,15 @@ website:
     foreground: $blue
     left: "[Source Code](https://codeberg.org/mackan/pages)"
   navbar:
+    title: false
     background: $black
     foreground: $white
     alignment: center
     pinned: true
     collapse: false
     left:
+      - href: index.qmd
+        text: About
       - href: tools.qmd
         text: Tools
       - href: writing.qmd
