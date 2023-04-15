@@ -9,11 +9,10 @@ title-block-style: none
 :::
 
 ::: {.g-col-8}
-- [Markus@Ljungqvist.xyz](mailto:markus@Ljungqvist.xyz)
+- [Markus@Ljungqvist.xyz](mailto:Markus@Ljungqvist.xyz)
 - [PGP Key](./publickey.txt)
 - [RSS Feed](https://www.markusljungqvist.com/blog/rss.xml)
-- [Codeberg](https://github.com/Mackrics)
-- [LinkedIn](https://www.linkedin.com/in/markusjsl/)
+- [GitHub](https://github.com/mackrics)
 :::
 :::
 
