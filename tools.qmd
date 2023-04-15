@@ -14,7 +14,7 @@ and personal projects. I primarily use the [Pro
 Git](https://git-scm.com/book/en/v2) book for learning more about Git.
 
 ## Quarto
-I am skilled using [quarto](https://quarto.org/). I have used quarto to create 
+I am skilled using [Quarto](https://quarto.org/). I have used quarto to create 
 websites, books, reports, and presentations. By combining my strengths in Git,
 R, shell, I am able to rapidly communicate results with great accuracy.
 

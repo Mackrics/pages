@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Markus Ljungqvist"
-  site-url: https://mackrics.com
+  site-url: "https://mackrics.com"
   search: false
   favicon: ./media/profile_picture.png
   page-footer: 
