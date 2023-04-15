@@ -21,4 +21,4 @@ R, shell, I am able to rapidly communicate results with great accuracy.
 ## Shell
 I prefer to manage most things via the command line. When working on machines
 running windows, I use Powershell. For Linux machines, I have experience with
-bash, fish, but currently use [mksh](http://www.mirbsd.org/mksh.htm)
+bash, fish, but currently use [mksh](http://www.mirbsd.org/mksh.htm).
