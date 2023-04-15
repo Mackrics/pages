@@ -11,7 +11,7 @@ website:
     border: false
     background: $black
     foreground: $blue
-    left: "[Source Code](https://codeberg.org/mackan/pages)"
+    left: "[Source Code](https://github.com/Mackrics/mackrics.github.io)"
   navbar:
     title: false
     background: $black

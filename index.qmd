@@ -12,7 +12,7 @@ title-block-style: none
 - [Markus@Ljungqvist.xyz](mailto:markus@Ljungqvist.xyz)
 - [PGP Key](./publickey.txt)
 - [RSS Feed](https://www.markusljungqvist.com/blog/rss.xml)
-- [Codeberg](https://codeberg.org/mackan)
+- [Codeberg](https://github.com/Mackrics)
 - [LinkedIn](https://www.linkedin.com/in/markusjsl/)
 :::
 :::
