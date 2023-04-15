@@ -11,7 +11,7 @@ title-block-style: none
 ::: {.g-col-8}
 - [Markus@Ljungqvist.xyz](mailto:Markus@Ljungqvist.xyz)
 - [PGP Key](./publickey.txt)
-- [RSS Feed]()
+- [RSS Feed](https://mackrics.com/blog.xml)
 - [GitHub](https://github.com/mackrics)
 :::
 :::
