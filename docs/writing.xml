@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Markus Ljungqvist</title>
+<link>https://MarkusLjungqvist.com/writing.html</link>
+<atom:link href="https://MarkusLjungqvist.com/writing.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.2.335</generator>
+<lastBuildDate>Sat, 17 Dec 2022 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>Thesis award from the Swedish Competition Authority</title>
+  <link>https://MarkusLjungqvist.com/blog/sca-award.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>I’m proud to announce that the masters thesis I coauthored placed second in the Swedish Competition Authority’s thesis competition. The SCA <a href="https://www.konkurrensverket.se/globalassets/dokument/kunskap-och-forskning/uppsatstavling/uppsatser/uppsats_2022_michael-erlandsson-markus-ljungqvist.pdf">published the thesis</a>, <a href="https://www.konkurrensverket.se/konkurrens/kunskap-och-forskning/uppsatstavling/pristagare-i-uppsatstavlingen/">their motivation</a>, and the <a href="https://www.konkurrensverket.se/konkurrens/kunskap-och-forskning/uppsatstavling/pristagare-i-uppsatstavlingen/andraplats-i-ekonomi-2022/">interview</a>.</p>
+
+
+
+ ]]></description>
+  <guid>https://MarkusLjungqvist.com/blog/sca-award.html</guid>
+  <pubDate>Sat, 17 Dec 2022 23:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Medical Markup: A Check-Up on the Quality-Competition in Primary Care</title>
+  <link>https://MarkusLjungqvist.com/theses/master-thesis.html</link>
+  <description><![CDATA[ 
+
+
+
+<p><a href="https://gupea.ub.gu.se/bitstream/handle/2077/72465/2022-118.pdf?sequence=1&amp;isAllowed=y">Link to thesis</a></p>
+<p>We show that quality-competition among private firms in the Swedish primary care have worsened during the last 15 years. As a result, public funds turn into profits, rather than quality care for patients. Our interpretation is that providers have not increased their (cost of) quality at the same rate as the compensation has increased. We measure the intensity of quality-competition with markups, which we retrieve from a production function, as De Loecker and Warzynski (2012). Since this is the first application of this methodology to estimate quality competition, we adapt the method by including quality in the Ackerberg, Caves, and Frazer (2015) two-stage estimator to control for time-variant unobserved firm quality and productivity.</p>
+
+
+
+ ]]></description>
+  <guid>https://MarkusLjungqvist.com/theses/master-thesis.html</guid>
+  <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Finns det en euroeffekt på handeln?</title>
+  <link>https://MarkusLjungqvist.com/theses/bachelor-european-studies.html</link>
+  <description><![CDATA[ 
+
+
+
+<p><a href="https://gupea.ub.gu.se/bitstream/handle/2077/64106/gupea_2077_64106_1.pdf?sequence=1">Link to thesis</a></p>
+<p>This Bachelor thesis’s purpose was to clarify recent questions on the euro effect, the effect that says that two countries who share the euro will trade more with each other, compared to countries that do not share the euro. Some authors have suggested that the euro effect in recent years has been significantly weaker than earlier studies have suggested. In recent years most studies conducted have used different types of simulation models to assess the effects of the euro, however this thesis uses the gravity model. The results are that the euro effect probably is stronger than ever.</p>
+
+
+
+ ]]></description>
+  <guid>https://MarkusLjungqvist.com/theses/bachelor-european-studies.html</guid>
+  <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>How have the sanctions against Russia and their counter sanctions affected the Russian trade?</title>
+  <link>https://MarkusLjungqvist.com/theses/bachelor-economics.html</link>
+  <description><![CDATA[ 
+
+
+
+<p><a href="https://gupea.ub.gu.se/bitstream/handle/2077/65246/gupea_2077_65246_1.pdf;jsessionid=979110E2FF0AB8E078100887BB0A4C34?sequence=1">Link to thesis</a></p>
+<p>Economic sanctions are prevalent in the modern world as an alternative to war, instead aiming to maim economic growth and power by hindering trade. In recent times, sanctions have been imposed against many countries, Russia being one of them. Often seen as a response to questionable political and economic acts. The western countries and the UN being the main actors behind recent sanctions have faced relatively small negative effects of their imposed sanctions. The receiving countries however, often faced large consequences. With this thesis we aim to explain how Russia was affected and possibly still is affected by the sanctions imposed by the EU, the US, and their own counter sanctions. Searching for patterns to see if trade was diverted and if the sanctions have had lasting effects in a longer term. To research the question, we use descriptive statistics and regression analysis to explain and predict the effects over time. Our conclusions are that sanctions had a great immediate impact on trade. In the first year a decrease of up to 31.75% in bilateral trade between Russia and the EU and US was observed. As time passed, all parties significantly diverted their trade to a degree. The initial trade diversion of Russia being 42.48% in the first year</p>
+
+
+
+ ]]></description>
+  <guid>https://MarkusLjungqvist.com/theses/bachelor-economics.html</guid>
+  <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

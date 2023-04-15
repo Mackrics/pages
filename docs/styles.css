@@ -1,0 +1,22 @@
+img {
+  border: 2px solid #89b4fa;
+  border-radius: 50%;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("media/plex/IBMPlexMono-Regular.woff2") format("woff2"),
+	url("media/plex/IBMPlexMono-Regular.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+		font-family: 'IBM Plex Mono', monospace;
+}
+
+a { 
+	color:#8aadf4;
+	text-decoration: none;
+}
