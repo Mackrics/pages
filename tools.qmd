@@ -13,16 +13,12 @@ I am experienced using [Git](https://git-scm.com) for professional, academic,
 and personal projects. I primarily use the [Pro
 Git](https://git-scm.com/book/en/v2) book for learning more about Git.
 
-## LaTeX 
-My favorite markup language is [LaTeX](https://www.latex-project.org/), which I
-use to make presentations and other types of documents.
-
-## Markdown
-For quick notes and short reports, I use Markdown, R Markdown, and quarto. The
-simple Markdown syntax enables quick typesetting, at the cost of the more
-advanced features from LaTex.
+## Quarto
+I am skilled using [quarto](https://quarto.org/). I have used quarto to create 
+websites, books, reports, and presentations. By combining my strengths in Git,
+R, shell, I am able to rapidly communicate results with great accuracy.
 
 ## Shell
 I prefer to manage most things via the command line. When working on machines
-running windows, I use powershell. For Linux machines, I have experience with
+running windows, I use Powershell. For Linux machines, I have experience with
 bash, fish, but currently use [mksh](http://www.mirbsd.org/mksh.htm)
