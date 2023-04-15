@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>Markus Ljungqvist</title>
-<link>https://MarkusLjungqvist.com/blog.html</link>
-<atom:link href="https://MarkusLjungqvist.com/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://mackrics.com.com/blog.html</link>
+<atom:link href="https://mackrics.com.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.2.335</generator>
 <lastBuildDate>Sat, 17 Dec 2022 23:00:00 GMT</lastBuildDate>
 <item>
   <title>Thesis award from the Swedish Competition Authority</title>
-  <link>https://MarkusLjungqvist.com/blog/sca-award.html</link>
+  <link>https://mackrics.com.com/blog/sca-award.html</link>
   <description><![CDATA[ 
 
 
@@ -23,7 +23,7 @@
 
 
  ]]></description>
-  <guid>https://MarkusLjungqvist.com/blog/sca-award.html</guid>
+  <guid>https://mackrics.com.com/blog/sca-award.html</guid>
   <pubDate>Sat, 17 Dec 2022 23:00:00 GMT</pubDate>
 </item>
 </channel>
