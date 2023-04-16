@@ -41,6 +41,7 @@ website:
         aria-label: GitHub
       - icon: mastodon
         href: https://fosstodon.org/@mackan
+        rel: me
         aria-label: Mastodon
 format:
   html:
