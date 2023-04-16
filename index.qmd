@@ -1,8 +1,6 @@
 ---
-title-block-style: none
+title: About
 ---
-
-# About
 
 I am an quantitative analyst at Copenhagen Economics, where I help clients
 with quantitative analyses related to competition economics. I enjoy
