@@ -13,6 +13,7 @@ title-block-style: none
 - [PGP Key](./publickey.txt)
 - [RSS Feed](https://mackrics.com/blog.xml)
 - [GitHub](https://github.com/mackrics)
+- <a rel="me" href="https://fosstodon.org/@mackan">Mastodon</a>
 :::
 :::
 
