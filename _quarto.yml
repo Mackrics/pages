@@ -26,7 +26,22 @@ website:
         text: Tools
       - href: writing.qmd
         text: Writing
-
+    right:
+      - icon: envelope
+        href: mailto:Markus@Ljungqvist.xyz
+        aria-label: Mail
+      - icon: key
+        href: ./publickey.txt
+        aria-label: PGP key
+      - icon: rss
+        href: https://mackrics.com/blog.xml
+        aria-label: RSS feed
+      - icon: github
+        href: https://github.com/mackrics
+        aria-label: GitHub
+      - icon: mastodon
+        href: https://fosstodon.org/@mackan
+        aria-label: Mastodon
 format:
   html:
     minimal: true

@@ -2,21 +2,6 @@
 title-block-style: none
 ---
 
-::: {.grid}
-
-::: {.g-col-4}
-![](./media/profile_picture.png){width=100%}
-:::
-
-::: {.g-col-8}
-- [Markus@Ljungqvist.xyz](mailto:Markus@Ljungqvist.xyz)
-- [PGP Key](./publickey.txt)
-- [RSS Feed](https://mackrics.com/blog.xml)
-- [GitHub](https://github.com/mackrics)
-- <a rel="me" href="https://fosstodon.org/@mackan">Mastodon</a>
-:::
-:::
-
 # About
 
 I am an quantitative analyst at Copenhagen Economics, where I help clients
@@ -28,4 +13,3 @@ Prior to joining Copenhagen Economics, I obtained Bachelor degrees in
 both Economics and European Studies, and a Master's degree in Economics from
 the University of Gothenburg. I specialize in applied	microeconomics and
 econometrics, more specifically empirical industrial organization.
-
