@@ -23,9 +23,17 @@ listing:
 ---
 
 ## Blog
+
+Here are some updates, to which you can subscribe to via an 
+[RSS feed](https://mackrics.com/blog.xml).
+
+
 :::{#blog}
 :::
 
 ## Theses
+
+These are the theses I have authored or co-authored during my studies.
+
 :::{#theses}
 :::
