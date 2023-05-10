@@ -10,7 +10,46 @@
 <atom:link href="https://mackrics.com/writing.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.326</generator>
-<lastBuildDate>Sat, 17 Dec 2022 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 09 May 2023 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>My favorite open source tools</title>
+  <link>https://mackrics.com/blog/tools.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="r" class="level2">
+<h2 data-anchor-id="r">R</h2>
+<p>I use <a href="https://www.r-project.org/">R</a> professionally in my daily work, but I have also obtained advanced knowledge of R via an advanced course in R, personal projects, and reading various books from <a href="https://www.bigbookofr.com/">The Big Book of R</a>.</p>
+<p>Specifically, I have used R to:</p>
+<ul>
+<li>Conduct econometric estimations such as: <a href="https://en.wikipedia.org/wiki/Ordinary_least_squares">OLS</a>, <a href="https://en.wikipedia.org/wiki/Generalized_method_of_moments">GMM</a>, <a href="https://en.wikipedia.org/wiki/Instrumental_variables_estimation">Instrument variables estimations</a>, and <a href="https://en.wikipedia.org/wiki/Merger_simulation">Merger simulations</a>.</li>
+<li>Manage complex data structures by working with nested data.</li>
+<li>Clean data.</li>
+<li>Create interactive command line interface applications to speed up manual tasks and learn new concepts.</li>
+<li>Working with various application programming interface to automate workflows.</li>
+</ul>
+</section>
+<section id="git" class="level2">
+<h2 data-anchor-id="git">Git</h2>
+<p>I am experienced using <a href="https://git-scm.com">Git</a> for professional, academic, and personal projects. I primarily use the <a href="https://git-scm.com/book/en/v2">Pro Git</a> book for learning more about Git. Since I prefer managing most things via a command line interface, and also use Git at the command line, I am able to complete more advanced git tasks rapidly.</p>
+</section>
+<section id="quarto" class="level2">
+<h2 data-anchor-id="quarto">Quarto</h2>
+<p>I am skilled using <a href="https://quarto.org/">Quarto</a> to create reports, presentations, websites, and books. Quarto enables me to automate tasks to speed up the writing process and develop more reproducible reports.</p>
+</section>
+<section id="shell" class="level2">
+<h2 data-anchor-id="shell">Shell</h2>
+<p>I prefer to manage most things via the command line. I use GNU/Linux on my personal machines and have used a wide variety of shells such as bash, fish, and mksh on them. I have also some experience using PowerShell on Windows machines. I use shell to manage files, script smaller repetitive tasks, and for smaller data exploration tasks.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>software</category>
+  <guid>https://mackrics.com/blog/tools.html</guid>
+  <pubDate>Tue, 09 May 2023 22:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Thesis award from the Swedish Competition Authority</title>
   <link>https://mackrics.com/blog/sca-award.html</link>

@@ -1,16 +1,11 @@
 [
   {
-    "listing": "/blog.html",
-    "items": [
-      "/blog/sca-award.html"
-    ]
-  },
-  {
     "listing": "/writing.html",
     "items": [
       "/theses/master-thesis.html",
       "/theses/bachelor-european-studies.html",
       "/theses/bachelor-economics.html",
+      "/blog/tools.html",
       "/blog/sca-award.html"
     ]
   }

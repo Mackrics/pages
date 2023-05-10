@@ -14,8 +14,8 @@ listing:
   - id: blog
     contents: blog
     type: table
-    sort: date
-    date-format: "YYYY-M-D"
+    sort: "date desc"
+    date-format: "YYYY-MM-D"
     fields: [date, title]
     feed: true
     sort-ui: false
@@ -24,7 +24,7 @@ listing:
 
 ## Blog
 
-Here are some updates, to which you can subscribe to via an 
+Below are my latest blog posts, to which you can subscribe to via my
 [RSS feed](https://mackrics.com/blog.xml).
 
 

@@ -7,6 +7,41 @@
     "text": "I’m proud to announce that the masters thesis I coauthored placed second in the Swedish Competition Authority’s thesis competition. The SCA published the thesis, their motivation, and the interview."
   },
   {
+    "objectID": "blog/tools.html",
+    "href": "blog/tools.html",
+    "title": "My favorite open source tools",
+    "section": "",
+    "text": "I use R professionally in my daily work, but I have also obtained advanced knowledge of R via an advanced course in R, personal projects, and reading various books from The Big Book of R.\nSpecifically, I have used R to:\n\nConduct econometric estimations such as: OLS, GMM, Instrument variables estimations, and Merger simulations.\nManage complex data structures by working with nested data.\nClean data.\nCreate interactive command line interface applications to speed up manual tasks and learn new concepts.\nWorking with various application programming interface to automate workflows."
+  },
+  {
+    "objectID": "blog/tools.html#r",
+    "href": "blog/tools.html#r",
+    "title": "My favorite open source tools",
+    "section": "",
+    "text": "I use R professionally in my daily work, but I have also obtained advanced knowledge of R via an advanced course in R, personal projects, and reading various books from The Big Book of R.\nSpecifically, I have used R to:\n\nConduct econometric estimations such as: OLS, GMM, Instrument variables estimations, and Merger simulations.\nManage complex data structures by working with nested data.\nClean data.\nCreate interactive command line interface applications to speed up manual tasks and learn new concepts.\nWorking with various application programming interface to automate workflows."
+  },
+  {
+    "objectID": "blog/tools.html#git",
+    "href": "blog/tools.html#git",
+    "title": "My favorite open source tools",
+    "section": "Git",
+    "text": "Git\nI am experienced using Git for professional, academic, and personal projects. I primarily use the Pro Git book for learning more about Git. Since I prefer managing most things via a command line interface, and also use Git at the command line, I am able to complete more advanced git tasks rapidly."
+  },
+  {
+    "objectID": "blog/tools.html#quarto",
+    "href": "blog/tools.html#quarto",
+    "title": "My favorite open source tools",
+    "section": "Quarto",
+    "text": "Quarto\nI am skilled using Quarto to create reports, presentations, websites, and books. Quarto enables me to automate tasks to speed up the writing process and develop more reproducible reports."
+  },
+  {
+    "objectID": "blog/tools.html#shell",
+    "href": "blog/tools.html#shell",
+    "title": "My favorite open source tools",
+    "section": "Shell",
+    "text": "Shell\nI prefer to manage most things via the command line. I use GNU/Linux on my personal machines and have used a wide variety of shells such as bash, fish, and mksh on them. I have also some experience using PowerShell on Windows machines. I use shell to manage files, script smaller repetitive tasks, and for smaller data exploration tasks."
+  },
+  {
     "objectID": "theses/bachelor-european-studies.html",
     "href": "theses/bachelor-european-studies.html",
     "title": "Finns det en euroeffekt på handeln?",
@@ -28,13 +63,6 @@
     "text": "Link to thesis\nWe show that quality-competition among private firms in the Swedish primary care have worsened during the last 15 years. As a result, public funds turn into profits, rather than quality care for patients. Our interpretation is that providers have not increased their (cost of) quality at the same rate as the compensation has increased. We measure the intensity of quality-competition with markups, which we retrieve from a production function, as De Loecker and Warzynski (2012). Since this is the first application of this methodology to estimate quality competition, we adapt the method by including quality in the Ackerberg, Caves, and Frazer (2015) two-stage estimator to control for time-variant unobserved firm quality and productivity."
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Date\n\n\nTitle\n\n\n\n\n\n\n2022-12-18\n\n\nThesis award from the Swedish Competition Authority\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "About",
@@ -46,14 +74,14 @@
     "href": "writing.html",
     "title": "Writing",
     "section": "",
-    "text": "Here are some updates, to which you can subscribe to via an RSS feed.\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n2022-12-18\n\n\nThesis award from the Swedish Competition Authority\n\n\n\n\n\n\nNo matching items"
+    "text": "Below are my latest blog posts, to which you can subscribe to via my RSS feed.\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n2023-05-10\n\n\nMy favorite open source tools\n\n\n\n\n2022-12-18\n\n\nThesis award from the Swedish Competition Authority\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "writing.html#blog",
     "href": "writing.html#blog",
     "title": "Writing",
     "section": "",
-    "text": "Here are some updates, to which you can subscribe to via an RSS feed.\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n2022-12-18\n\n\nThesis award from the Swedish Competition Authority\n\n\n\n\n\n\nNo matching items"
+    "text": "Below are my latest blog posts, to which you can subscribe to via my RSS feed.\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n2023-05-10\n\n\nMy favorite open source tools\n\n\n\n\n2022-12-18\n\n\nThesis award from the Swedish Competition Authority\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "writing.html#theses",
@@ -61,40 +89,5 @@
     "title": "Writing",
     "section": "Theses",
     "text": "Theses\nThese are the theses I have authored or co-authored during my studies.\n\n\n\n\n\n\nYear\n\n\nTitle\n\n\n\n\n\n\n2022\n\n\nMedical Markup: A Check-Up on the Quality-Competition in Primary Care\n\n\n\n\n2020\n\n\nFinns det en euroeffekt på handeln?\n\n\n\n\n2020\n\n\nHow have the sanctions against Russia and their counter sanctions affected the Russian trade?\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "tools.html",
-    "href": "tools.html",
-    "title": "Software I Use",
-    "section": "",
-    "text": "I use R professionally in my daily work, but I have also obtained advanced knowledge of R via an advanced course in R, personal projects, and reading various books from The Big Book of R.\nSpecifically, I have used R to:\n\nConduct econometric estimations such as: OLS, GMM, Instrument variables estimations, and Merger simulations.\nManage complex data structures by working with nested data.\nClean data.\nCreate interactive command line interface applications to speed up manual tasks and learn new concepts.\nWorking with various application programming interface to automate workflows."
-  },
-  {
-    "objectID": "tools.html#r",
-    "href": "tools.html#r",
-    "title": "Software I Use",
-    "section": "",
-    "text": "I use R professionally in my daily work, but I have also obtained advanced knowledge of R via an advanced course in R, personal projects, and reading various books from The Big Book of R.\nSpecifically, I have used R to:\n\nConduct econometric estimations such as: OLS, GMM, Instrument variables estimations, and Merger simulations.\nManage complex data structures by working with nested data.\nClean data.\nCreate interactive command line interface applications to speed up manual tasks and learn new concepts.\nWorking with various application programming interface to automate workflows."
-  },
-  {
-    "objectID": "tools.html#git",
-    "href": "tools.html#git",
-    "title": "Software I Use",
-    "section": "Git",
-    "text": "Git\nI am experienced using Git for professional, academic, and personal projects. I primarily use the Pro Git book for learning more about Git. Since I prefer managing most things via a command line interface, and also use Git at the command line, I am able to complete more advanced git tasks rapidly."
-  },
-  {
-    "objectID": "tools.html#quarto",
-    "href": "tools.html#quarto",
-    "title": "Software I Use",
-    "section": "Quarto",
-    "text": "Quarto\nI am skilled using Quarto to create reports, presentations, websites, and books. Quarto enables me to automate tasks to speed up the writing process and develop more reproducible reports."
-  },
-  {
-    "objectID": "tools.html#shell",
-    "href": "tools.html#shell",
-    "title": "Software I Use",
-    "section": "Shell",
-    "text": "Shell\nI prefer to manage most things via the command line. I use GNU/Linux on my personal machines and have used a wide variety of shells such as bash, fish, and mksh on them. I have also some experience using PowerShell on Windows machines. I use shell to manage files, script smaller repetitive tasks, and for smaller data exploration tasks."
   }
 ]

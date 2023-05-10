@@ -1,5 +1,8 @@
 ---
-title: "Software I Use"
+title: My favorite open source tools
+date: 2023-05-10
+categories:
+  - software
 ---
 
 ## R
