@@ -1,17 +1,16 @@
 ---
 title: My favorite open source tools
-date: 2023-05-10
-categories:
-  - software
+date: 9999-12-31
+date-format: iso
 ---
 
 ## R
-I use [R](https://www.r-project.org/) professionally in my daily work, but I
-have also obtained advanced knowledge of R via an advanced course in R,
-personal projects, and reading various books from [The Big Book of
-R](https://www.bigbookofr.com/).
+[R](https://www.r-project.org/) is a programming language for statistical computing.
+I use R in my daily work, personal projects, and when I studied. Beside 
+hands-on experience, I enjoy learning new techniques through
+[The Big Book of R](https://www.bigbookofr.com/).
 
-Specifically, I have used R to:
+Here are some stuff I have used R for:
 
 - Conduct econometric estimations such as:
   [OLS](https://en.wikipedia.org/wiki/Ordinary_least_squares),
@@ -26,16 +25,18 @@ Specifically, I have used R to:
 
 
 ## Git
-I am experienced using [Git](https://git-scm.com) for professional, academic,
-and personal projects. I primarily use the [Pro
-Git](https://git-scm.com/book/en/v2) book for learning more about Git. Since I
-prefer managing most things via a command line interface, and also use Git at
-the command line, I am able to complete more advanced git tasks rapidly.
+[Git](https://git-scm.com) is a version control system which I have used for
+professional, academic, and personal projects. Git enables granular control
+of the history of code documents and is also a nice platform for sharing code
+and collaborating. A very nice resource for learning about Git is the [Pro
+Git](https://git-scm.com/book/en/v2).
 
 ## Quarto
-I am skilled using [Quarto](https://quarto.org/) to create reports,
-presentations, websites, and books. Quarto enables me to automate tasks to
-speed up the writing process and develop more reproducible reports.
+[Quarto](https://quarto.org/) is a scientific typesetting system which enables
+literate programming. It is a very efficient way to generate reports,
+presentations, books, and websites, since code and text can be combined into a
+single document. By combining code and text into a single document, the document
+also become more reproducible.
 
 ## Shell
 I prefer to manage most things via the command line. I use GNU/Linux on my

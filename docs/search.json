@@ -11,28 +11,28 @@
     "href": "blog/tools.html",
     "title": "My favorite open source tools",
     "section": "",
-    "text": "I use R professionally in my daily work, but I have also obtained advanced knowledge of R via an advanced course in R, personal projects, and reading various books from The Big Book of R.\nSpecifically, I have used R to:\n\nConduct econometric estimations such as: OLS, GMM, Instrument variables estimations, and Merger simulations.\nManage complex data structures by working with nested data.\nClean data.\nCreate interactive command line interface applications to speed up manual tasks and learn new concepts.\nWorking with various application programming interface to automate workflows."
+    "text": "R is a programming language for statistical computing. I use R in my daily work, personal projects, and when I studied. Beside hands-on experience, I enjoy learning new techniques through The Big Book of R.\nHere are some stuff I have used R for:\n\nConduct econometric estimations such as: OLS, GMM, Instrument variables estimations, and Merger simulations.\nManage complex data structures by working with nested data.\nClean data.\nCreate interactive command line interface applications to speed up manual tasks and learn new concepts.\nWorking with various application programming interface to automate workflows."
   },
   {
     "objectID": "blog/tools.html#r",
     "href": "blog/tools.html#r",
     "title": "My favorite open source tools",
     "section": "",
-    "text": "I use R professionally in my daily work, but I have also obtained advanced knowledge of R via an advanced course in R, personal projects, and reading various books from The Big Book of R.\nSpecifically, I have used R to:\n\nConduct econometric estimations such as: OLS, GMM, Instrument variables estimations, and Merger simulations.\nManage complex data structures by working with nested data.\nClean data.\nCreate interactive command line interface applications to speed up manual tasks and learn new concepts.\nWorking with various application programming interface to automate workflows."
+    "text": "R is a programming language for statistical computing. I use R in my daily work, personal projects, and when I studied. Beside hands-on experience, I enjoy learning new techniques through The Big Book of R.\nHere are some stuff I have used R for:\n\nConduct econometric estimations such as: OLS, GMM, Instrument variables estimations, and Merger simulations.\nManage complex data structures by working with nested data.\nClean data.\nCreate interactive command line interface applications to speed up manual tasks and learn new concepts.\nWorking with various application programming interface to automate workflows."
   },
   {
     "objectID": "blog/tools.html#git",
     "href": "blog/tools.html#git",
     "title": "My favorite open source tools",
     "section": "Git",
-    "text": "Git\nI am experienced using Git for professional, academic, and personal projects. I primarily use the Pro Git book for learning more about Git. Since I prefer managing most things via a command line interface, and also use Git at the command line, I am able to complete more advanced git tasks rapidly."
+    "text": "Git\nGit is a version control system which I have used for professional, academic, and personal projects. Git enables granular control of the history of code documents and is also a nice platform for sharing code and collaborating. A very nice resource for learning about Git is the Pro Git."
   },
   {
     "objectID": "blog/tools.html#quarto",
     "href": "blog/tools.html#quarto",
     "title": "My favorite open source tools",
     "section": "Quarto",
-    "text": "Quarto\nI am skilled using Quarto to create reports, presentations, websites, and books. Quarto enables me to automate tasks to speed up the writing process and develop more reproducible reports."
+    "text": "Quarto\nQuarto is a scientific typesetting system which enables literate programming. It is a very efficient way to generate reports, presentations, books, and websites, since code and text can be combined into a single document. By combining code and text into a single document, the document also become more reproducible."
   },
   {
     "objectID": "blog/tools.html#shell",
@@ -74,14 +74,14 @@
     "href": "writing.html",
     "title": "Writing",
     "section": "",
-    "text": "Below are my latest blog posts, to which you can subscribe to via my RSS feed.\n\n\n2023-05-10: My favorite open source tools  2022-12-18: Thesis award from the Swedish Competition Authority \n\n\nNo matching items"
+    "text": "Below are my latest blog posts, to which you can subscribe to via my RSS feed.\n\n\n9999-12-31: My favorite open source tools  2022-12-18: Thesis award from the Swedish Competition Authority \n\n\nNo matching items"
   },
   {
     "objectID": "writing.html#blog",
     "href": "writing.html#blog",
     "title": "Writing",
     "section": "",
-    "text": "Below are my latest blog posts, to which you can subscribe to via my RSS feed.\n\n\n2023-05-10: My favorite open source tools  2022-12-18: Thesis award from the Swedish Competition Authority \n\n\nNo matching items"
+    "text": "Below are my latest blog posts, to which you can subscribe to via my RSS feed.\n\n\n9999-12-31: My favorite open source tools  2022-12-18: Thesis award from the Swedish Competition Authority \n\n\nNo matching items"
   },
   {
     "objectID": "writing.html#theses",

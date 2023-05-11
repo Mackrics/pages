@@ -1,6 +1,7 @@
 ---
 title: Thesis award from the Swedish Competition Authority
 date: 2022-12-18
+date-format: iso
 ---
 I’m proud to announce that the masters thesis I coauthored placed second in the
 Swedish Competition Authority’s thesis competition. The SCA [published the
