@@ -3,10 +3,9 @@ project:
   output-dir: docs
 
 website:
-  title: "Markus Ljungqvist"
+  title: "Mackrics.com"
   site-url: "https://mackrics.com"
   search: false
-  favicon: ./media/profile_picture.png
   page-footer: 
     border: false
     background: $black
@@ -21,18 +20,16 @@ website:
     collapse: false
     left:
       - href: index.qmd
-        text: About
-      - href: writing.qmd
-        text: Writing
+        text: Home
     right:
       - icon: envelope
-        href: mailto:Markus@Ljungqvist.xyz
+        href: mailto:mackrics@pm.me
         aria-label: Mail
       - icon: key
         href: ./publickey.txt
         aria-label: PGP key
       - icon: rss
-        href: https://mackrics.com/blog.xml
+        href: ./index.xml
         aria-label: RSS feed
       - icon: github
         href: https://github.com/mackrics
@@ -47,5 +44,6 @@ format:
     theme:
       - darkly
       - style.scss
+    monofont: "IBM Plex Mono"
     css: styles.css
     toc: false

@@ -17,13 +17,6 @@ body {
 }
 
 a { 
-	color:#8aadf4;
+	color: #8aadf4;
 	text-decoration: none;
-}
-
-.table{
-	--bs-table-bg: #8aadf4;
-	--bs-table-striped-color: #8aadf4;
-	--bs-table-active-color: #8aadf4;
-	border-color: #8aadf4;
 }

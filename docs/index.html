@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Markus Ljungqvist - About</title>
+<title>Mackrics.com</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,7 +24,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<link href="././media/profile_picture.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
@@ -44,10 +45,41 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-blog .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-date","listing-date-format","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-blog'] = new List('listing-blog', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
-</head>
+<link rel="alternate" type="application/rss+xml" title="Mackrics.com" href="index.xml"></head>
 
 <body class="nav-fixed fullcontent">
 
@@ -58,16 +90,12 @@ ul.task-list li input[type="checkbox"] {
           <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./writing.html" rel="" target="">
- <span class="menu-text">Writing</span></a>
+ <span class="menu-text">Home</span></a>
   </li>  
 </ul>
           <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:Markus@Ljungqvist.xyz" rel="" target=""><i class="bi bi-envelope" role="img" aria-label="Mail">
+    <a class="nav-link" href="mailto:mackrics@pm.me" rel="" target=""><i class="bi bi-envelope" role="img" aria-label="Mail">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -77,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://mackrics.com/blog.xml" rel="" target=""><i class="bi bi-rss" role="img" aria-label="RSS feed">
+    <a class="nav-link" href="././index.xml" rel="" target=""><i class="bi bi-rss" role="img" aria-label="RSS feed">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -105,27 +133,39 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">About</h1>
+
+
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I’m still working on this website, but it will surely be a cool place soon, so check back later :-)</p>
+</div>
+</div>
+<section id="about" class="level1">
+<h1>About</h1>
+<p>I am an quantitative analyst who give clients advice based on analyzes related to competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily <a href="https://www.r-project.org/">R</a>) and other open source tools such as <a href="https://git-scm.com/">Git</a>, <a href="https://quarto.org/">Quarto</a>, and shell scripting.</p>
+</section>
+<section id="blog-posts" class="level1">
+<h1>Blog posts</h1>
+<div id="listing-blog" class="quarto-listing quarto-listing-container-custom">
+<ul>
+2023-05-13: <a href="./blog/starting-blog.html">Starting a blog</a> <br>
+</ul>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
 </div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<p>I am an quantitative analyst who give clients advice based on analyzes related to competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily <a href="https://www.r-project.org/">R</a>) and other open source tools such as <a href="https://git-scm.com/">Git</a>, <a href="https://quarto.org/">Quarto</a>, and shell scripting.</p>
-<p>I have a Master’s degree in economics, where the thesis I co-authored about competition in the Swedish primary care sector <a href="./blog/sca-award.html">received an award by the Swedish Competition Authority</a>. During my studies, I took courses within applied microeconomics, industrial organization, econometrics, and statistical programming, which gave me an in-depth theoretical understanding of markets and the quantitative tools used to analyze them.</p>
-
-
+</section>
 
 </main> <!-- /main -->
 </div> <!-- /content -->

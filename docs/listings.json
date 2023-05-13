@@ -1,17 +1,8 @@
 [
   {
-    "listing": "/writing.html",
+    "listing": "/index.html",
     "items": [
-      "/theses/master-thesis.html",
-      "/theses/bachelor-european-studies.html",
-      "/theses/bachelor-economics.html",
-      "/blog/sca-award.html"
-    ]
-  },
-  {
-    "listing": "/blog.html",
-    "items": [
-      "/blog/sca-award.html"
+      "/blog/starting-blog.html"
     ]
   }
 ]

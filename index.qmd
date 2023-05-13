@@ -1,16 +1,29 @@
 ---
-title: About
+listing: 
+  - id: blog
+    contents: blog
+    template: blog-listing.ejs
+    type: table
+    sort: "date desc"
+    date-format: "YYYY-MM-D"
+    fields: [date, title]
+    sort-ui: false
+    filter-ui: false
+    feed: true
 ---
 
+::: {.callout-important}
+I'm still working on this website, but it will surely be a cool place soon,
+so check back later :-)
+:::
+
+# About
 I am an quantitative analyst who give clients advice based on analyzes related to
 competition economics. I enjoy solving quantitative problems and automating
 "boring tasks" using my in-depth knowledge of statistical programming languages 
 (primarily [R](https://www.r-project.org/)) and other open source tools such as
 [Git](https://git-scm.com/), [Quarto](https://quarto.org/), and shell scripting.
 
-I have a Master's degree in economics, where the thesis I co-authored about
-competition in the Swedish primary care sector [received an award by the
-Swedish Competition Authority](./blog/sca-award.qmd). During my studies, I took
-courses within applied microeconomics, industrial organization, econometrics,
-and statistical programming, which gave me an in-depth theoretical
-understanding of markets and the quantitative tools used to analyze them.
+# Blog posts
+:::{#blog}
+:::

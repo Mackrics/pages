@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "blog/sca-award.html",
-    "href": "blog/sca-award.html",
-    "title": "Thesis award from the Swedish Competition Authority",
+    "objectID": "blog/starting-blog.html",
+    "href": "blog/starting-blog.html",
+    "title": "Starting a blog",
     "section": "",
-    "text": "I’m proud to announce that the masters thesis I coauthored placed second in the Swedish Competition Authority’s thesis competition. The SCA published the thesis, their motivation, and the interview."
+    "text": "This is a first blog post."
   },
   {
     "objectID": "theses/bachelor-european-studies.html",
@@ -32,34 +32,6 @@
     "href": "index.html",
     "title": "About",
     "section": "",
-    "text": "I am an quantitative analyst who give clients advice based on analyzes related to competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\nI have a Master’s degree in economics, where the thesis I co-authored about competition in the Swedish primary care sector received an award by the Swedish Competition Authority. During my studies, I took courses within applied microeconomics, industrial organization, econometrics, and statistical programming, which gave me an in-depth theoretical understanding of markets and the quantitative tools used to analyze them."
-  },
-  {
-    "objectID": "writing.html",
-    "href": "writing.html",
-    "title": "Writing",
-    "section": "",
-    "text": "Below are my latest blog posts, to which you can subscribe to via my RSS feed.\n\n\n2022-12-18: Thesis award from the Swedish Competition Authority \n\n\nNo matching items"
-  },
-  {
-    "objectID": "writing.html#blog",
-    "href": "writing.html#blog",
-    "title": "Writing",
-    "section": "",
-    "text": "Below are my latest blog posts, to which you can subscribe to via my RSS feed.\n\n\n2022-12-18: Thesis award from the Swedish Competition Authority \n\n\nNo matching items"
-  },
-  {
-    "objectID": "writing.html#theses",
-    "href": "writing.html#theses",
-    "title": "Writing",
-    "section": "Theses",
-    "text": "Theses\nThese are the theses I have authored or co-authored during my studies.\n\n\n2022: Medical Markup: A Check-Up on the Quality-Competition in Primary Care  2020: Finns det en euroeffekt på handeln?  2020: How have the sanctions against Russia and their counter sanctions affected the Russian trade? \n\n\nNo matching items"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Writing",
-    "section": "",
-    "text": "2022-12-18: Thesis award from the Swedish Competition Authority \n\n\nNo matching items"
+    "text": "Important\n\n\n\nI’m still working on this website, but it will surely be a cool place soon, so check back later :-)\n\n\n\nAbout\nI am an quantitative analyst who give clients advice based on analyzes related to competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\n\n\nBlog posts\n\n\n2023-05-13: Starting a blog \n\n\nNo matching items"
   }
 ]

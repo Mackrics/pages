@@ -1,0 +1,7 @@
+---
+title: Starting a blog
+date: 2023-05-13
+date-format: iso
+---
+
+This is a first blog post.
