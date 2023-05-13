@@ -3,14 +3,14 @@ project:
   output-dir: docs
 
 website:
-  title: "Mackrics.com"
+  title: "Mackrics"
   site-url: "https://mackrics.com"
   search: false
   page-footer: 
     border: false
     background: $black
-    foreground: $blue
-    left: "[Source Code](https://github.com/Mackrics/mackrics.github.io)"
+    foreground: $white
+    left: "[Source code](https://github.com/Mackrics/mackrics.github.io)"
   navbar:
     title: false
     background: $black
