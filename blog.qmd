@@ -1,0 +1,14 @@
+---
+title: Writing
+listing: 
+  - id: blog
+    contents: blog
+    template: blog-listing.ejs
+    type: table
+    sort: "date desc"
+    date-format: "YYYY-MM-D"
+    fields: [date, title]
+    sort-ui: false
+    filter-ui: false
+    feed: true
+---

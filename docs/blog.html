@@ -49,34 +49,6 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-theses .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-date","listing-date-format","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-theses'] = new List('listing-theses', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-blog .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -108,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
-</head>
+<link rel="alternate" type="application/rss+xml" title="Markus Ljungqvist" href="blog.xml"></head>
 
 <body class="nav-fixed fullcontent">
 
@@ -122,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./writing.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./writing.html" rel="" target="">
  <span class="menu-text">Writing</span></a>
   </li>  
 </ul>
@@ -183,35 +155,18 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="blog" class="level2">
-<h2 data-anchor-id="blog">Blog</h2>
-<p>Below are my latest blog posts, to which you can subscribe to via my <a href="https://mackrics.com/blog.xml">RSS feed</a>.</p>
-<div id="listing-blog" class="quarto-listing quarto-listing-container-custom">
+
+
+
+
+<div class="quarto-listing quarto-listing-container-custom" id="listing-blog">
 <ul>
 2022-12-18: <a href="./blog/sca-award.html">Thesis award from the Swedish Competition Authority</a> <br>
 </ul>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div>
-</section>
-<section id="theses" class="level2">
-<h2 data-anchor-id="theses">Theses</h2>
-<p>These are the theses I have authored or co-authored during my studies.</p>
-<div id="listing-theses" class="quarto-listing quarto-listing-container-custom">
-<ul>
-2022: <a href="./theses/master-thesis.html">Medical Markup: A Check-Up on the Quality-Competition in Primary Care</a> <br> 2020: <a href="./theses/bachelor-european-studies.html">Finns det en euroeffekt på handeln?</a> <br> 2020: <a href="./theses/bachelor-economics.html">How have the sanctions against Russia and their counter sanctions affected the Russian trade?</a> <br>
-</ul>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-
-
-
-</section>
-
-</main> <!-- /main -->
+</div></main> <!-- /main -->
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

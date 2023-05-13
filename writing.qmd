@@ -20,7 +20,6 @@ listing:
     fields: [date, title]
     sort-ui: false
     filter-ui: false
-    feed: true
 ---
 
 ## Blog
