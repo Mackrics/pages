@@ -20,12 +20,13 @@ listing:
     fields: [date, title]
     sort-ui: false
     filter-ui: false
+    feed: true
 ---
 
 ## Blog
 
 Below are my latest blog posts, to which you can subscribe to via my
-[RSS feed](https://mackrics.com/blog/index.xml).
+[RSS feed](https://mackrics.com/blog.xml).
 
 :::{#blog}
 :::

@@ -1,9 +1,9 @@
 ---
-title: All blog posts
+title: Mackrics blog posts
 listing:
   id: blog
-  contents: ./
-  template: ../blog-listing.ejs
+  contents: blog
+  template: blog-listing.ejs
   type: table
   sort: "date desc"
   date-format: "YYYY-MM-D"
