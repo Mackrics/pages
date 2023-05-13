@@ -10,7 +10,7 @@ competition economics. I enjoy solving quantitative problems and automating
 
 I have a Master's degree in economics, where the thesis I co-authored about
 competition in the Swedish primary care sector [received an award by the
-Swedish competition authority](./blog/sca-award.qmd). During my studies, I took
+Swedish Competition Authority](./blog/sca-award.qmd). During my studies, I took
 courses within applied microeconomics, industrial organization, econometrics,
 and statistical programming, which gave me an in-depth theoretical
 understanding of markets and the quantitative tools used to analyze them.
