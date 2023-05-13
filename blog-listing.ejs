@@ -1,0 +1,5 @@
+<ul>
+<% for (const item of items) { %>
+    <%= item.date %>: <a href="<%- item.path %>"><%= item.title %></a> <br>
+  <% } %>
+</ul>

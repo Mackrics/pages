@@ -1,11 +1,5 @@
 [
   {
-    "listing": "/blog.html",
-    "items": [
-      "/blog/sca-award.html"
-    ]
-  },
-  {
     "listing": "/writing.html",
     "items": [
       "/theses/master-thesis.html",

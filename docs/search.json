@@ -28,73 +28,31 @@
     "text": "Link to thesis\nWe show that quality-competition among private firms in the Swedish primary care have worsened during the last 15 years. As a result, public funds turn into profits, rather than quality care for patients. Our interpretation is that providers have not increased their (cost of) quality at the same rate as the compensation has increased. We measure the intensity of quality-competition with markups, which we retrieve from a production function, as De Loecker and Warzynski (2012). Since this is the first application of this methodology to estimate quality competition, we adapt the method by including quality in the Ackerberg, Caves, and Frazer (2015) two-stage estimator to control for time-variant unobserved firm quality and productivity."
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Date\n\n\nTitle\n\n\n\n\n\n\n2022-12-18\n\n\nThesis award from the Swedish Competition Authority\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "About",
     "section": "",
-    "text": "I am an quantitative analyst who helps clients with analyzes related to competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages and other open source tools.\nI have a Master’s degree in economics, where the thesis I co-authored about competition in the Swedish primary care sector received an award by the Swedish competition authority. During my studies, I took courses within applied microeconomics, industrial organization, econometrics, and statistical programming, which gave me an in-depth theoretical understanding of markets and the quantitative tools used to analyze them."
+    "text": "I am an quantitative analyst who give clients advice based on analyzes related to competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\nI have a Master’s degree in economics, where the thesis I co-authored about competition in the Swedish primary care sector received an award by the Swedish competition authority. During my studies, I took courses within applied microeconomics, industrial organization, econometrics, and statistical programming, which gave me an in-depth theoretical understanding of markets and the quantitative tools used to analyze them."
   },
   {
     "objectID": "writing.html",
     "href": "writing.html",
     "title": "Writing",
     "section": "",
-    "text": "Here are some updates, to which you can subscribe to via an RSS feed.\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n2022-12-18\n\n\nThesis award from the Swedish Competition Authority\n\n\n\n\n\n\nNo matching items"
+    "text": "Below are my latest blog posts, to which you can subscribe to via my RSS feed.\n\n\n2022-12-18: Thesis award from the Swedish Competition Authority \n\n\nNo matching items"
   },
   {
     "objectID": "writing.html#blog",
     "href": "writing.html#blog",
     "title": "Writing",
     "section": "",
-    "text": "Here are some updates, to which you can subscribe to via an RSS feed.\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n2022-12-18\n\n\nThesis award from the Swedish Competition Authority\n\n\n\n\n\n\nNo matching items"
+    "text": "Below are my latest blog posts, to which you can subscribe to via my RSS feed.\n\n\n2022-12-18: Thesis award from the Swedish Competition Authority \n\n\nNo matching items"
   },
   {
     "objectID": "writing.html#theses",
     "href": "writing.html#theses",
     "title": "Writing",
     "section": "Theses",
-    "text": "Theses\nThese are the theses I have authored or co-authored during my studies.\n\n\n\n\n\n\nYear\n\n\nTitle\n\n\n\n\n\n\n2022\n\n\nMedical Markup: A Check-Up on the Quality-Competition in Primary Care\n\n\n\n\n2020\n\n\nFinns det en euroeffekt på handeln?\n\n\n\n\n2020\n\n\nHow have the sanctions against Russia and their counter sanctions affected the Russian trade?\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "tools.html",
-    "href": "tools.html",
-    "title": "Software I Use",
-    "section": "",
-    "text": "I use R professionally in my daily work, but I have also obtained advanced knowledge of R via an advanced course in R, personal projects, and reading various books from The Big Book of R.\nSpecifically, I have used R to:\n\nConduct econometric estimations such as: OLS, GMM, Instrument variables estimations, and Merger simulations.\nManage complex data structures by working with nested data.\nClean data.\nCreate interactive command line interface applications to speed up manual tasks and learn new concepts.\nWorking with various application programming interface to automate workflows."
-  },
-  {
-    "objectID": "tools.html#r",
-    "href": "tools.html#r",
-    "title": "Software I Use",
-    "section": "",
-    "text": "I use R professionally in my daily work, but I have also obtained advanced knowledge of R via an advanced course in R, personal projects, and reading various books from The Big Book of R.\nSpecifically, I have used R to:\n\nConduct econometric estimations such as: OLS, GMM, Instrument variables estimations, and Merger simulations.\nManage complex data structures by working with nested data.\nClean data.\nCreate interactive command line interface applications to speed up manual tasks and learn new concepts.\nWorking with various application programming interface to automate workflows."
-  },
-  {
-    "objectID": "tools.html#git",
-    "href": "tools.html#git",
-    "title": "Software I Use",
-    "section": "Git",
-    "text": "Git\nI am experienced using Git for professional, academic, and personal projects. I primarily use the Pro Git book for learning more about Git. Since I prefer managing most things via a command line interface, and also use Git at the command line, I am able to complete more advanced git tasks rapidly."
-  },
-  {
-    "objectID": "tools.html#quarto",
-    "href": "tools.html#quarto",
-    "title": "Software I Use",
-    "section": "Quarto",
-    "text": "Quarto\nI am skilled using Quarto to create reports, presentations, websites, and books. Quarto enables me to automate tasks to speed up the writing process and develop more reproducible reports."
-  },
-  {
-    "objectID": "tools.html#shell",
-    "href": "tools.html#shell",
-    "title": "Software I Use",
-    "section": "Shell",
-    "text": "Shell\nI prefer to manage most things via the command line. I use GNU/Linux on my personal machines and have used a wide variety of shells such as bash, fish, and mksh on them. I have also some experience using PowerShell on Windows machines. I use shell to manage files, script smaller repetitive tasks, and for smaller data exploration tasks."
+    "text": "Theses\nThese are the theses I have authored or co-authored during my studies.\n\n\n2022: Medical Markup: A Check-Up on the Quality-Competition in Primary Care  2020: Finns det en euroeffekt på handeln?  2020: How have the sanctions against Russia and their counter sanctions affected the Russian trade? \n\n\nNo matching items"
   }
 ]

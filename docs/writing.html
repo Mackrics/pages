@@ -56,9 +56,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-date","listing-date-format","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -84,9 +84,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-date","listing-date-format","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -120,10 +120,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./tools.html" rel="" target="">
- <span class="menu-text">Tools</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./writing.html" rel="" target="" aria-current="page">
@@ -189,32 +185,11 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="blog" class="level2">
 <h2 data-anchor-id="blog">Blog</h2>
-<p>Here are some updates, to which you can subscribe to via an <a href="https://mackrics.com/blog.xml">RSS feed</a>.</p>
-<div id="listing-blog" class="quarto-listing quarto-listing-container-table">
-
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-Date
-</th>
-<th>
-Title
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-listing-date-sort="1671318000000" data-listing-file-modified-sort="1679399438302" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Thesis award from the Swedish Competition Authority" data-listing-filename-sort="sca-award.qmd">
-<td>
-<span class="listing-date">2022-12-18</span>
-</td>
-<td>
-<a href="./blog/sca-award.html" class="title listing-title">Thesis award from the Swedish Competition Authority</a>
-</td>
-</tr>
-</tbody>
-
-</table>
+<p>Below are my latest blog posts, to which you can subscribe to via my <a href="https://mackrics.com/blog.xml">RSS feed</a>.</p>
+<div id="listing-blog" class="quarto-listing quarto-listing-container-custom">
+<ul>
+2022-12-18: <a href="./blog/sca-award.html">Thesis award from the Swedish Competition Authority</a> <br>
+</ul>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
@@ -223,47 +198,10 @@ No matching items
 <section id="theses" class="level2">
 <h2 data-anchor-id="theses">Theses</h2>
 <p>These are the theses I have authored or co-authored during my studies.</p>
-<div id="listing-theses" class="quarto-listing quarto-listing-container-table">
-
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-Year
-</th>
-<th>
-Title
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1679399487201" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Medical Markup: A Check-Up on the Quality-Competition in Primary Care" data-listing-filename-sort="master-thesis.qmd">
-<td>
-<span class="listing-date">2022</span>
-</td>
-<td>
-<a href="./theses/master-thesis.html" class="title listing-title">Medical Markup: A Check-Up on the Quality-Competition in Primary Care</a>
-</td>
-</tr>
-<tr data-index="1" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1678020597653" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Finns det en euroeffekt på handeln?" data-listing-filename-sort="bachelor-european-studies.qmd">
-<td>
-<span class="listing-date">2020</span>
-</td>
-<td>
-<a href="./theses/bachelor-european-studies.html" class="title listing-title">Finns det en euroeffekt på handeln?</a>
-</td>
-</tr>
-<tr data-index="2" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1678021262659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="How have the sanctions against Russia and their counter sanctions affected the Russian trade?" data-listing-filename-sort="bachelor-economics.qmd">
-<td>
-<span class="listing-date">2020</span>
-</td>
-<td>
-<a href="./theses/bachelor-economics.html" class="title listing-title">How have the sanctions against Russia and their counter sanctions affected the Russian trade?</a>
-</td>
-</tr>
-</tbody>
-
-</table>
+<div id="listing-theses" class="quarto-listing quarto-listing-container-custom">
+<ul>
+2022: <a href="./theses/master-thesis.html">Medical Markup: A Check-Up on the Quality-Competition in Primary Care</a> <br> 2020: <a href="./theses/bachelor-european-studies.html">Finns det en euroeffekt på handeln?</a> <br> 2020: <a href="./theses/bachelor-economics.html">How have the sanctions against Russia and their counter sanctions affected the Russian trade?</a> <br>
+</ul>
 <div class="listing-no-matching d-none">
 No matching items
 </div>

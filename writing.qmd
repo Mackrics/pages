@@ -3,7 +3,7 @@ title: Writing
 listing: 
   - id: theses
     contents: theses
-    type: table
+    template: blog-listing.ejs
     sort: "date desc"
     date-format: "YYYY"
     fields: [date, title]
@@ -13,9 +13,10 @@ listing:
       date: "Year"
   - id: blog
     contents: blog
+    template: blog-listing.ejs
     type: table
-    sort: date
-    date-format: "YYYY-M-D"
+    sort: "date desc"
+    date-format: "YYYY-MM-D"
     fields: [date, title]
     feed: true
     sort-ui: false
@@ -24,7 +25,7 @@ listing:
 
 ## Blog
 
-Here are some updates, to which you can subscribe to via an 
+Below are my latest blog posts, to which you can subscribe to via my
 [RSS feed](https://mackrics.com/blog.xml).
 
 
