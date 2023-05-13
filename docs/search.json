@@ -7,41 +7,6 @@
     "text": "I’m proud to announce that the masters thesis I coauthored placed second in the Swedish Competition Authority’s thesis competition. The SCA published the thesis, their motivation, and the interview."
   },
   {
-    "objectID": "blog/tools.html",
-    "href": "blog/tools.html",
-    "title": "My favorite open source tools",
-    "section": "",
-    "text": "R is a programming language for statistical computing. I use R in my daily work, personal projects, and when I studied. Beside hands-on experience, I enjoy learning new techniques through The Big Book of R.\nHere are some stuff I have used R for:\n\nConduct econometric estimations such as: OLS, GMM, Instrument variables estimations, and Merger simulations.\nManage complex data structures by working with nested data.\nClean data.\nCreate interactive command line interface applications to speed up manual tasks and learn new concepts.\nWorking with various application programming interface to automate workflows."
-  },
-  {
-    "objectID": "blog/tools.html#r",
-    "href": "blog/tools.html#r",
-    "title": "My favorite open source tools",
-    "section": "",
-    "text": "R is a programming language for statistical computing. I use R in my daily work, personal projects, and when I studied. Beside hands-on experience, I enjoy learning new techniques through The Big Book of R.\nHere are some stuff I have used R for:\n\nConduct econometric estimations such as: OLS, GMM, Instrument variables estimations, and Merger simulations.\nManage complex data structures by working with nested data.\nClean data.\nCreate interactive command line interface applications to speed up manual tasks and learn new concepts.\nWorking with various application programming interface to automate workflows."
-  },
-  {
-    "objectID": "blog/tools.html#git",
-    "href": "blog/tools.html#git",
-    "title": "My favorite open source tools",
-    "section": "Git",
-    "text": "Git\nGit is a version control system which I have used for professional, academic, and personal projects. Git enables granular control of the history of code documents and is also a nice platform for sharing code and collaborating. A very nice resource for learning about Git is the Pro Git."
-  },
-  {
-    "objectID": "blog/tools.html#quarto",
-    "href": "blog/tools.html#quarto",
-    "title": "My favorite open source tools",
-    "section": "Quarto",
-    "text": "Quarto\nQuarto is a scientific typesetting system which enables literate programming. It is a very efficient way to generate reports, presentations, books, and websites, since code and text can be combined into a single document. By combining code and text into a single document, the document also become more reproducible."
-  },
-  {
-    "objectID": "blog/tools.html#shell",
-    "href": "blog/tools.html#shell",
-    "title": "My favorite open source tools",
-    "section": "Shell",
-    "text": "Shell\nI prefer to manage most things via the command line. I use GNU/Linux on my personal machines and have used a wide variety of shells such as bash, fish, and mksh on them. I have also some experience using PowerShell on Windows machines. I use shell to manage files, script smaller repetitive tasks, and for smaller data exploration tasks."
-  },
-  {
     "objectID": "theses/bachelor-european-studies.html",
     "href": "theses/bachelor-european-studies.html",
     "title": "Finns det en euroeffekt på handeln?",
@@ -63,25 +28,18 @@
     "text": "Link to thesis\nWe show that quality-competition among private firms in the Swedish primary care have worsened during the last 15 years. As a result, public funds turn into profits, rather than quality care for patients. Our interpretation is that providers have not increased their (cost of) quality at the same rate as the compensation has increased. We measure the intensity of quality-competition with markups, which we retrieve from a production function, as De Loecker and Warzynski (2012). Since this is the first application of this methodology to estimate quality competition, we adapt the method by including quality in the Ackerberg, Caves, and Frazer (2015) two-stage estimator to control for time-variant unobserved firm quality and productivity."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "About",
-    "section": "",
-    "text": "I am an quantitative analyst who helps clients with analyzes related to competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages and other open source tools.\nI have a Master’s degree in economics, where the thesis I co-authored about competition in the Swedish primary care sector received an award by the Swedish competition authority. During my studies, I took courses within applied microeconomics, industrial organization, econometrics, and statistical programming, which gave me an in-depth theoretical understanding of markets and the quantitative tools used to analyze them."
-  },
-  {
     "objectID": "writing.html",
     "href": "writing.html",
     "title": "Writing",
     "section": "",
-    "text": "Below are my latest blog posts, to which you can subscribe to via my RSS feed.\n\n\n9999-12-31: My favorite open source tools  2022-12-18: Thesis award from the Swedish Competition Authority \n\n\nNo matching items"
+    "text": "Below are my latest blog posts, to which you can subscribe to via my RSS feed.\n\n\n2022-12-18: Thesis award from the Swedish Competition Authority \n\n\nNo matching items"
   },
   {
     "objectID": "writing.html#blog",
     "href": "writing.html#blog",
     "title": "Writing",
     "section": "",
-    "text": "Below are my latest blog posts, to which you can subscribe to via my RSS feed.\n\n\n9999-12-31: My favorite open source tools  2022-12-18: Thesis award from the Swedish Competition Authority \n\n\nNo matching items"
+    "text": "Below are my latest blog posts, to which you can subscribe to via my RSS feed.\n\n\n2022-12-18: Thesis award from the Swedish Competition Authority \n\n\nNo matching items"
   },
   {
     "objectID": "writing.html#theses",
@@ -89,5 +47,12 @@
     "title": "Writing",
     "section": "Theses",
     "text": "Theses\nThese are the theses I have authored or co-authored during my studies.\n\n\n2022: Medical Markup: A Check-Up on the Quality-Competition in Primary Care  2020: Finns det en euroeffekt på handeln?  2020: How have the sanctions against Russia and their counter sanctions affected the Russian trade? \n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
+    "section": "",
+    "text": "I am an quantitative analyst who give clients advice based on analyzes related to competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\nI have a Master’s degree in economics, where the thesis I co-authored about competition in the Swedish primary care sector received an award by the Swedish competition authority. During my studies, I took courses within applied microeconomics, industrial organization, econometrics, and statistical programming, which gave me an in-depth theoretical understanding of markets and the quantitative tools used to analyze them."
   }
 ]
