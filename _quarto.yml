@@ -32,7 +32,7 @@ website:
         href: ./publickey.txt
         aria-label: PGP key
       - icon: rss
-        href: https://mackrics.com/blog.xml
+        href: https://mackrics.com/blog/index.xml
         aria-label: RSS feed
       - icon: github
         href: https://github.com/mackrics
