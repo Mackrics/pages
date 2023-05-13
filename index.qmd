@@ -2,10 +2,11 @@
 title: About
 ---
 
-I am an quantitative analyst who helps clients with analyzes related to
+I am an quantitative analyst who give clients advice based on analyzes related to
 competition economics. I enjoy solving quantitative problems and automating
-"boring tasks" using my in-depth knowledge of statistical programming languages
-and other [open source tools](./blog/tools.qmd). 
+"boring tasks" using my in-depth knowledge of statistical programming languages 
+(primarily [R](https://www.r-project.org/)) and other open source tools such as
+[Git](https://git-scm.com/), [Quarto](https://quarto.org/), and shell scripting.
 
 I have a Master's degree in economics, where the thesis I co-authored about
 competition in the Swedish primary care sector [received an award by the
