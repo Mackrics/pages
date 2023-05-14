@@ -1,7 +1,7 @@
 ---
 title: Starting a blog
-date: 2023-05-13
+date: 2222-12-31
 date-format: iso
 ---
 
-This is a first blog post.
+This is a placeholder post for now. Check back later!

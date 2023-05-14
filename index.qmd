@@ -13,17 +13,18 @@ listing:
 ---
 
 ::: {.callout-important}
+## Please note
 I'm still working on this website, but it will surely be a cool place soon,
 so check back later :-)
 :::
 
-# About
-I am an quantitative analyst who give clients advice based on analyzes related to
-competition economics. I enjoy solving quantitative problems and automating
-"boring tasks" using my in-depth knowledge of statistical programming languages 
-(primarily [R](https://www.r-project.org/)) and other open source tools such as
-[Git](https://git-scm.com/), [Quarto](https://quarto.org/), and shell scripting.
+# Hello there,
+I am an quantitative analyst within competition economics. I enjoy solving 
+quantitative problems and automating "boring tasks" using my in-depth knowledge 
+of statistical programming languages (primarily [R](https://www.r-project.org/))
+and other open source tools such as [Git](https://git-scm.com/), 
+[Quarto](https://quarto.org/), and shell scripting.
 
-# Blog posts
+# Some posts
 :::{#blog}
 :::

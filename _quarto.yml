@@ -47,3 +47,4 @@ format:
     monofont: "IBM Plex Mono"
     css: styles.css
     toc: false
+    highlight-style: ctp-mocha.theme

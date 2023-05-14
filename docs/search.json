@@ -4,7 +4,7 @@
     "href": "blog/starting-blog.html",
     "title": "Starting a blog",
     "section": "",
-    "text": "This is a first blog post."
+    "text": "This is a placeholder post for now. Check back later!"
   },
   {
     "objectID": "theses/bachelor-european-studies.html",
@@ -30,8 +30,8 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About",
+    "title": "Hello there,",
     "section": "",
-    "text": "Important\n\n\n\nI’m still working on this website, but it will surely be a cool place soon, so check back later :-)\n\n\n\nAbout\nI am an quantitative analyst who give clients advice based on analyzes related to competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\n\n\nBlog posts\n\n\n2023-05-13: Starting a blog \n\n\nNo matching items"
+    "text": "Please note\n\n\n\nI’m still working on this website, but it will surely be a cool place soon, so check back later :-)\n\n\n\nHello there,\nI am an quantitative analyst within competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\n\n\nSome posts\n\n\n2222-12-31: Starting a blog \n\n\nNo matching items"
   }
 ]

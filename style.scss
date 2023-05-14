@@ -5,11 +5,14 @@ $black: #11111b !default;
 $blue: #89b4fa  !default;
 $red: #f38ba8 !default;
 $green: #a6e3a1 !default;
+$grey: #1e1e2e  !default;
 
 
 /* theming -------------------------------------------------------------------*/
 $body-color:            $white !default;
 $body-bg:               $black !default;
+$code-bg: 		$grey !default;
+$code-color: 		$blue !default;
 $link-color:            $blue  !default;
 $navbar-light-color:    $black !default;
 $navbar-dark-color:     $black !default;
