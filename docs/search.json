@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "blog/starting-blog.html",
-    "href": "blog/starting-blog.html",
-    "title": "Starting a blog",
+    "objectID": "blog/placeholder.html",
+    "href": "blog/placeholder.html",
+    "title": "Placeholder",
     "section": "",
-    "text": "This is a placeholder post for now. Check back later!"
+    "text": "This is a placeholder post."
   },
   {
     "objectID": "theses/bachelor-european-studies.html",
@@ -32,6 +32,6 @@
     "href": "index.html",
     "title": "Hello there,",
     "section": "",
-    "text": "Please note\n\n\n\nI’m still working on this website, but it will surely be a cool place soon, so check back later :-)\n\n\n\nHello there,\nI am an quantitative analyst within competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\n\n\nSome posts\n\n\n2222-12-31: Starting a blog \n\n\nNo matching items"
+    "text": "Please note\n\n\n\nI’m still working on this website, but it will surely be a cool place soon, so check back later :-)\n\n\n\nHello there,\nI am an quantitative analyst within competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\n\n\nSome stuff I’ve written\n\n\n2023-05-14: Placeholder \n\n\nNo matching items"
   }
 ]

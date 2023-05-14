@@ -1,7 +1,21 @@
 ---
 title: Starting a blog
-date: 2222-12-31
+date: 2023-05-21
 date-format: iso
+draft: true
 ---
 
-This is a placeholder post for now. Check back later!
+Why do you start a blog in 2023?
+
+I decided that I really wanted to master [Quarto](https://quarto.org) and
+learn some of its cooler features. One of the nice thing you can create
+with Quarto are different types of websites, such as a blog, to share technical 
+content. 
+
+Technical writing is difficult, and is something I want to improve at. To practice
+technical writing, I decided to create a blog using Quarto and document some of
+the stuff I learn and share my personal projects. Hopefully, my technical
+writing will improve with practice.
+
+The website is hosted via [GitHub pages](https://pages.github.com/), and you can check out the source
+code of this website in [this repository](https://github.com/Mackrics/mackrics.github.io).
