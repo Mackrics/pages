@@ -22,7 +22,7 @@ website:
       - href: index.qmd
         text: Home
     right:
-      - icon: envelope
+      - icon: envelope-at
         href: mailto:mackrics@pm.me
         aria-label: Mail
       - icon: key
