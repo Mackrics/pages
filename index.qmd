@@ -25,6 +25,6 @@ of statistical programming languages (primarily [R](https://www.r-project.org/))
 and other open source tools such as [Git](https://git-scm.com/), 
 [Quarto](https://quarto.org/), and shell scripting.
 
-# Some stuff I've written
+# Blog posts
 :::{#blog}
 :::
