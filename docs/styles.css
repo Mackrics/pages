@@ -20,3 +20,18 @@ a {
 	color: #8aadf4;
 	text-decoration: none;
 }
+
+h1::before{
+	content: "# ";
+	color: #f38ba8;
+}
+
+h2::before{
+	content: "## ";
+	color: #f38ba8;
+}
+
+h2::before{
+	content: "### ";
+	color: #f38ba8;
+}
