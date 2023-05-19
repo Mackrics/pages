@@ -12,12 +12,6 @@ listing:
     feed: true
 ---
 
-::: {.callout-important}
-## Please note
-I'm still working on this website, but it will surely be a cool place soon,
-so check back later :-)
-:::
-
 # Hello there,
 I am an quantitative analyst within competition economics. I enjoy solving 
 quantitative problems and automating "boring tasks" using my in-depth knowledge 
