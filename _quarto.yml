@@ -6,11 +6,6 @@ website:
   title: "Mackrics"
   site-url: "https://mackrics.com"
   search: false
-  page-footer: 
-    border: false
-    background: $black
-    foreground: $white
-    left: "[Source code](https://github.com/Mackrics/mackrics.github.io)"
   navbar:
     title: false
     background: $black
