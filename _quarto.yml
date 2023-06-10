@@ -18,7 +18,7 @@ website:
         text: Home
     right:
       - icon: envelope-at
-        href: mailto:mackrics@pm.me
+        href: mailto:hello@mackrics.com
         aria-label: Mail
       - icon: key
         href: ./publickey.txt
