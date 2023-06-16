@@ -16,9 +16,16 @@ body {
 		font-family: 'IBM Plex Mono', monospace;
 }
 
+
 a { 
 	color: #8aadf4;
 	text-decoration: none;
+}
+
+.blockquote { 
+	color: #cdd6f4;
+	background: #1e1e2e;
+	border-left: 10px solid #8aadf4;
 }
 
 h1::before{
