@@ -1,6 +1,6 @@
 ---
 title: The joy of programming
-date: 2023-06-16
+date: 2023-06-22
 date-format: iso
 draft: true
 ---
@@ -29,14 +29,13 @@ an application which converts currencies, or a dashboard where you analyze your
 gym routine. These "products" do not need to be perfect and will likely not
 be used by anyone but you. 
 
-> "Let's build some happy little trees." @bobross
+> Let's build some happy little trees. @bobross
 
 These happy little programs are the perfect opportunity for you to learn
 something new and embrace the mindfulness of programming. Writing a program 
 which have already been written by someone else is not a waste of time, it is
 an essential part in the learning process and appreciating the craft behind
 well-written programs.
-
 
 The program can be as simple or extensive as you want it to. It could be a
 program with hard-coded values, or a highly flexible programs. It is a program
