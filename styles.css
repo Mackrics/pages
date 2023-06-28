@@ -38,7 +38,7 @@ h2::before{
 	color: #f38ba8;
 }
 
-h2::before{
+h3::before{
 	content: "### ";
 	color: #f38ba8;
 }
