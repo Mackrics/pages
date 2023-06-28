@@ -1,8 +1,7 @@
 ---
 title: The joy of programming
-date: 2023-06-22
+date: 2023-06-28
 date-format: iso
-draft: true
 ---
 
 > We don’t really know where this goes -- and I’m not sure we really care. @bobross

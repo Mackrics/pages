@@ -10,7 +10,44 @@
 <atom:link href="https://mackrics.com/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.361</generator>
-<lastBuildDate>Thu, 18 May 2023 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 27 Jun 2023 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>The joy of programming</title>
+  <link>https://mackrics.com/blog/joy-of-programming.html</link>
+  <description><![CDATA[ 
+
+
+
+<blockquote class="blockquote">
+<p>We don’t really know where this goes – and I’m not sure we really care. <span class="citation" data-cites="bobross">Ross (1984-1994)</span></p>
+</blockquote>
+<p>During the 80s and 90s there was a popular television show called “the joy of painting” by Bob Ross. The show is typical “comfort TV” where Bob Ross calmly guides the viewer through a new painting in each show. He embraces mistakes and not having a plan, which is the “joy of painting”.</p>
+<p>I believe that the approach Bob Ross had to teaching painting is also something we can use when we learn how to write better programs. Whenever we encounter a problem, maybe checking the weather conveniently or converting currencies, we try to seek out a program which solves our issue. In most cases, this is the best approach, especially when performance is critical or when time is of essence. There is, however, certain circumstances in which we can take these moments to pursue <em>“the joy of programming”</em></p>
+<blockquote class="blockquote">
+<p>We don’t make mistakes, just happy little accidents. <span class="citation" data-cites="bobross">Ross (1984-1994)</span></p>
+</blockquote>
+<p>The joy of programming is when you try to solve a relatively simple problem by writing a happy little program. It could be a script which checks the weather, an application which converts currencies, or a dashboard where you analyze your gym routine. These “products” do not need to be perfect and will likely not be used by anyone but you.</p>
+<blockquote class="blockquote">
+<p>Let’s build some happy little trees. <span class="citation" data-cites="bobross">Ross (1984-1994)</span></p>
+</blockquote>
+<p>These happy little programs are the perfect opportunity for you to learn something new and embrace the mindfulness of programming. Writing a program which have already been written by someone else is not a waste of time, it is an essential part in the learning process and appreciating the craft behind well-written programs.</p>
+<p>The program can be as simple or extensive as you want it to. It could be a program with hard-coded values, or a highly flexible programs. It is a program which you can continue to develop over time by implementing some new happy features. Maybe you have already written a happy little program which checks the weather, where you have hard-coded some town. Try to make the input flexible by allowing the program to take a town as an argument.</p>
+<p>The purpose the happy little program is to solve a very specific issue - that you have not written a particular type of program yet. It is about the joy of identifying a problem, and continuously adding features which makes it better and better. It is about becoming a better programmer and appreciating the <em>art</em> of programming.</p>
+<blockquote class="blockquote">
+<p>We artists are a different breed of people. We’re a happy bunch. <span class="citation" data-cites="bobross">Ross (1984-1994)</span></p>
+</blockquote>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-bobross" class="csl-entry">
+Ross, Bob. 1984-1994. <span>“The Joy of Painting.”</span>
+</div>
+</div></section></div> ]]></description>
+  <guid>https://mackrics.com/blog/joy-of-programming.html</guid>
+  <pubDate>Tue, 27 Jun 2023 22:00:00 GMT</pubDate>
+</item>
 <item>
   <title>I’m starting a blog</title>
   <link>https://mackrics.com/blog/starting-blog.html</link>
