@@ -1,0 +1,75 @@
+---
+title: The galton machine
+date: 2023-08-29
+date-format: iso
+---
+
+# Law of large numbers
+
+```{r}
+#| echo: false
+library(tibble)
+library(ggplot2)
+library(ricethemes)
+
+draw_binary <- function(n) {
+  mean(sample(c(0, 1), n, replace = TRUE))
+}
+
+
+draw_samples <- function(samples, sample_size) {
+  sample <- NULL
+  for (i in seq(1, samples)) {
+    sample[i] <- draw_binary(sample_size)
+  }
+  sample_frame <-
+    tibble(
+      id     = seq(1, samples),
+      mean = sample
+    )
+  return(sample_frame)
+}
+
+
+plot_samples <- function(sample_frame, bins = 30) {
+  sample_frame |>
+    ggplot() +
+    aes(mean) +
+    geom_histogram(
+      aes(y = after_stat(density)),
+      bins = bins,
+      color = ctp_mocha[["peach"]],
+      fill = ctp_mocha[["yellow"]]
+    ) +
+    geom_density(color = ctp_mocha[["red"]]) +
+    theme_ctp_mocha() +
+    labs(x = "", y = "") +
+    scale_x_continuous(limits = c(0.25, 0.75)) +
+    scale_y_continuous(limits = c(0, 25))
+}
+```
+
+# Plot
+
+```{r}
+#| warning: false
+#| layout-ncol: 2
+#| fig-cap: "As sample size increases, the mean of samples approach a normal distribution."
+#| fig-subcap:
+#|  - n = 10
+#|  - n = 30
+#|  - n = 100
+#|  - n = 1000
+
+draw_samples(1000, 10) |>
+  plot_samples()
+
+draw_samples(1000, 30) |>
+  plot_samples()
+
+draw_samples(1000, 100) |>
+  plot_samples()
+
+draw_samples(1000, 1000) |>
+  plot_samples()
+```
