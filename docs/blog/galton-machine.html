@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2023-08-29">
 
-<title>Mackrics - The galton machine</title>
+<title>Mackrics - The Galton board</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -138,7 +104,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The galton machine</h1>
+<h1 class="title">The Galton board</h1>
 </div>
 
 
@@ -159,38 +125,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="law-of-large-numbers" class="level1">
-<h1>Law of large numbers</h1>
-</section>
-<section id="plot" class="level1">
-<h1>Plot</h1>
-<div>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">draw_samples</span>(<span class="dv">1000</span>, <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_samples</span>()</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">draw_samples</span>(<span class="dv">1000</span>, <span class="dv">30</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_samples</span>()</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">draw_samples</span>(<span class="dv">1000</span>, <span class="dv">100</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_samples</span>()</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">draw_samples</span>(<span class="dv">1000</span>, <span class="dv">1000</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_samples</span>()</span></code></pre></div>
+<p><a href="https://en.wikipedia.org/wiki/Galton_board">The Galton board</a> was built in the 19th century to demonstrate the central limit theorem. Specifically, it showed that given sufficiently large sample sizes, a collection of sample means from the binomial distribution would approximate the normal distribution. The Galton board is not only very satisfying to watch, it also demonstrates one of the most important concepts for statistical inference.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption class="figure-caption">The Galton board in action</figcaption>
+<p><video src="https://upload.wikimedia.org/wikipedia/commons/transcoded/d/dc/Galton_box.webm/Galton_box.webm.720p.vp9.webm" style="width:70.0%" controls=""><a href="https://upload.wikimedia.org/wikipedia/commons/transcoded/d/dc/Galton_box.webm/Galton_box.webm.720p.vp9.webm">Video</a></video></p>
+</figure>
+</div>
+<p>Assume that you flip a coin and either get a tail or a head and want to investigate the probability of getting tail. If you were to only flip the coin once, you would only get a value of either 0% or 100%. However, as you increase your number of throws you will eventually approach 50% which is the true value.</p>
+<p>If you then draw a many samples of a sufficiently large sample size, the sample means will follow a normal distribution with the true mean as the mean of the distribution. The larger the sample size is, the lower variance the distribution will have, see the figure below.</p>
 <div class="cell quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
+<figcaption class="figure-caption">Sample size of 10</figcaption>
 <p><img src="galton-machine_files/figure-html/unnamed-chunk-2-1.png" width="672" class="figure-img"></p>
-<figcaption class="figure-caption">n = 10</figcaption>
 </figure>
 </div>
 </div>
 <div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
+<figcaption class="figure-caption">Sample size of 30</figcaption>
 <p><img src="galton-machine_files/figure-html/unnamed-chunk-2-2.png" width="672" class="figure-img"></p>
-<figcaption class="figure-caption">n = 30</figcaption>
 </figure>
 </div>
 </div>
@@ -199,30 +157,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
+<figcaption class="figure-caption">Sample size of 100</figcaption>
 <p><img src="galton-machine_files/figure-html/unnamed-chunk-2-3.png" width="672" class="figure-img"></p>
-<figcaption class="figure-caption">n = 100</figcaption>
 </figure>
 </div>
 </div>
 <div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
+<figcaption class="figure-caption">Sample size of 1000</figcaption>
 <p><img src="galton-machine_files/figure-html/unnamed-chunk-2-4.png" width="672" class="figure-img"></p>
-<figcaption class="figure-caption">n = 1000</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p>As sample size increases, the mean of samples approach a normal distribution.</p>
+</div>
+<p>While one conclusion from this is that a larger sample size provide more accurate estimates, it also means that we can test the probability of obtaining a sample mean by <em>assuming</em> a distribution. For example, we could then ask ourselves “what is the probability that we obtain a sample mean of 0.2, if we belive the true mean to be 0.5?”. In the figure below, we illustrate this scenario.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption class="figure-caption">What is the probability that the blue distribution which we obtained from our sample is the true distirbution if theory suggests that the yellow distiribution is the true one?</figcaption>
+<p><img src="galton-machine_files/figure-html/unnamed-chunk-3-1.png" width="672" class="figure-img"></p>
+</figure>
 </div>
 </div>
 </div>
-</div>
+<p>This is what enables any statistical inference: we present theory supporting a hypothesis, we then collect data to test the hypothesis, and finally test if we are able, or unable, to reject the hypothesis.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 </div> <!-- /content -->

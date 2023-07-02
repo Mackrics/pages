@@ -44,3 +44,4 @@ format:
     toc: false
     bibliography: ./references.bib
     highlight-style: ctp-mocha.theme
+    fig-cap-location: top

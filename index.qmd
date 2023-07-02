@@ -1,7 +1,9 @@
 ---
 listing: 
   - id: blog
-    contents: blog
+    contents: 
+      - "blog"
+      - "!blog/index.qmd"
     template: blog-listing.ejs
     type: table
     sort: "date desc"
@@ -10,6 +12,7 @@ listing:
     sort-ui: false
     filter-ui: false
     feed: true
+    max-items: 5
 ---
 
 # Hello there,
@@ -22,3 +25,4 @@ and other open source tools such as [Git](https://git-scm.com/),
 # Blog posts
 :::{#blog}
 :::
+[All posts](./blog/index.qmd)

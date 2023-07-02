@@ -1,16 +1,19 @@
 ---
-title: The galton machine
+title: The Galton board
 date: 2023-08-29
 date-format: iso
+draft: true
 ---
-
-# Law of large numbers
 
 ```{r}
 #| echo: false
+#| warning: false
 library(tibble)
 library(ggplot2)
 library(ricethemes)
+library(purrr)
+library(dplyr)
+library(tidyr)
 
 draw_binary <- function(n) {
   mean(sample(c(0, 1), n, replace = TRUE))
@@ -33,8 +36,7 @@ draw_samples <- function(samples, sample_size) {
 
 plot_samples <- function(sample_frame, bins = 30) {
   sample_frame |>
-    ggplot() +
-    aes(mean) +
+    ggplot() + aes(mean) +
     geom_histogram(
       aes(y = after_stat(density)),
       bins = bins,
@@ -44,32 +46,85 @@ plot_samples <- function(sample_frame, bins = 30) {
     geom_density(color = ctp_mocha[["red"]]) +
     theme_ctp_mocha() +
     labs(x = "", y = "") +
-    scale_x_continuous(limits = c(0.25, 0.75)) +
-    scale_y_continuous(limits = c(0, 25))
+    scale_x_continuous(limits = c(0, 1)) +
+    scale_y_continuous(limits = c(0, 25)) +
+    theme(
+      axis.text.x = element_blank(),
+      axis.text.y = element_blank()
+    )
 }
 ```
 
-# Plot
+[The Galton board](https://en.wikipedia.org/wiki/Galton_board) was built in the
+19th century to demonstrate the central limit theorem. Specifically, it showed
+that given sufficiently large sample sizes, a collection of sample means
+from the binomial distribution would approximate the normal distribution. 
+The Galton board is not only very satisfying to watch, it also demonstrates one
+of the most important concepts for statistical inference.
+
+![The Galton board in action](https://upload.wikimedia.org/wikipedia/commons/transcoded/d/dc/Galton_box.webm/Galton_box.webm.720p.vp9.webm){width=70%}
+
+Assume that you flip a coin and either get a tail or a head and want to 
+investigate the probability of getting tail. If you were
+to only flip the coin once, you would only get a value of either 0% or 100%.
+However, as you increase your number of throws you will eventually approach 50% which is the true value.
+
+
+If you then draw a many samples of a sufficiently large sample size, the sample
+means will follow a normal distribution with the true mean as the mean of the distribution.
+The larger the sample size is, the lower variance the distribution will have, see the figure below.
 
 ```{r}
 #| warning: false
+#| echo: false
 #| layout-ncol: 2
-#| fig-cap: "As sample size increases, the mean of samples approach a normal distribution."
 #| fig-subcap:
-#|  - n = 10
-#|  - n = 30
-#|  - n = 100
-#|  - n = 1000
-
-draw_samples(1000, 10) |>
-  plot_samples()
-
-draw_samples(1000, 30) |>
-  plot_samples()
-
-draw_samples(1000, 100) |>
-  plot_samples()
-
-draw_samples(1000, 1000) |>
-  plot_samples()
+#|  - Sample size of 10
+#|  - Sample size of 30
+#|  - Sample size of 100
+#|  - Sample size of 1000
+set.seed(1001)
+draw_samples(1000, 10) |> plot_samples()
+draw_samples(1000, 30) |> plot_samples()
+draw_samples(1000, 100) |> plot_samples()
+draw_samples(1000, 1000) |> plot_samples()
 ```
+
+While one conclusion from this is that a larger sample size provide more accurate estimates,
+it also means that we can test the probability of obtaining a sample mean by
+*assuming* a distribution. For example, we could then ask ourselves "what is the
+probability that we obtain a sample mean of 0.2, if we belive the true mean
+to be 0.5?". In the figure below, we illustrate this scenario.
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-cap: "What is the probability that the blue distribution which we obtained from our sample is the true distirbution if theory suggests that the yellow distiribution is the true one?"
+draw_samples(1000, 30) |>
+  mutate(mean = mean - 0.3) |>
+  bind_cols(draw_samples(1000, 30)) |>
+  rename_with(~c("id", "mean1", "id2", "mean2")) |>
+  select(-id2) |>
+  pivot_longer(-id) |>
+  ggplot() +
+  aes(value, color = name) +
+  geom_density(bw = 0.03) +
+  geom_vline(
+    xintercept = c(0.2, 0.5),
+    color = c(ctp_mocha[["blue"]], ctp_mocha[["yellow"]]),
+    linetype = "dashed"
+  ) +
+  theme_ctp_mocha() +
+  scale_color_ctp_mocha() +
+  theme(
+    legend.position = 0,
+    axis.text.x = element_blank(),
+    axis.text.y = element_blank()
+    ) +
+  labs(x = "", y = "")
+```
+
+This is what enables any statistical inference: we present theory supporting
+a hypothesis, we then collect data to test the hypothesis, and finally test
+if we are able, or unable, to reject the hypothesis.
+
