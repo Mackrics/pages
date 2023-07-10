@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mackrics.com/blog/starting-blog.html</loc>
-    <lastmod>2023-07-02T19:31:30.668Z</lastmod>
+    <loc>https://mackrics.com/index.html</loc>
+    <lastmod>2023-07-10T13:29:15.650Z</lastmod>
   </url>
   <url>
     <loc>https://mackrics.com/blog/joy-of-programming.html</loc>
-    <lastmod>2023-07-02T19:31:31.152Z</lastmod>
+    <lastmod>2023-07-10T13:29:09.273Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mackrics.com/blog/starting-blog.html</loc>
+    <lastmod>2023-07-10T13:29:08.778Z</lastmod>
   </url>
   <url>
     <loc>https://mackrics.com/blog/index.html</loc>
-    <lastmod>2023-07-02T19:31:52.394Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mackrics.com/index.html</loc>
-    <lastmod>2023-07-02T19:31:47.726Z</lastmod>
+    <lastmod>2023-07-10T13:29:09.745Z</lastmod>
   </url>
 </urlset>

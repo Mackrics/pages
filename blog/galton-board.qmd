@@ -6,8 +6,7 @@ draft: true
 ---
 
 ```{r}
-#| echo: false
-#| warning: false
+#| include: false
 library(tibble)
 library(ggplot2)
 library(ricethemes)
@@ -16,7 +15,7 @@ library(dplyr)
 library(tidyr)
 
 draw_binary <- function(n) {
-  mean(sample(c(0, 1), n, replace = TRUE))
+  mean(sample(c(0, 1), n, replace = TRUE), na.rm = TRUE)
 }
 
 
@@ -36,18 +35,20 @@ draw_samples <- function(samples, sample_size) {
 
 plot_samples <- function(sample_frame, bins = 30) {
   sample_frame |>
-    ggplot() + aes(mean) +
+    ggplot() + 
+    aes(mean) +
     geom_histogram(
       aes(y = after_stat(density)),
-      bins = bins,
+      bins = {{ bins }},
       color = ctp_mocha[["peach"]],
-      fill = ctp_mocha[["yellow"]]
+      fill = ctp_mocha[["yellow"]],
+      na.rm = TRUE
     ) +
     geom_density(color = ctp_mocha[["red"]]) +
     theme_ctp_mocha() +
     labs(x = "", y = "") +
     scale_x_continuous(limits = c(0, 1)) +
-    scale_y_continuous(limits = c(0, 25)) +
+    scale_y_continuous(limits = c(0, 30)) +
     theme(
       axis.text.x = element_blank(),
       axis.text.y = element_blank()
@@ -57,37 +58,46 @@ plot_samples <- function(sample_frame, bins = 30) {
 
 [The Galton board](https://en.wikipedia.org/wiki/Galton_board) was built in the
 19th century to demonstrate the central limit theorem. Specifically, it showed
-that given sufficiently large sample sizes, a collection of sample means
-from the binomial distribution would approximate the normal distribution. 
-The Galton board is not only very satisfying to watch, it also demonstrates one
-of the most important concepts for statistical inference.
+that given sufficiently large sample sizes, a collection of sample means from
+the binomial distribution would approximate the normal distribution. The Galton
+board is not only very satisfying to watch, it also demonstrates one of the
+most important concepts for statistical inference.
 
-![The Galton board in action](https://upload.wikimedia.org/wikipedia/commons/transcoded/d/dc/Galton_box.webm/Galton_box.webm.720p.vp9.webm){width=70%}
 
-Assume that you flip a coin and either get a tail or a head and want to 
-investigate the probability of getting tail. If you were
-to only flip the coin once, you would only get a value of either 0% or 100%.
-However, as you increase your number of throws you will eventually approach 50% which is the true value.
+![The Galton board in action](https://upload.wikimedia.org/wikipedia/commons/transcoded/d/dc/Galton_box.webm/Galton_box.webm.720p.vp9.webm){width=100%}
+
+Assume that you flip a coin and either get a tail or a head and want to
+investigate the probability of getting tail. If you were to only flip the coin
+once, you would only get a value of either 0% or 100%. However, as you increase
+your number of throws you will eventually approach 50% which is the true value.
 
 
 If you then draw a many samples of a sufficiently large sample size, the sample
-means will follow a normal distribution with the true mean as the mean of the distribution.
-The larger the sample size is, the lower variance the distribution will have, see the figure below.
+means will follow a normal distribution with the true mean as the mean of the
+distribution. The larger the sample size is, the lower variance the
+distribution will have, see the figure below.
+
 
 ```{r}
-#| warning: false
+#| panel: tabset
+#| output: asis
 #| echo: false
-#| layout-ncol: 2
-#| fig-subcap:
-#|  - Sample size of 10
-#|  - Sample size of 30
-#|  - Sample size of 100
-#|  - Sample size of 1000
-set.seed(1001)
+#| warning: false
+#| fig-align: center
+set.seed(8008)
+
+cat("# Sample size of 10\n")
 draw_samples(1000, 10) |> plot_samples()
+cat("\n\n")
+cat("# Sample size of 30\n")
 draw_samples(1000, 30) |> plot_samples()
-draw_samples(1000, 100) |> plot_samples()
-draw_samples(1000, 1000) |> plot_samples()
+cat("\n\n")
+cat("# Sample size of 100\n")
+draw_samples(1000, 100) |> plot_samples(bins = 40)
+cat("\n\n")
+cat("# Sample size of 500\n")
+draw_samples(1000, 500) |> plot_samples(bins = 50)
+cat("\n\n")
 ```
 
 While one conclusion from this is that a larger sample size provide more accurate estimates,

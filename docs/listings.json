@@ -1,13 +1,13 @@
 [
   {
-    "listing": "/blog/index.html",
+    "listing": "/index.html",
     "items": [
       "/blog/joy-of-programming.html",
       "/blog/starting-blog.html"
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/blog/index.html",
     "items": [
       "/blog/joy-of-programming.html",
       "/blog/starting-blog.html"
