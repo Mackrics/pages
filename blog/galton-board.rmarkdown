@@ -56,6 +56,7 @@ plot_samples <- function(sample_frame, bins = 30) {
 }
 ```
 
+
 [The Galton board](https://en.wikipedia.org/wiki/Galton_board) was built in the
 19th century to demonstrate the central limit theorem. Specifically, it showed
 that given sufficiently large sample sizes, a collection of sample means from
@@ -75,6 +76,7 @@ If you then draw many samples of a sufficiently large sample size, the sample
 means will follow a normal distribution with the true mean as the mean of the
 distribution. The larger the sample size is, the lower variance the
 distribution will have, see the figure below.
+
 
 
 ```{r}
@@ -99,11 +101,13 @@ draw_samples(1000, 500) |> plot_samples(bins = 50)
 cat("\n\n")
 ```
 
+
 While one conclusion from this is that a larger sample size provide more accurate estimates,
 it also means that we can test the probability of obtaining a sample mean by
 *assuming* a distribution. For example, we could then ask ourselves "what is the
 probability that we obtain a sample mean of 0.2, if we believe the true mean
 to be 0.5?". In the figure below, we illustrate this scenario.
+
 
 ```{r}
 #| echo: false
@@ -133,8 +137,10 @@ draw_samples(1000, 30) |>
   labs(x = "", y = "")
 ```
 
+
 This is what enables any statistical inference: we present theory supporting
 a hypothesis (The population mean is 0.2), we then collect data to test the 
 hypothesis which shows that the sample mean is 0.5. The probability of getting
 a value of 0.5, when our theory suggests that the true mean is 0.2 is what 
 determines the probability that our theory is correct, given the sample. 
+
