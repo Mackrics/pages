@@ -45,7 +45,7 @@ plot_samples <- function(sample_frame, bins = 30) {
       na.rm = TRUE
     ) +
     geom_density(color = ctp_mocha[["red"]]) +
-    theme_ctp_mocha() +
+    theme_ctp(ctp_mocha) +
     labs(x = "", y = "") +
     scale_x_continuous(limits = c(0, 1)) +
     scale_y_continuous(limits = c(0, 30)) +
@@ -126,8 +126,8 @@ draw_samples(1000, 30) |>
     color = c(ctp_mocha[["blue"]], ctp_mocha[["yellow"]]),
     linetype = "dashed"
   ) +
-  theme_ctp_mocha() +
-  scale_color_ctp_mocha() +
+  theme_ctp(ctp_mocha) +
+  scale_color_ctp(ctp_mocha) +
   theme(
     legend.position = 0,
     axis.text.x = element_blank(),
