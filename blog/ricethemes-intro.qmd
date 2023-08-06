@@ -72,4 +72,4 @@ for (i in seq(1, length(plotlist2))) {
 ```
 
 Any feedback or request is much appreciated, preferably as a GitHub issue in
-[this repository](https://github.com/Mackrics/ricethemes/issues)
+[this repository](https://github.com/Mackrics/ricethemes/issues).
