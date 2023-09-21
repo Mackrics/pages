@@ -30,7 +30,7 @@ website:
         href: https://github.com/mackrics
         aria-label: GitHub
       - icon: mastodon
-        href: https://fosstodon.org\@mackan
+        href: https://fosstodon.org\@mackrics
         rel: me
         aria-label: Mastodon
 format:

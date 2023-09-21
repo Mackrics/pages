@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Hello there,",
+    "objectID": "blog/starting-blog.html",
+    "href": "blog/starting-blog.html",
+    "title": "I’m starting a blog",
     "section": "",
-    "text": "Hello there,\nI am an quantitative analyst within competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\n\n\nBlog posts\n\n\n2023-06-28: The joy of programming  2023-05-19: I’m starting a blog \n\n\nNo matching items\n\n\nView all"
+    "text": "Why would anyone start a blog in 2023?\nTechnical writing is difficult, and is something I want to improve at, which is why I’m starting a blog to practice my technical writing. I plan to share some of my personal project and stuff I learn from those projects on this blog, which I created with Quarto.\nQuarto is a very cool scientific typesetting system built to share technical content and share via, for example, a website such as this one. I built this website using Quarto as a personal project to learn more about how it works and to improve my web development skills. If you’re interested in how this website was created, I host it in a GitHub repository and publish it via GitHub pages. If you’re interested in creating a blog using Quarto, you can learn more about it here and if you also want to host it via GitHub pages, check out this page."
   },
   {
     "objectID": "blog/index.html",
@@ -14,11 +14,11 @@
     "text": "2023-06-28: The joy of programming  2023-05-19: I’m starting a blog \n\n\nNo matching items"
   },
   {
-    "objectID": "blog/starting-blog.html",
-    "href": "blog/starting-blog.html",
-    "title": "I’m starting a blog",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hello there,",
     "section": "",
-    "text": "Why would anyone start a blog in 2023?\nTechnical writing is difficult, and is something I want to improve at, which is why I’m starting a blog to practice my technical writing. I plan to share some of my personal project and stuff I learn from those projects on this blog, which I created with Quarto.\nQuarto is a very cool scientific typesetting system built to share technical content and share via, for example, a website such as this one. I built this website using Quarto as a personal project to learn more about how it works and to improve my web development skills. If you’re interested in how this website was created, I host it in a GitHub repository and publish it via GitHub pages. If you’re interested in creating a blog using Quarto, you can learn more about it here and if you also want to host it via GitHub pages, check out this page."
+    "text": "Hello there,\nI am an quantitative analyst within competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\n\n\nBlog posts\n\n\n2023-06-28: The joy of programming  2023-05-19: I’m starting a blog \n\n\nNo matching items\n\n\nView all"
   },
   {
     "objectID": "blog/joy-of-programming.html",
