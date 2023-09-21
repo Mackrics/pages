@@ -1,24 +1,10 @@
 [
   {
-    "objectID": "blog/starting-blog.html",
-    "href": "blog/starting-blog.html",
-    "title": "I’m starting a blog",
+    "objectID": "blog/ricethemes-intro.html",
+    "href": "blog/ricethemes-intro.html",
+    "title": "Introducing {ricethemes}",
     "section": "",
-    "text": "Why would anyone start a blog in 2023?\nTechnical writing is difficult, and is something I want to improve at, which is why I’m starting a blog to practice my technical writing. I plan to share some of my personal project and stuff I learn from those projects on this blog, which I created with Quarto.\nQuarto is a very cool scientific typesetting system built to share technical content and share via, for example, a website such as this one. I built this website using Quarto as a personal project to learn more about how it works and to improve my web development skills. If you’re interested in how this website was created, I host it in a GitHub repository and publish it via GitHub pages. If you’re interested in creating a blog using Quarto, you can learn more about it here and if you also want to host it via GitHub pages, check out this page."
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "2023-06-28: The joy of programming  2023-05-19: I’m starting a blog \n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Hello there,",
-    "section": "",
-    "text": "Hello there,\nI am an quantitative analyst within competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\n\n\nBlog posts\n\n\n2023-06-28: The joy of programming  2023-05-19: I’m starting a blog \n\n\nNo matching items\n\n\nView all"
+    "text": "I’ve written a R package with popular desktop themes for {ggplot2}. The idea is that the package will enable analysts to explore data using their preferred desktop theme and have a coherent development enviorment. For now, I’ve added the Catppuccin theme with four flavors: latte, frappe, macchiato, and mocha. I plan on adding more themes in the future, depending on the demand.\nI recommend using the pak package to install ricethemes.\npak::pkg_install(\"mackrics/ricethemes\")\nFor now, the package contains functions to obtain hex codes for the various colors, themes, and functions to display the colors.\n\nctp_mochactp_macchiatoctp_frappectp_latte\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe classic cars correlation plot looks something like this for the four flavors:\n\nctp_mochactp_macchiatoctp_frappectp_latte\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAny feedback or request is much appreciated, preferably as a GitHub issue in this repository."
   },
   {
     "objectID": "blog/joy-of-programming.html",
@@ -26,5 +12,26 @@
     "title": "The joy of programming",
     "section": "",
     "text": "We don’t really know where this goes – and I’m not sure we really care. Ross (1984-1994)\n\nDuring the 80s and 90s there was a popular television show called “the joy of painting” by Bob Ross. The show is typical “comfort TV” where Bob Ross calmly guides the viewer through a new painting in each show. He embraces mistakes and not having a plan, which is the “joy of painting”.\nI believe that the approach Bob Ross had to teaching painting is also something we can use when we learn how to write better programs. Whenever we encounter a problem, maybe checking the weather conveniently or converting currencies, we try to seek out a program which solves our issue. In most cases, this is the best approach, especially when performance is critical or when time is of essence. There is, however, certain circumstances in which we can take these moments to pursue “the joy of programming”\n\nWe don’t make mistakes, just happy little accidents. Ross (1984-1994)\n\nThe joy of programming is when you try to solve a relatively simple problem by writing a happy little program. It could be a script which checks the weather, an application which converts currencies, or a dashboard where you analyze your gym routine. These “products” do not need to be perfect and will likely not be used by anyone but you.\n\nLet’s build some happy little trees. Ross (1984-1994)\n\nThese happy little programs are the perfect opportunity for you to learn something new and embrace the mindfulness of programming. Writing a program which have already been written by someone else is not a waste of time, it is an essential part in the learning process and appreciating the craft behind well-written programs.\nThe program can be as simple or extensive as you want it to. It could be a program with hard-coded values, or a highly flexible programs. It is a program which you can continue to develop over time by implementing some new happy features. Maybe you have already written a happy little program which checks the weather, where you have hard-coded some town. Try to make the input flexible by allowing the program to take a town as an argument.\nThe purpose the happy little program is to solve a very specific issue - that you have not written a particular type of program yet. It is about the joy of identifying a problem, and continuously adding features which makes it better and better. It is about becoming a better programmer and appreciating the art of programming.\n\nWe artists are a different breed of people. We’re a happy bunch. Ross (1984-1994)\n\n\n\n\n\nReferences\n\nRoss, Bob. 1984-1994. “The Joy of Painting.”"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hello there,",
+    "section": "",
+    "text": "Hello there,\nI am an quantitative analyst within competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\n\n\nBlog posts\n\n\n2023-09-21: Introducing {ricethemes}  2023-06-28: The joy of programming  2023-05-19: I’m starting a blog \n\n\nNo matching items\n\n\nView all"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "2023-09-21: Introducing {ricethemes}  2023-06-28: The joy of programming  2023-05-19: I’m starting a blog \n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/starting-blog.html",
+    "href": "blog/starting-blog.html",
+    "title": "I’m starting a blog",
+    "section": "",
+    "text": "Why would anyone start a blog in 2023?\nTechnical writing is difficult, and is something I want to improve at, which is why I’m starting a blog to practice my technical writing. I plan to share some of my personal project and stuff I learn from those projects on this blog, which I created with Quarto.\nQuarto is a very cool scientific typesetting system built to share technical content and share via, for example, a website such as this one. I built this website using Quarto as a personal project to learn more about how it works and to improve my web development skills. If you’re interested in how this website was created, I host it in a GitHub repository and publish it via GitHub pages. If you’re interested in creating a blog using Quarto, you can learn more about it here and if you also want to host it via GitHub pages, check out this page."
   }
 ]

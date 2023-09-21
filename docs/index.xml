@@ -10,7 +10,99 @@
 <atom:link href="https://mackrics.com/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Tue, 27 Jun 2023 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 20 Sep 2023 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Introducing {ricethemes}</title>
+  <link>https://mackrics.com/blog/ricethemes-intro.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>I’ve written a R package with popular desktop themes for <code>{ggplot2}</code>. The idea is that the package will enable analysts to explore data using their preferred desktop theme and have a coherent development enviorment. For now, I’ve added the <a href="https://github.com/catppuccin/catppuccin">Catppuccin</a> theme with four flavors: <code>latte</code>, <code>frappe</code>, <code>macchiato</code>, and <code>mocha</code>. I plan on adding more themes in the future, depending on the demand.</p>
+<p>I recommend using the <a href="https://pak.r-lib.org/"><code>pak</code></a> package to install ricethemes.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1">pak<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pkg_install</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"mackrics/ricethemes"</span>)</span></code></pre></div>
+<p>For now, the package contains functions to obtain hex codes for the various colors, themes, and functions to display the colors.</p>
+<div class="tabset-margin-container"></div><div class="cell panel-tabset" data-layout-align="center">
+<ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" aria-controls="tabset-1-1" aria-selected="true">ctp_mocha</a></li><li class="nav-item"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" aria-controls="tabset-1-2" aria-selected="false">ctp_macchiato</a></li><li class="nav-item"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" aria-controls="tabset-1-3" aria-selected="false">ctp_frappe</a></li><li class="nav-item"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" aria-controls="tabset-1-4" aria-selected="false">ctp_latte</a></li></ul>
+<div class="cell tab-content" data-layout-align="center">
+<div id="tabset-1-1" class="tab-pane active" aria-labelledby="tabset-1-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mackrics.com/blog/ricethemes-intro_files/figure-html/unnamed-chunk-1-1.png" style="width:100.0%" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" aria-labelledby="tabset-1-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mackrics.com/blog/ricethemes-intro_files/figure-html/unnamed-chunk-1-2.png" style="width:100.0%" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" aria-labelledby="tabset-1-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mackrics.com/blog/ricethemes-intro_files/figure-html/unnamed-chunk-1-3.png" style="width:100.0%" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div id="tabset-1-4" class="tab-pane" aria-labelledby="tabset-1-4-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mackrics.com/blog/ricethemes-intro_files/figure-html/unnamed-chunk-1-4.png" style="width:100.0%" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>The classic <code>cars</code> correlation plot looks something like this for the four flavors:</p>
+<div class="tabset-margin-container"></div><div class="cell panel-tabset" data-layout-align="center">
+<ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" aria-controls="tabset-2-1" aria-selected="true">ctp_mocha</a></li><li class="nav-item"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" aria-controls="tabset-2-2" aria-selected="false">ctp_macchiato</a></li><li class="nav-item"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" aria-controls="tabset-2-3" aria-selected="false">ctp_frappe</a></li><li class="nav-item"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" aria-controls="tabset-2-4" aria-selected="false">ctp_latte</a></li></ul>
+<div class="cell tab-content" data-layout-align="center">
+<div id="tabset-2-1" class="tab-pane active" aria-labelledby="tabset-2-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mackrics.com/blog/ricethemes-intro_files/figure-html/unnamed-chunk-2-1.png" style="width:100.0%" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" aria-labelledby="tabset-2-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mackrics.com/blog/ricethemes-intro_files/figure-html/unnamed-chunk-2-2.png" style="width:100.0%" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" aria-labelledby="tabset-2-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mackrics.com/blog/ricethemes-intro_files/figure-html/unnamed-chunk-2-3.png" style="width:100.0%" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div id="tabset-2-4" class="tab-pane" aria-labelledby="tabset-2-4-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mackrics.com/blog/ricethemes-intro_files/figure-html/unnamed-chunk-2-4.png" style="width:100.0%" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Any feedback or request is much appreciated, preferably as a GitHub issue in <a href="https://github.com/Mackrics/ricethemes/issues">this repository</a>.</p>
+
+
+
+ ]]></description>
+  <guid>https://mackrics.com/blog/ricethemes-intro.html</guid>
+  <pubDate>Wed, 20 Sep 2023 22:00:00 GMT</pubDate>
+</item>
 <item>
   <title>The joy of programming</title>
   <link>https://mackrics.com/blog/joy-of-programming.html</link>
