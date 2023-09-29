@@ -30,7 +30,7 @@ website:
         href: https://github.com/mackrics
         aria-label: GitHub
       - icon: mastodon
-        href: https://fosstodon.org/@mackrics
+        href: https://fosstodon.org\@mackrics
         rel: me
         aria-label: Mastodon
       - icon: chat-fill
@@ -45,5 +45,6 @@ format:
     monofont: "IBM Plex Mono"
     css: styles.css
     toc: false
+    bibliography: ./references.bib
     highlight-style: ctp-mocha.theme
     fig-cap-location: top
