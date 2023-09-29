@@ -33,6 +33,9 @@ website:
         href: https://fosstodon.org\@mackrics
         rel: me
         aria-label: Mastodon
+      - icon: chat-fill
+        href: https://matrix.to\#/@mackan:matrix.org
+        aria-label: Matrix
 format:
   html:
     minimal: true
