@@ -1,6 +1,6 @@
 ---
 title: Introducing grid themes in `{ricethemes}`
-date: 2023-10-18
+date: 2023-10-19
 date-format: iso
 ---
 
@@ -8,20 +8,18 @@ If you have not already checked out [`{ricethemes}`](https://github.com/mackrics
 check out my [blog post introducing it](./ricethemes-intro.qmd).
 
 Usually when making plots, I am not interested in the precise values on either
-the x or y axis. Therefore, I do not usually use grid lines since they are not
-neseccary to spot general trends and plots usually look better without them. However,
-on some occasions I want to know the value of a specific observation and therefore
-need grid lines.
+the x or y axis -- only the general pattern or trend. Therefore, I do not
+usually use grid lines since they are  unnecessary and plots generally
+look better without them. However, on some occasions I want to know the value
+of a specific observation and therefore need grid lines.
 
-I have now added a theme (with four flavors) in `{ricethemes}` with grid lines.
-I tried making the themes relatively minimal by not adding any axis lines and
-having a single color for both the minor and major grid lines. I decided on
-grid lines for both the x and y axis to make this theme a bit more practical
-and universal.
-
-The grid lines are in a slightly brighter (darker for the latte flavor) color
-so that the main background could remain the same. The purpose of this is to
-make the grid lines visible, yet unintrusive. 
+I have now added a theme, `theme_ctp_grid()`, with four flavors in
+`{ricethemes}` which has grid lines. The theme is relatively minimal since it
+does not have any axis lines and only a single color for both the minor and
+major grid lines. I decided on grid lines for both the x and y axis to make
+this theme a bit more practical. The grid lines are in a slightly brighter
+(darker for the latte flavor) color than the main background which is still the
+same as in `theme_ctp()`
 
 If you have already installed `{ricethemes}`, update it with the following
 command to get the latest themes, which you can also use to install it if you

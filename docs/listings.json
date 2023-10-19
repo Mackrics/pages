@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/blog/index.html",
     "items": [
       "/blog/ricethemes-grid.html",
       "/blog/ricethemes-intro.html",
@@ -9,8 +9,9 @@
     ]
   },
   {
-    "listing": "/blog/index.html",
+    "listing": "/index.html",
     "items": [
+      "/blog/ricethemes-grid.html",
       "/blog/ricethemes-intro.html",
       "/blog/joy-of-programming.html",
       "/blog/starting-blog.html"

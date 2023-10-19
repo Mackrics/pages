@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mackrics.com/blog/ricethemes-intro.html</loc>
-    <lastmod>2023-10-19T04:47:18.398Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mackrics.com/blog/joy-of-programming.html</loc>
-    <lastmod>2023-09-29T21:45:15.092Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mackrics.com/index.html</loc>
-    <lastmod>2023-10-19T05:02:55.499Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mackrics.com/blog/index.html</loc>
-    <lastmod>2023-10-18T18:29:42.904Z</lastmod>
+    <loc>https://mackrics.com/blog/ricethemes-grid.html</loc>
+    <lastmod>2023-10-19T20:34:46.039Z</lastmod>
   </url>
   <url>
     <loc>https://mackrics.com/blog/starting-blog.html</loc>
-    <lastmod>2023-09-29T21:45:15.290Z</lastmod>
+    <lastmod>2023-10-19T20:34:40.631Z</lastmod>
   </url>
   <url>
-    <loc>https://mackrics.com/blog/ricethemes-grid.html</loc>
-    <lastmod>2023-10-19T05:02:55.303Z</lastmod>
+    <loc>https://mackrics.com/blog/index.html</loc>
+    <lastmod>2023-10-19T20:34:40.263Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mackrics.com/index.html</loc>
+    <lastmod>2023-10-19T20:34:38.007Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mackrics.com/blog/joy-of-programming.html</loc>
+    <lastmod>2023-10-19T20:34:40.462Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mackrics.com/blog/ricethemes-intro.html</loc>
+    <lastmod>2023-10-19T20:34:43.803Z</lastmod>
   </url>
 </urlset>

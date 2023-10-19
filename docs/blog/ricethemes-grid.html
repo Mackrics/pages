@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-10-18">
+<meta name="dcterms.date" content="2023-10-19">
 
 <title>Mackrics - Introducing grid themes in {ricethemes}</title>
 <style>
@@ -154,7 +154,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2023-10-18</p>
+      <p class="date">2023-10-19</p>
     </div>
   </div>
   
@@ -165,9 +165,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 <p>If you have not already checked out <a href="https://github.com/mackrics/ricethemes"><code>{ricethemes}</code></a>, check out my <a href="../blog/ricethemes-intro.html">blog post introducing it</a>.</p>
-<p>Usually when making plots, I am not interested in the precise values on either the x or y axis. Therefore, I do not usually use grid lines since they are not neseccary to spot general trends and plots usually look better without them. However, on some occasions I want to know the value of a specific observation and therefore need grid lines.</p>
-<p>I have now added a theme (with four flavors) in <code>{ricethemes}</code> with grid lines. I tried making the themes relatively minimal by not adding any axis lines and having a single color for both the minor and major grid lines. I decided on grid lines for both the x and y axis to make this theme a bit more practical and universal.</p>
-<p>The grid lines are in a slightly brighter (darker for the latte flavor) color so that the main background could remain the same. The purpose of this is to make the grid lines visible, yet unintrusive.</p>
+<p>Usually when making plots, I am not interested in the precise values on either the x or y axis – only the general pattern or trend. Therefore, I do not usually use grid lines since they are unnecessary and plots generally look better without them. However, on some occasions I want to know the value of a specific observation and therefore need grid lines.</p>
+<p>I have now added a theme, <code>theme_ctp_grid()</code>, with four flavors in <code>{ricethemes}</code> which has grid lines. The theme is relatively minimal since it does not have any axis lines and only a single color for both the minor and major grid lines. I decided on grid lines for both the x and y axis to make this theme a bit more practical. The grid lines are in a slightly brighter (darker for the latte flavor) color than the main background which is still the same as in <code>theme_ctp()</code></p>
 <p>If you have already installed <code>{ricethemes}</code>, update it with the following command to get the latest themes, which you can also use to install it if you have not already:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pkg_install</span>(<span class="st">"mackrics/ricethemes"</span>)</span></code></pre></div>
 <p>Enjoy!</p>
