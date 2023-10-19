@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "Hello there,",
     "section": "",
-    "text": "Hello there,\nI am an quantitative analyst within competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\n\n\nBlog posts\n\n\n2023-09-21: Introducing {ricethemes}  2023-06-28: The joy of programming  2023-05-19: I’m starting a blog \n\n\nNo matching items\n\n\nView all"
+    "text": "Hello there,\nI am an quantitative analyst within competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\n\n\nBlog posts\n\n\n2023-10-18: Introducing grid themes in {ricethemes}  2023-09-21: Introducing {ricethemes}  2023-06-28: The joy of programming  2023-05-19: I’m starting a blog \n\n\nNo matching items\n\n\nView all"
   },
   {
     "objectID": "blog/index.html",
@@ -33,5 +33,12 @@
     "title": "I’m starting a blog",
     "section": "",
     "text": "Why would anyone start a blog in 2023?\nTechnical writing is difficult, and is something I want to improve at, which is why I’m starting a blog to practice my technical writing. I plan to share some of my personal project and stuff I learn from those projects on this blog, which I created with Quarto.\nQuarto is a very cool scientific typesetting system built to share technical content and share via, for example, a website such as this one. I built this website using Quarto as a personal project to learn more about how it works and to improve my web development skills. If you’re interested in how this website was created, I host it in a GitHub repository and publish it via GitHub pages. If you’re interested in creating a blog using Quarto, you can learn more about it here and if you also want to host it via GitHub pages, check out this page."
+  },
+  {
+    "objectID": "blog/ricethemes-grid.html",
+    "href": "blog/ricethemes-grid.html",
+    "title": "Introducing grid themes in {ricethemes}",
+    "section": "",
+    "text": "If you have not already checked out {ricethemes}, check out my blog post introducing it.\nUsually when making plots, I am not interested in the precise values on either the x or y axis. Therefore, I do not usually use grid lines since they are not neseccary to spot general trends and plots usually look better without them. However, on some occasions I want to know the value of a specific observation and therefore need grid lines.\nI have now added a theme (with four flavors) in {ricethemes} with grid lines. I tried making the themes relatively minimal by not adding any axis lines and having a single color for both the minor and major grid lines. I decided on grid lines for both the x and y axis to make this theme a bit more practical and universal.\nThe grid lines are in a slightly brighter (darker for the latte flavor) color so that the main background could remain the same. The purpose of this is to make the grid lines visible, yet unintrusive.\nIf you have already installed {ricethemes}, update it with the following command to get the latest themes, which you can also use to install it if you have not already:\npak::pkg_install(\"mackrics/ricethemes\")\nEnjoy!\n\nctp_mochactp_macchiatoctp_frappectp_latte"
   }
 ]

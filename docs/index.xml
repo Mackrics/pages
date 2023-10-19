@@ -10,7 +10,67 @@
 <atom:link href="https://mackrics.com/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Wed, 20 Sep 2023 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 17 Oct 2023 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Introducing grid themes in {ricethemes}</title>
+  <link>https://mackrics.com/blog/ricethemes-grid.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>If you have not already checked out <a href="https://github.com/mackrics/ricethemes"><code>{ricethemes}</code></a>, check out my <a href="../blog/ricethemes-intro.html">blog post introducing it</a>.</p>
+<p>Usually when making plots, I am not interested in the precise values on either the x or y axis. Therefore, I do not usually use grid lines since they are not neseccary to spot general trends and plots usually look better without them. However, on some occasions I want to know the value of a specific observation and therefore need grid lines.</p>
+<p>I have now added a theme (with four flavors) in <code>{ricethemes}</code> with grid lines. I tried making the themes relatively minimal by not adding any axis lines and having a single color for both the minor and major grid lines. I decided on grid lines for both the x and y axis to make this theme a bit more practical and universal.</p>
+<p>The grid lines are in a slightly brighter (darker for the latte flavor) color so that the main background could remain the same. The purpose of this is to make the grid lines visible, yet unintrusive.</p>
+<p>If you have already installed <code>{ricethemes}</code>, update it with the following command to get the latest themes, which you can also use to install it if you have not already:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1">pak<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pkg_install</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"mackrics/ricethemes"</span>)</span></code></pre></div>
+<p>Enjoy!</p>
+<div class="tabset-margin-container"></div><div class="cell panel-tabset" data-layout-align="center">
+<ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" aria-controls="tabset-1-1" aria-selected="true">ctp_mocha</a></li><li class="nav-item"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" aria-controls="tabset-1-2" aria-selected="false">ctp_macchiato</a></li><li class="nav-item"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" aria-controls="tabset-1-3" aria-selected="false">ctp_frappe</a></li><li class="nav-item"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" aria-controls="tabset-1-4" aria-selected="false">ctp_latte</a></li></ul>
+<div class="cell tab-content" data-layout-align="center">
+<div id="tabset-1-1" class="tab-pane active" aria-labelledby="tabset-1-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mackrics.com/blog/ricethemes-grid_files/figure-html/unnamed-chunk-1-1.png" style="width:100.0%" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" aria-labelledby="tabset-1-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mackrics.com/blog/ricethemes-grid_files/figure-html/unnamed-chunk-1-2.png" style="width:100.0%" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" aria-labelledby="tabset-1-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mackrics.com/blog/ricethemes-grid_files/figure-html/unnamed-chunk-1-3.png" style="width:100.0%" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div id="tabset-1-4" class="tab-pane" aria-labelledby="tabset-1-4-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mackrics.com/blog/ricethemes-grid_files/figure-html/unnamed-chunk-1-4.png" style="width:100.0%" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <guid>https://mackrics.com/blog/ricethemes-grid.html</guid>
+  <pubDate>Tue, 17 Oct 2023 22:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Introducing {ricethemes}</title>
   <link>https://mackrics.com/blog/ricethemes-intro.html</link>
