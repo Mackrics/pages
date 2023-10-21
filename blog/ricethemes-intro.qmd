@@ -18,7 +18,7 @@ ricethemes.
 pak::pkg_install("mackrics/ricethemes")
 ```
 
-For now, the package contains functions to obtain hex codes for the various colors,
+The package contain functions to obtain hex codes for the various colors,
 themes, and functions to display the colors.
 
 ```{r}
