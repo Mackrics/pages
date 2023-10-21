@@ -18,8 +18,7 @@ I have now added a theme, `theme_ctp_grid()`, with four flavors in
 does not have any axis lines and only a single color for both the minor and
 major grid lines. I decided on grid lines for both the x and y axis to make
 this theme a bit more practical. The grid lines are in a slightly brighter
-color than the main background which is still the
-same as in `theme_ctp()`
+color than the main background which is still the same as in `theme_ctp()`
 
 If you have already installed `{ricethemes}`, update it with the following
 command to get the latest themes, which you can also use to install it if you
