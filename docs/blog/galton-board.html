@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-07-10">
+<meta name="dcterms.date" content="2023-11-02">
 
 <title>Mackrics - The Galton board</title>
 <style>
@@ -120,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2023-07-10</p>
+      <p class="date">2023-11-02</p>
     </div>
   </div>
   
@@ -137,8 +137,9 @@ ul.task-list li input[type="checkbox"] {
 <p><video src="https://upload.wikimedia.org/wikipedia/commons/transcoded/d/dc/Galton_box.webm/Galton_box.webm.720p.vp9.webm" style="width:100.0%" controls=""><a href="https://upload.wikimedia.org/wikipedia/commons/transcoded/d/dc/Galton_box.webm/Galton_box.webm.720p.vp9.webm">Video</a></video></p>
 </figure>
 </div>
-<p>Assume that you want to investigate the probability of getting a tail when flipping a coin. If you were to only flip the coin once, you would only get a value of either 0% or 100%. However, as you increase your number of throws you will eventually approach 50% which is the true value.</p>
-<p>If you then draw many samples of a sufficiently large sample size, the sample means will follow a normal distribution with the true mean as the mean of the distribution. The larger the sample size is, the lower variance the distribution will have, see the figure below.</p>
+<p>Assume that you want to investigate the probability of getting a tail when flipping a coin. If you were to only flip the coin once, you would either get a head or tail and would conclude that it is either 100% or 0% probability that you get a tail. However, as you increase your number of throws you will eventually conclude that the probability of getting a tail is 50%.</p>
+<p>If you instead imagine that you and a couple of friends independently toss a coin a small number of times each, it is unlikely that any of you will get a tail <em>exactly</em> 50% of the time. However, the distribution of your and your friends probabilities will be normally distributed, meaning that the mean of the sample means will approximately be the true mean.</p>
+<p>If the sample sizes are large, the variance of the distribution is smaller, meaning that more samples are likely close to 50% probability.</p>
 <div class="tabset-margin-container"></div><div class="cell panel-tabset" data-layout-align="center">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Sample size of 10</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Sample size of 30</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Sample size of 100</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Sample size of 500</a></li></ul>
 <div class="cell tab-content" data-layout-align="center">
@@ -172,18 +173,20 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>While one conclusion from this is that a larger sample size provide more accurate estimates, it also means that we can test the probability of obtaining a sample mean by <em>assuming</em> a distribution. For example, we could then ask ourselves “what is the probability that we obtain a sample mean of 0.2, if we believe the true mean to be 0.5?”. In the figure below, we illustrate this scenario.</p>
+<p>While one conclusion from this is that a larger sample size provide more accurate estimates, it also means that we can test the probability of obtaining a sample mean by <em>assuming</em> a distribution.</p>
+<p>In this example, we can assume that the probability of getting a tail is 50%. If we have only a collection of small samples, we would not be able to reject that a small deviation from the mean is random. Meanwhile, we will be able to reject that a small deviation is random if we have a large sample.</p>
+<p>One way to think about this is in terms of differences in probability distributions. We imagine that in theory all samples should be distributed with a mean of 50%. We then use the distribution of the sample throws to test the probability that our sample mean is a part of a normal distribution with a mean of 50%.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<figcaption class="figure-caption">What is the probability that the blue distribution which we obtained from our sample is the true distirbution if theory suggests that the yellow distiribution is the true one?</figcaption>
+<figcaption class="figure-caption">What is the probability that the blue distribution, which we obtained from our sample, is the true distribution if theory suggests that the yellow distribution is the true one?</figcaption>
 <p><img src="galton-board_files/figure-html/unnamed-chunk-3-1.png" style="width:100.0%" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<p>This is what enables any statistical inference: we present theory supporting a hypothesis (The population mean is 0.2), we then collect data to test the hypothesis which shows that the sample mean is 0.5. The probability of getting a value of 0.5, when our theory suggests that the true mean is 0.2 is what determines the probability that our theory is correct, given the sample.</p>
+<p>The Galton board illustrates one of the most fundamental and important ideas in statistics in a beautiful way.</p>
 
 
 
