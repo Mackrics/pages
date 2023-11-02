@@ -6,7 +6,7 @@ listing:
     template: ../blog-listing.ejs
     type: table
     sort: "date desc"
-    date-format: "YYYY-MM-D"
+    date-format: "YYYY-MM-DD"
     fields: [date, title]
     sort-ui: false
     filter-ui: false
