@@ -1,8 +1,8 @@
 ---
 title: The Galton board
-date: 2023-07-10
+date: 2023-11-02
 date-format: iso
-draft: true
+draft: false
 ---
 
 ```{r}
@@ -66,16 +66,20 @@ most important concepts for statistical inference.
 
 ![The Galton board in action](https://upload.wikimedia.org/wikipedia/commons/transcoded/d/dc/Galton_box.webm/Galton_box.webm.720p.vp9.webm){width=100%}
 
-Assume that you want to investigate the probability of getting a tail when 
-flipping a coin. If you were to only flip the coin once, you would only get a 
-value of either 0% or 100%. However, as you increase your number of throws you 
-will eventually approach 50% which is the true value.
+Assume that you want to investigate the probability of getting a tail when
+flipping a coin. If you were to only flip the coin once, you would either get a
+head or tail and would conclude that it is either 100% or 0% probability that
+you get a tail. However, as you increase your number of throws you will
+eventually conclude that the probability of getting a tail is 50%.
 
-If you then draw many samples of a sufficiently large sample size, the sample
-means will follow a normal distribution with the true mean as the mean of the
-distribution. The larger the sample size is, the lower variance the
-distribution will have, see the figure below.
+If you instead imagine that you and a couple of friends independently toss a
+coin a small number of times each, it is unlikely that any of you will get
+a tail *exactly* 50% of the time. However, the distribution of your and your
+friends probabilities will be normally distributed, meaning that the
+mean of the sample means will approximately be the true mean.
 
+If the sample sizes are large, the variance of the distribution is smaller,
+meaning that more samples are likely close to 50% probability.
 
 ```{r}
 #| panel: tabset
@@ -101,17 +105,26 @@ draw_samples(1000, 500) |> plot_samples(bins = 50)
 cat("\n\n")
 ```
 
-While one conclusion from this is that a larger sample size provide more accurate estimates,
-it also means that we can test the probability of obtaining a sample mean by
-*assuming* a distribution. For example, we could then ask ourselves "what is the
-probability that we obtain a sample mean of 0.2, if we believe the true mean
-to be 0.5?". In the figure below, we illustrate this scenario.
+While one conclusion from this is that a larger sample size provide more
+accurate estimates, it also means that we can test the probability of obtaining
+a sample mean by *assuming* a distribution.
+
+In this example, we can assume that the probability of getting a tail is 50%. 
+If we have only a collection of small samples, we would not be able to reject
+that a small deviation from the mean is random. Meanwhile, we will be able to 
+reject that a small deviation is random if we have a large sample.
+
+One way to think about this is in terms of differences in probability
+distributions. We imagine that in theory all samples should be distributed with
+a mean of 50%. We then use the distribution of the sample throws to test the
+probability that our sample mean is a part of a normal distribution with a mean
+of 50%.
 
 ```{r}
 #| echo: false
 #| warning: false
 #| out-width: "100%"
-#| fig-cap: "What is the probability that the blue distribution which we obtained from our sample is the true distirbution if theory suggests that the yellow distiribution is the true one?"
+#| fig-cap: "What is the probability that the blue distribution, which we obtained from our sample, is the true distribution if theory suggests that the yellow distribution is the true one?"
 draw_samples(1000, 30) |>
   mutate(mean = mean - 0.3) |>
   bind_cols(draw_samples(1000, 30)) |>
@@ -136,8 +149,5 @@ draw_samples(1000, 30) |>
   labs(x = "", y = "")
 ```
 
-This is what enables any statistical inference: we present theory supporting
-a hypothesis (The population mean is 0.2), we then collect data to test the 
-hypothesis which shows that the sample mean is 0.5. The probability of getting
-a value of 0.5, when our theory suggests that the true mean is 0.2 is what 
-determines the probability that our theory is correct, given the sample. 
+The Galton board illustrates one of the most fundamental and important ideas
+in statistics in a beautiful way.
