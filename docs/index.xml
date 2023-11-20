@@ -83,6 +83,20 @@
   <pubDate>Wed, 01 Nov 2023 23:00:00 GMT</pubDate>
 </item>
 <item>
+  <title>What I wish I knew when I wrote my first neovim plugin</title>
+  <link>https://mackrics.com/blog/nvim-lua.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+ ]]></description>
+  <guid>https://mackrics.com/blog/nvim-lua.html</guid>
+  <pubDate>Wed, 01 Nov 2023 23:00:00 GMT</pubDate>
+</item>
+<item>
   <title>Introducing grid themes in {ricethemes}</title>
   <link>https://mackrics.com/blog/ricethemes-grid.html</link>
   <description><![CDATA[ 

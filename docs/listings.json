@@ -3,6 +3,7 @@
     "listing": "/index.html",
     "items": [
       "/blog/galton-board.html",
+      "/blog/nvim-lua.html",
       "/blog/ricethemes-grid.html",
       "/blog/ricethemes-intro.html",
       "/blog/joy-of-programming.html",
