@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Hello there,",
     "section": "",
-    "text": "Hello there,\nI am an quantitative analyst within competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\nI enjoy working on small side project to learn more about programming, such as:\n\nRicethemes: an R package with cool ggplot2 themes.\nNeoslime: a neovim plugin to send code from the editor to a nvim terminal\n\n\n\nBlog posts\n\n\n2023-12-19: What I wish I knew before I wrote my first Neovim plugin, part 1  2023-11-02: The Galton board  2023-10-19: Introducing grid themes in {ricethemes}  2023-09-21: Introducing {ricethemes}  2023-06-28: The joy of programming \n\n\nNo matching items\n\n\nView all"
+    "text": "Hello there,\nI am an quantitative analyst within competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\nI enjoy working on small side project to learn more about programming, such as:\n\nRicethemes: an R package with cool ggplot2 themes.\nNeoslime: a neovim plugin to send code from the editor to a neovim terminal.\n\n\n\nBlog posts\n\n\n2023-12-19: What I wish I knew before I wrote my first Neovim plugin, part 1  2023-11-02: The Galton board  2023-10-19: Introducing grid themes in {ricethemes}  2023-09-21: Introducing {ricethemes}  2023-06-28: The joy of programming \n\n\nNo matching items\n\n\nView all"
   },
   {
     "objectID": "blog/index.html",
