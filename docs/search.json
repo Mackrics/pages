@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Hello there,",
     "section": "",
-    "text": "Hello there,\nI am an quantitative analyst within competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\n\n\nBlog posts\n\n\n2023-12-19: What I wish I knew when I wrote my first Neovim plugin, part 1  2023-11-02: The Galton board  2023-10-19: Introducing grid themes in {ricethemes}  2023-09-21: Introducing {ricethemes}  2023-06-28: The joy of programming \n\n\nNo matching items\n\n\nView all"
+    "text": "Hello there,\nI am an quantitative analyst within competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\nI enjoy working on small side project to learn more about programming, such as:\n\nRicethemes: an R package with cool ggplot2 themes.\nNeoslime: a neovim plugin to send code from the editor to a nvim terminal\n\n\n\nBlog posts\n\n\n2023-12-19: What I wish I knew before I wrote my first Neovim plugin, part 1  2023-11-02: The Galton board  2023-10-19: Introducing grid themes in {ricethemes}  2023-09-21: Introducing {ricethemes}  2023-06-28: The joy of programming \n\n\nNo matching items\n\n\nView all"
   },
   {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "2023-12-19: What I wish I knew when I wrote my first Neovim plugin, part 1  2023-11-02: The Galton board  2023-10-19: Introducing grid themes in {ricethemes}  2023-09-21: Introducing {ricethemes}  2023-06-28: The joy of programming  2023-05-19: I’m starting a blog \n\n\nNo matching items"
+    "text": "2023-12-19: What I wish I knew before I wrote my first Neovim plugin, part 1  2023-11-02: The Galton board  2023-10-19: Introducing grid themes in {ricethemes}  2023-09-21: Introducing {ricethemes}  2023-06-28: The joy of programming  2023-05-19: I’m starting a blog \n\n\nNo matching items"
   },
   {
     "objectID": "blog/ricethemes-grid.html",
@@ -51,21 +51,21 @@
   {
     "objectID": "blog/nvim-lua.html",
     "href": "blog/nvim-lua.html",
-    "title": "What I wish I knew when I wrote my first Neovim plugin, part 1",
+    "title": "What I wish I knew before I wrote my first Neovim plugin, part 1",
     "section": "",
     "text": "I recently wrote my first Neovim plugin1 to learn more about how Neovim plugins work and to try to customize my development environment further. It was a bit difficult to get started with developing Neovim plugins and finding good resources, so I will try to summarize what I wish I knew before I got started."
   },
   {
     "objectID": "blog/nvim-lua.html#it-is-relatively-simple-to-call-lua-from-neovim",
     "href": "blog/nvim-lua.html#it-is-relatively-simple-to-call-lua-from-neovim",
-    "title": "What I wish I knew when I wrote my first Neovim plugin, part 1",
+    "title": "What I wish I knew before I wrote my first Neovim plugin, part 1",
     "section": "It is relatively simple to call Lua from Neovim",
     "text": "It is relatively simple to call Lua from Neovim\nI wanted to write a Neovim plugin for a long while, but postponed it since I thought it would be very difficult. However, Lua is relatively easy to learn and is quite similar to R/Python/Julia making it easy to learn if you come from a data science background. Furthermore, there a lot of Neovim apis which you can take advantage of when writing your plugin, most of which are well documented.\nLua is well integrated into Neovim and is pretty straightforward to call. In fact, you can call Lua directly from the Neovim command mode. The hello world example of this would be:\n:lua print('hello world')\nWhich is very similar to how you would do it in R/Python/Julia.\nIf you have already setup your init.lua file to configure Neovim, you can define Lua functions directly in your init.lua file. If you for example want to define a hello world function you can copy and paste the following in your init.lua:\nfunction hello(name)\n  local message = 'hello ' .. name .. '!' -- Two dots are used to glue strings\n  print(message)\nend\nWhich will then enable you to call the following from the Neovim command mode to print ‘hello world!’:\n:lua hello('world')\nDefining Lua functions and calling them directly from Neovim command mode is pretty straightforward and will hopefully empower you to start defining some functions yourself and dare to think about what types of functions you want to configure."
   },
   {
     "objectID": "blog/nvim-lua.html#footnotes",
     "href": "blog/nvim-lua.html#footnotes",
-    "title": "What I wish I knew when I wrote my first Neovim plugin, part 1",
+    "title": "What I wish I knew before I wrote my first Neovim plugin, part 1",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nYou can check it out here if you are interested: Mackrics/neoslime↩︎"
   }

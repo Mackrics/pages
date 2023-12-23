@@ -22,6 +22,11 @@ of statistical programming languages (primarily [R](https://www.r-project.org/))
 and other open source tools such as [Git](https://git-scm.com/), 
 [Quarto](https://quarto.org/), and shell scripting.
 
+I enjoy working on small side project to learn more about programming, such as:
+
+- [Ricethemes](https://github.com/Mackrics/ricethemes): an R package with cool ggplot2 themes.
+- [Neoslime](https://github.com/Mackrics/neoslime): a neovim plugin to send code from the editor to a nvim terminal
+
 # Blog posts
 :::{#blog}
 :::
