@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mackrics.com/index.html</loc>
-    <lastmod>2023-12-23T16:43:13.749Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mackrics.com/blog/index.html</loc>
-    <lastmod>2023-12-23T16:43:13.362Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mackrics.com/blog/ricethemes-grid.html</loc>
-    <lastmod>2023-12-23T16:43:11.141Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mackrics.com/blog/starting-blog.html</loc>
-    <lastmod>2023-12-23T16:43:06.143Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mackrics.com/blog/joy-of-programming.html</loc>
-    <lastmod>2023-12-23T16:43:05.962Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mackrics.com/blog/ricethemes-intro.html</loc>
-    <lastmod>2023-12-23T16:43:09.024Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mackrics.com/blog/galton-board.html</loc>
-    <lastmod>2023-12-23T16:43:13.158Z</lastmod>
+    <lastmod>2024-01-02T20:39:33.853Z</lastmod>
   </url>
   <url>
     <loc>https://mackrics.com/blog/nvim-lua.html</loc>
-    <lastmod>2023-12-23T16:43:13.552Z</lastmod>
+    <lastmod>2024-01-02T20:39:33.279Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mackrics.com/blog/galton-board.html</loc>
+    <lastmod>2024-01-02T20:39:32.847Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mackrics.com/blog/ricethemes-intro.html</loc>
+    <lastmod>2024-01-02T20:39:28.576Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mackrics.com/blog/joy-of-programming.html</loc>
+    <lastmod>2024-01-02T20:39:25.480Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mackrics.com/blog/starting-blog.html</loc>
+    <lastmod>2024-01-02T20:39:25.665Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mackrics.com/blog/ricethemes-grid.html</loc>
+    <lastmod>2024-01-02T20:39:30.708Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mackrics.com/blog/index.html</loc>
+    <lastmod>2024-01-02T20:39:33.076Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mackrics.com/blog/nvim-lua-folders.html</loc>
+    <lastmod>2024-01-02T20:39:33.646Z</lastmod>
   </url>
 </urlset>

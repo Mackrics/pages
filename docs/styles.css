@@ -27,6 +27,38 @@ a {
 	color: #cdd6f4;
 }
 
+.callout-header {
+  color: #cdd6f4;
+}
+
+
+div.callout-note.callout-style-default {
+  .callout-header {
+    background-color: #1e1e2e;
+  }
+}
+
+.callout-note {
+  color: #cdd6f4;
+}
+
+.callout-title-container {
+  background: #1e1e2e;
+}
+
+.align-content-center.d-flex.callout-header {
+  background: #1e1e2e;
+}
+
+div.callout-note.callout {
+  border-left-color: #89b4fa;
+}
+
+
+.callout-icon-container {
+  background: #1e1e2e;
+}
+
 h1::before{
 	content: "# ";
 	color: #f38ba8;

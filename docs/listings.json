@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/blog/nvim-lua-folders.html",
       "/blog/nvim-lua.html",
       "/blog/galton-board.html",
       "/blog/ricethemes-grid.html",
@@ -13,6 +14,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/nvim-lua-folders.html",
       "/blog/nvim-lua.html",
       "/blog/galton-board.html",
       "/blog/ricethemes-grid.html",
