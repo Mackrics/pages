@@ -63,7 +63,8 @@ require('hello')
 
 vim.api.nvim_create_user_command(
   'Hello',
-  'lua hello()'
+  'lua hello()',
+  {}
 )
 ```
 

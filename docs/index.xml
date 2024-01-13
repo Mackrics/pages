@@ -121,8 +121,13 @@ background-color: null;
 font-style: inherit;">,</span></span>
 <span id="cb3-5">  <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'lua hello()'</span></span>
-<span id="cb3-6"><span class="op" style="color: #5E5E5E;
+font-style: inherit;">'lua hello()'</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb3-6">  <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{}</span></span>
+<span id="cb3-7"><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <p>This will then export the lua function so that it can be called from the Neovim command mode as <code>Hello</code>.</p>

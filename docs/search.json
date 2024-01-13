@@ -88,6 +88,6 @@
     "href": "blog/nvim-lua-folders.html#plugin",
     "title": "What I wish I knew before I wrote my first Neovim plugin, part 2",
     "section": "./plugin/",
-    "text": "./plugin/\nThe plugin directory is what is loaded by the package manager. The main purpose of the files here is to source the required lua functions and define the user-facing functions. You can think of this as the “init.lua” of your package.\nAs an example, if we want to export the hello world function we defined in ./lua/hello.lua.\nrequire('hello')\n\nvim.api.nvim_create_user_command(\n  'Hello',\n  'lua hello()'\n)\nThis will then export the lua function so that it can be called from the Neovim command mode as Hello.\nCongratulations, you now have a minimal viable package which can be installed from your favorite Neovim package manager."
+    "text": "./plugin/\nThe plugin directory is what is loaded by the package manager. The main purpose of the files here is to source the required lua functions and define the user-facing functions. You can think of this as the “init.lua” of your package.\nAs an example, if we want to export the hello world function we defined in ./lua/hello.lua.\nrequire('hello')\n\nvim.api.nvim_create_user_command(\n  'Hello',\n  'lua hello()',\n  {}\n)\nThis will then export the lua function so that it can be called from the Neovim command mode as Hello.\nCongratulations, you now have a minimal viable package which can be installed from your favorite Neovim package manager."
   }
 ]
