@@ -1,5 +1,5 @@
 ---
-title: What I wish I knew before I wrote my first Neovim plugin, part 1
+title: "Neovim plugins: calling lua"
 date: 2023-12-19
 date-format: iso
 draft: false

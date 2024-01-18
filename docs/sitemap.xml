@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mackrics.com/index.html</loc>
-    <lastmod>2024-01-13T10:23:22.103Z</lastmod>
+    <lastmod>2024-01-18T15:16:52.160Z</lastmod>
   </url>
   <url>
     <loc>https://mackrics.com/blog/nvim-lua.html</loc>
-    <lastmod>2024-01-13T10:23:21.527Z</lastmod>
+    <lastmod>2024-01-18T15:16:51.940Z</lastmod>
   </url>
   <url>
     <loc>https://mackrics.com/blog/galton-board.html</loc>
@@ -34,6 +34,6 @@
   </url>
   <url>
     <loc>https://mackrics.com/blog/nvim-lua-folders.html</loc>
-    <lastmod>2024-01-13T10:23:21.886Z</lastmod>
+    <lastmod>2024-01-18T15:16:18.443Z</lastmod>
   </url>
 </urlset>

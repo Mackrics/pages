@@ -4,26 +4,26 @@
     "href": "index.html",
     "title": "Hello there,",
     "section": "",
-    "text": "Hello there,\nI am an quantitative analyst within competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\nI enjoy working on small side project to learn more about programming, such as:\n\nRicethemes: an R package with cool ggplot2 themes.\nNeoslime: a neovim plugin to send code from the editor to a neovim terminal.\n\n\n\nBlog posts\n\n\n2024-01-02: What I wish I knew before I wrote my first Neovim plugin, part 2  2023-12-19: What I wish I knew before I wrote my first Neovim plugin, part 1  2023-11-02: The Galton board  2023-10-19: Introducing grid themes in {ricethemes}  2023-09-21: Introducing {ricethemes} \n\n\nNo matching items\n\n\nView all"
+    "text": "Hello there,\nI am an quantitative analyst within competition economics. I enjoy solving quantitative problems and automating “boring tasks” using my in-depth knowledge of statistical programming languages (primarily R) and other open source tools such as Git, Quarto, and shell scripting.\nI enjoy working on small side project to learn more about programming, such as:\n\nRicethemes: an R package with cool ggplot2 themes.\nNeoslime: a neovim plugin to send code from the editor to a neovim terminal.\n\n\n\nBlog posts\n\n\n2024-01-02: Neovim plugins: the folders  2023-12-19: Neovim plugins: calling lua  2023-11-02: The Galton board  2023-10-19: Introducing grid themes in {ricethemes}  2023-09-21: Introducing {ricethemes} \n\n\nNo matching items\n\n\nView all"
   },
   {
     "objectID": "blog/nvim-lua.html",
     "href": "blog/nvim-lua.html",
-    "title": "What I wish I knew before I wrote my first Neovim plugin, part 1",
+    "title": "Neovim plugins: calling lua",
     "section": "",
     "text": "I recently wrote my first Neovim plugin1 to learn more about how Neovim plugins work and to try to customize my development environment further. It was a bit difficult to get started with developing Neovim plugins and finding good resources, so I will try to summarize what I wish I knew before I got started."
   },
   {
     "objectID": "blog/nvim-lua.html#it-is-relatively-simple-to-call-lua-from-neovim",
     "href": "blog/nvim-lua.html#it-is-relatively-simple-to-call-lua-from-neovim",
-    "title": "What I wish I knew before I wrote my first Neovim plugin, part 1",
+    "title": "Neovim plugins: calling lua",
     "section": "It is relatively simple to call Lua from Neovim",
     "text": "It is relatively simple to call Lua from Neovim\nI wanted to write a Neovim plugin for a long while, but postponed it since I thought it would be very difficult. However, Lua is relatively easy to learn and is quite similar to R/Python/Julia making it easy to learn if you come from a data science background. Furthermore, there a lot of Neovim apis which you can take advantage of when writing your plugin, most of which are well documented.\nLua is well integrated into Neovim and is pretty straightforward to call. In fact, you can call Lua directly from the Neovim command mode. The hello world example of this would be:\n:lua print('hello world')\nWhich is very similar to how you would do it in R/Python/Julia.\nIf you have already setup your init.lua file to configure Neovim, you can define Lua functions directly in your init.lua file. If you for example want to define a hello world function you can copy and paste the following in your init.lua:\nfunction hello(name)\n  local message = 'hello ' .. name .. '!' -- Two dots are used to glue strings\n  print(message)\nend\nWhich will then enable you to call the following from the Neovim command mode to print ‘hello world!’:\n:lua hello('world')\nDefining Lua functions and calling them directly from Neovim command mode is pretty straightforward and will hopefully empower you to start defining some functions yourself and dare to think about what types of functions you want to configure."
   },
   {
     "objectID": "blog/nvim-lua.html#footnotes",
     "href": "blog/nvim-lua.html#footnotes",
-    "title": "What I wish I knew before I wrote my first Neovim plugin, part 1",
+    "title": "Neovim plugins: calling lua",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nYou can check it out here if you are interested: Mackrics/neoslime↩︎"
   },
@@ -72,21 +72,21 @@
   {
     "objectID": "blog/nvim-lua-folders.html",
     "href": "blog/nvim-lua-folders.html",
-    "title": "What I wish I knew before I wrote my first Neovim plugin, part 2",
+    "title": "Neovim plugins: the folders",
     "section": "",
     "text": "Note\n\n\n\nThis is a blog post in my series about what I wish I knew before I wrote my first Neovim plugin. If you have not already read part 1, check it out here.\nOne of the most difficult things for me to find information about for my first Neovim plugin, was how I would go from a function in init.lua, to a full-blown package which I could install from my plugin manager. In particular, it was difficult to understand the folder structure of the different packages I studied.\nIt turns out that the process is very similar to how you would do it for other programming languages when writing a package. There are only two directories required: ./lua/ and ./plugin/."
   },
   {
     "objectID": "blog/nvim-lua-folders.html#lua",
     "href": "blog/nvim-lua-folders.html#lua",
-    "title": "What I wish I knew before I wrote my first Neovim plugin, part 2",
+    "title": "Neovim plugins: the folders",
     "section": "./lua/",
     "text": "./lua/\nThe lua directory contains the lua functions of your package. You could put all the functions in a single file, but it is good practice to factor out functions into separate files, or at least group similar functions into a single file.\nAs an example, let’s say that the content of ./lua/hello.lua is:\nfunction hello()\n  local message = 'hello, world!'\n  print(message)\nend\nI.e, it defines the lua function hello()"
   },
   {
     "objectID": "blog/nvim-lua-folders.html#plugin",
     "href": "blog/nvim-lua-folders.html#plugin",
-    "title": "What I wish I knew before I wrote my first Neovim plugin, part 2",
+    "title": "Neovim plugins: the folders",
     "section": "./plugin/",
     "text": "./plugin/\nThe plugin directory is what is loaded by the package manager. The main purpose of the files here is to source the required lua functions and define the user-facing functions. You can think of this as the “init.lua” of your package.\nAs an example, if we want to export the hello world function we defined in ./lua/hello.lua.\nrequire('hello')\n\nvim.api.nvim_create_user_command(\n  'Hello',\n  'lua hello()',\n  {}\n)\nThis will then export the lua function so that it can be called from the Neovim command mode as Hello.\nCongratulations, you now have a minimal viable package which can be installed from your favorite Neovim package manager."
   }
