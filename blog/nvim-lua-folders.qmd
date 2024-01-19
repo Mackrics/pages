@@ -21,7 +21,7 @@ It turns out that the process is very similar to how you would do it for other
 programming languages when writing a package. There are only two
 directories required: `./lua/` and `./plugin/`.
 
-``` sh
+```sh
 .
 ├── lua
 │   ├── first-function.lua
