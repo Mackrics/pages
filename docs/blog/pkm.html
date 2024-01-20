@@ -202,8 +202,7 @@ This makes it easier to save ideas and make the most of your work. I suggest mak
 <div class="cell-output-display">
 <div>
 <div>
-<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '30px'}}}%%
-%%{init: {"flowchart": {"htmlLabels": false}} }%%
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '1rem'}}}%%
 
 flowchart TD
 subgraph Input
@@ -218,7 +217,6 @@ subgraph Input
   end
   subgraph Process
     direction LR
-    %%{init:{'theme':'forest'}}%%
     A  --&gt; O(Omnivore)
     B  --&gt; L(Libera)
     R  --&gt; M(Miniflux)
@@ -232,17 +230,17 @@ subgraph Input
     E --&gt; N
     V --&gt; N
   end
-  subgraph Production["`**Production**`"]
+  subgraph Production["Production"]
     N --&gt; NA(Next action)
     N --&gt; SM(Someday maybe)
     N --&gt; PRO(Project note)
     N --&gt; ZK(Zettelkasten)
   end
-  classDef Process fill:#fab387,stroke:#333, color: red
+  classDef Process fill:#fab387,size:20px,stroke:#333
   class Process Process;
   classDef Production fill:#a6e3a1,stroke:#333
   class Production Production;
-  classDef Input fill:#f38ba8,stroke:#333
+  classDef Input color:#f38ba8,padding-top:20em,stroke:#333
   class Input Input;
 
 </pre>

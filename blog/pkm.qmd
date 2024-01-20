@@ -77,8 +77,7 @@ Input -> Processing -> Production -> Consumption
 ```{mermaid}
 %%| fig-align: center
 
-%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '30px'}}}%%
-%%{init: {"flowchart": {"htmlLabels": false}} }%%
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '1rem'}}}%%
 
 flowchart TD
 subgraph Input
@@ -93,7 +92,6 @@ subgraph Input
   end
   subgraph Process
     direction LR
-    %%{init:{'theme':'forest'}}%%
     A  --> O(Omnivore)
     B  --> L(Libera)
     R  --> M(Miniflux)
@@ -107,17 +105,17 @@ subgraph Input
     E --> N
     V --> N
   end
-  subgraph Production["`**Production**`"]
+  subgraph Production["Production"]
     N --> NA(Next action)
     N --> SM(Someday maybe)
     N --> PRO(Project note)
     N --> ZK(Zettelkasten)
   end
-  classDef Process fill:#fab387,stroke:#333, color: red
+  classDef Process fill:#fab387,size:20px,stroke:#333
   class Process Process;
   classDef Production fill:#a6e3a1,stroke:#333
   class Production Production;
-  classDef Input fill:#f38ba8,stroke:#333
+  classDef Input color:#f38ba8,padding-top:20em,stroke:#333
   class Input Input;
 
 ```

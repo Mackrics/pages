@@ -48,3 +48,4 @@ format:
     bibliography: ./references.bib
     highlight-style: ctp-mocha.theme
     fig-cap-location: top
+    code-oveflow: wrap
