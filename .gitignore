@@ -54,3 +54,4 @@ rsconnect/
 
 /.quarto/
 github
+*.html
