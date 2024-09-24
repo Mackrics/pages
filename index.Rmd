@@ -29,7 +29,30 @@ I enjoy working on small side project to learn more about programming, such as:
 - [Neoslime](https://github.com/Mackrics/neoslime): a neovim plugin to send
   code from the editor to a neovim terminal.
 
+
 # Blog posts
-:::{#blog}
-:::
-[View all](./blog/index.qmd)
+
+```{r}
+#| results = 'asis',
+#| echo = FALSE
+
+fs::dir_ls("blog", regex = "*.Rmd") |>
+  data.table(path = _) |>
+  copy() |>
+  _[path != "blog/index.Rmd"] |>
+  _[, let(
+      params = lapply(path, rmarkdown::yaml_front_matter)
+    )] |>
+  _[, let(
+        date = as.Date(purrr::map_chr(params, \(x) x[[ "date" ]])),
+        title = purrr::map_chr(params, \(x) x[[ "title" ]]),
+	link = stringr::str_replace(path, "Rmd", "html")
+  )] |>
+  _[order(-date), let(
+    print = purrr::pmap_chr(list(date, title, link), \(date, title, link) glue::glue("\n\n**{date}**: [{title}]({link})\n\n")))
+  ][, print] |>
+  head(5) |>
+  cat()
+```
+
+[View all](./blog/index.html)
