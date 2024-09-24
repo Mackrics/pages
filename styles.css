@@ -8,13 +8,24 @@
 }
 
 body {
-		font-family: 'IBM Plex Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #11111b;
 }
 
 
 a { 
-	color: #8aadf4;
-	text-decoration: none;
+  color: #89b4fa;
+  text-decoration: none;
+}
+
+code { 
+  color: #89b4fa;
+  background-code: #1e1e2e;
+  text-decoration: none;
+}
+
+li, p, h1, h2, h3, h4, h5 {
+  color: #cdd6f4
 }
 
 .blockquote { 

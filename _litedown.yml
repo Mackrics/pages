@@ -1,10 +1,10 @@
 ---
 site:
-  rebuild: "outdated"
+  rebuild: "always"
   pattern: "[.]R?md$"
 output:
   litedown::html_format:
     meta:
-      css: ["styles.css", "@default"]
+      css: ["styles.css", "../styles.css"]
       include_before: "[Home](/index.html) [Blog](/blog/index.html)"
 ---

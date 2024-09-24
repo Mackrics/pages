@@ -1,21 +1,9 @@
 ---
-listing: 
-  - id: blog
-    contents: 
-      - "blog"
-      - "!blog/index.qmd"
-    template: blog-listing.ejs
-    type: table
-    sort: "date desc"
-    date-format: "YYYY-MM-DD"
-    fields: [date, title]
-    sort-ui: false
-    filter-ui: false
-    feed: true
-    max-items: 5
+title: Mackrics
 ---
 
 # Hello there,
+
 I am an quantitative analyst within competition economics. I enjoy solving 
 quantitative problems and automating "boring tasks" using my in-depth knowledge 
 of statistical programming languages (primarily [R](https://www.r-project.org/))
