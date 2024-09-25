@@ -5,6 +5,12 @@ site:
 output:
   litedown::html_format:
     meta:
-      css: ["styles.css", "../styles.css"]
-      include_before: "[Home](/index.html) [Blog](/blog/index.html)"
+      css: ["https://prismjs.catppuccin.com/mocha.css", "../styles.css"]
+      js: "prism.js"
+      include_before: "[Home](/index.html)"
+      include_after: ""
+    options:
+      js_highlight:
+        package: prism
+      toc: false
 ---

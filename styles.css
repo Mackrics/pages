@@ -20,8 +20,16 @@ a {
 
 code { 
   color: #89b4fa;
-  background-code: #1e1e2e;
   text-decoration: none;
+  margin: 0px;
+}
+
+pre {
+  margin: 30px; 
+  border-radius: 10px; 
+  background-color: #1e1e2e; 
+  padding: 10px; 
+  border: 1px solid #a6adc8; 
 }
 
 li, p, h1, h2, h3, h4, h5 {
@@ -84,3 +92,11 @@ h3::before{
 	content: "### ";
 	color: #f38ba8;
 }
+
+html {
+    max-width: 800px; /* Adjust as needed */
+    width: 100%; /* Full width on smaller screens */
+    margin: 0 auto; /* Center the article */
+    padding: 20px; /* Add some padding */
+}
+
