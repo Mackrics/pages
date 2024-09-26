@@ -1,14 +1,12 @@
 @font-face {
-  font-family: "IBM Plex Mono";
-  src: url("media/plex/IBMPlexMono-Regular.woff2") format("woff2"),
-	url("media/plex/IBMPlexMono-Regular.woff")
-      format("woff");
+  font-family: "IBM Blex mono";
+  src: url("./media/blex/BlexmonoNerdFont-Regular.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'IBM Blex mono', monospace;
   background-color: #11111b;
 }
 
@@ -94,9 +92,9 @@ h3::before{
 }
 
 html {
+    font-family: 'IBM Blex mono', monospace;
     max-width: 800px; /* Adjust as needed */
     width: 100%; /* Full width on smaller screens */
     margin: 0 auto; /* Center the article */
     padding: 20px; /* Add some padding */
 }
-
