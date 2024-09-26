@@ -28,6 +28,8 @@ I enjoy working on small side project to learn more about programming, such as:
 #| results = 'asis',
 #| echo = FALSE
 
+library(data.table)
+
 gen_blogroll <- function(nrow) {
   fs::dir_ls("blog", regex = "*.Rmd") |>
   data.table(path = _) |>
