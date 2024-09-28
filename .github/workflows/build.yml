@@ -28,7 +28,8 @@ jobs:
           }
           lib <- Sys.getenv("R_LIBS_SITE")
           if (lib == "") {
-            lib <- file.path(dirname(.Library), "site-library")
+            lib <- file.path(Sys.getenv("HOME"), "R", "site-library")  # Use a writable path
+            dir.create(lib, recursive = TRUE, showWarnings = FALSE)  # Create the directory if it doesn't exist
             cat(sprintf("R_LIBS_SITE=%s\n", lib), file = Sys.getenv("GITHUB_ENV"), append = TRUE)
             cat(sprintf("R_LIB_FOR_PAK=%s\n", lib), file = Sys.getenv("GITHUB_ENV"), append = TRUE)
             message("Setting R_LIBS_SITE to ", lib)
