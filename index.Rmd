@@ -6,6 +6,13 @@ output:
       css: ["index-style.css", "styles.css", "https://prismjs.catppuccin.com/mocha.css"]
 ---
 
+::: {.callout-warning}
+
+**This is the development version of my website**
+
+Please go to <https://mackrics.com/> for the main version.
+:::
+
 ```{r, setup}
 #| echo = FALSE,
 #| message = FALSE

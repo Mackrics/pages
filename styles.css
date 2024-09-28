@@ -124,3 +124,20 @@ blockquote {
   background-color: #1e1e2e;
   margin: 30px; 
 }
+
+.callout-warning {
+  background-color: #1e1e2e;
+  padding: 10px; 
+  border: 1px solid #f38ba8; 
+  border-radius: 5px;
+  margin: 30px; 
+}
+
+.callout-warning p {
+  color: #f38ba8;
+}
+
+.callout-warning a {
+  color: #f38ba8;
+  text-decoration: underline;
+}
