@@ -20,8 +20,7 @@ jobs:
 
       - name: Install pak package and project dependencies
         run: |
-          Rscript -e 'Sys.setenv(PKG_SYSREQS = "false"); 
-                       install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch)); 
+          sudo Rscript -e 'install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch)); 
                        pak::lockfile_install()'
 
       - name: Render Markdown and Generate RSS Feed
