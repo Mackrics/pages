@@ -25,7 +25,7 @@ jobs:
       run: |
         Rscript -e 'install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch))'
     - name: Install dependencies from lockfile
-      run: R -e "pak::install_lockfile()"
+      run: R -e "pak::lockfile_install()"
 
     - name: Run litedown fuse
       run: R -e "litedown::fuse::site()"
