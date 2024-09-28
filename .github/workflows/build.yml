@@ -18,10 +18,24 @@ jobs:
         with:
           R-version: '4.4.1'  
 
-      - name: Install pak package and project dependencies
+      - name: Install pak (Unix)
+        if: ${{ runner.os != 'Windows' && inputs.pak-version != 'none' }}
         run: |
-          sudo Rscript -e 'install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch)); 
-                       pak::lockfile_install()'
+          echo "::group::Install pak"
+          if which sudo >/dev/null; then SUDO="sudo -E --preserve-env=PATH env"; else SUDO=""; fi
+          $SUDO R -q -e 'dir.create(Sys.getenv("R_LIB_FOR_PAK"), recursive = TRUE, showWarnings = FALSE)'
+          $SUDO R -q -e 'install.packages("pak", lib = Sys.getenv("R_LIB_FOR_PAK"), repos = sprintf("https://r-lib.github.io/p/pak/%s/%s/%s/%s", "${{ inputs.pak-version }}", .Platform$pkgType, R.Version()$os, R.Version()$arch))'
+          echo "::endgroup::"
+        shell: bash
+
+      - name: Install dependencies
+        run: |
+          cat("::group::Install/update packages\n")
+          Sys.setenv("PKGCACHE_HTTP_VERSION" = "2")
+          library(pak, lib.loc = Sys.getenv("R_LIB_FOR_PAK"))
+          pak::lockfile_install()
+          cat("::endgroup::\n")
+        shell: Rscript {0}
 
       - name: Render Markdown and Generate RSS Feed
         run: |
