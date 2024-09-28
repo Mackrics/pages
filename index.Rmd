@@ -18,6 +18,8 @@ source("./R/gen_rss_feed.R")
 
 I'm a R programmer and economist who enjoy exploring open source software.
 
+Here are some programs I've written:
+
 - [Ricethemes](https://github.com/Mackrics/ricethemes): an R package with cool
   ggplot2 themes.
 - [Neoslime](https://github.com/Mackrics/neoslime): a neovim plugin to send
