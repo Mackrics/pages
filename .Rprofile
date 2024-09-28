@@ -1,1 +1,1 @@
-source("renv/activate.R")
+options(help_type = "html")
