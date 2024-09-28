@@ -18,15 +18,11 @@ jobs:
         with:
           R-version: '4.4.1'  # Specify R version 4.4.1
 
-      - name: Install pak package
-        env:
-          PKG_SYSREQS: true  # Set environment variable to allow pak to install system requirements
+      - name: Install pak package and project dependencies
         run: |
-          Rscript -e 'install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch))'
-
-      - name: Install project dependencies
-        run: |
-          Rscript -e 'pak::lockfile_install()'
+          Rscript -e 'Sys.setenv(PKG_SYSREQS = "true"); 
+                       install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch)); 
+                       pak::lockfile_install()'
 
       - name: Render Markdown and Generate RSS Feed
         run: |
