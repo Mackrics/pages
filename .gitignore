@@ -55,3 +55,7 @@ rsconnect/
 /.quarto/
 github
 *.Rmd
+*.md
+*.yml
+*.R
+R/
