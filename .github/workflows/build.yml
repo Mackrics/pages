@@ -23,12 +23,9 @@ jobs:
 
     - name: Install pak
       run: |
-        Rscript -e 'install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch));
-        pak::lockfile_install()'
-
-    - name: Run litedown fuse
-      run: R -e "litedown::fuse::site()"
-
+        sudo Rscript -e 'install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch));
+        pak::lockfile_install();
+        litedown::fuse_site()'
     - name: Checkout deploy branch
       run: git checkout deploy
 
