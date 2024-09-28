@@ -5,8 +5,9 @@ title: All blog posts
 ```{r}
 #| results = 'asis',
 #| echo = FALSE
+source(here::"packages.R")
 
-fs::dir_ls(here::here("blog"), regex = "*.Rmd") |>
+dir_ls(here::here("blog"), regex = "*.Rmd") |>
   data.table(path = _) |>
   copy() |>
   _[!stringr::str_detect(path, "blog/index.Rmd")] |>
