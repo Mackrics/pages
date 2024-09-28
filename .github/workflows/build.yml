@@ -22,7 +22,7 @@ jobs:
 
     - name: install sysreqss
       run:
-        sudo apt-get update
+        sudo apt-get update;
         sudo apt-get install -y fontconfig freetype cairo libpng libcurl openssl make pandoc v8 libxml2
     - name: Install pak
       run: |
