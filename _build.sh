@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-Rscript -e 'pak::pkg_install()'
+Rscript -e 'pak::lockfile_install()'
 Rscript -e 'litedown::fuse_site()'
 Rscript -e '
 source("R/gen_rss_feed.R")
