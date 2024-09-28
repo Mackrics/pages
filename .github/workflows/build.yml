@@ -18,11 +18,10 @@ jobs:
         with:
           R-version: '4.4.1' 
           using: "composite"
+
       - name: Set site library path
         run: |
-          # Set site library path
-          cat("::group::Set site library path\n")
-          if (Sys.getenv("RENV_PROJECT") != "") {
+          Rscript -e 'if (Sys.getenv("RENV_PROJECT") != "") {
             message("renv project detected, no need to set R_LIBS_SITE")
             cat(sprintf("R_LIB_FOR_PAK=%s\n", .libPaths()[1]), file = Sys.getenv("GITHUB_ENV"), append = TRUE)
             q("no")
@@ -37,33 +36,29 @@ jobs:
             message("R_LIBS_SITE is already set to ", lib)
             cat(sprintf("R_LIB_FOR_PAK=%s\n", strsplit(lib, .Platform$path.sep)[[1]][[1]]), file = Sys.getenv("GITHUB_ENV"), append = TRUE)
           }
-          if (nchar("${{ env.R_LIBS_USER && 'ok' || '' }}") == 0) {
+          if (nchar(Sys.getenv("R_LIBS_USER")) == 0) {
             message("R_LIBS_USER GH env var is unset, setting now: ", Sys.getenv("R_LIBS_USER"))
             cat(sprintf("R_LIBS_USER=%s\n", Sys.getenv("R_LIBS_USER")), file = Sys.getenv("GITHUB_ENV"), append = TRUE)
           } else {
             message("R_LIBS_USER GH env var is already set: ", Sys.getenv("R_LIBS_USER"))
-          }
-          cat("::endgroup::\n")
-        shell: Rscript {0}
-
+          }'
 
       - name: Install pak
         run: |
           echo "::group::Install pak"
-          if which sudo >/dev/null; then SUDO="sudo -E --preserve-env=PATH env"; else SUDO=""; fi
-          $SUDO R -q -e 'dir.create(Sys.getenv("R_LIB_FOR_PAK"), recursive = TRUE, showWarnings = FALSE)'
-          $SUDO R -q -e 'install.packages("pak", lib = Sys.getenv("R_LIB_FOR_PAK"), repos = sprintf("https://r-lib.github.io/p/pak/%s/%s/%s/%s", "${{ inputs.pak-version }}", .Platform$pkgType, R.Version()$os, R.Version()$arch))'
+          R -q -e 'dir.create(Sys.getenv("R_LIB_FOR_PAK"), recursive = TRUE, showWarnings = FALSE)'
+          R -q -e 'install.packages("pak", lib = Sys.getenv("R_LIB_FOR_PAK"), repos = "https://r-lib.github.io/p/pak/latest")'
           echo "::endgroup::"
         shell: bash
 
       - name: Install dependencies
         run: |
-          cat("::group::Install/update packages\n")
-          Sys.setenv("PKGCACHE_HTTP_VERSION" = "2")
-          library(pak, lib.loc = Sys.getenv("R_LIB_FOR_PAK"))
-          pak::lockfile_install()
-          cat("::endgroup::\n")
-        shell: Rscript {0}
+          Rscript -e 'message("::group::Install/update packages")'
+          Rscript -e 'Sys.setenv("PKGCACHE_HTTP_VERSION" = "2")'
+          Rscript -e 'library(pak, lib.loc = Sys.getenv("R_LIB_FOR_PAK"))'
+          Rscript -e 'pak::lockfile_install()'
+          Rscript -e 'message("::endgroup::")'
+        shell: bash
 
       - name: Render Markdown and Generate RSS Feed
         run: |
@@ -76,11 +71,4 @@ jobs:
           '
 
       - name: Commit and push changes to deploy branch
-        run: |
-          git config --local user.email "hello@mackrics.com"
-          git config --local user.name "mackrics"
-          git add .
-          git commit -m "Update site"
-          git push origin HEAD:deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run:
