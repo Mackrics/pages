@@ -16,10 +16,38 @@ jobs:
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
         with:
-          R-version: '4.4.1'  
+          R-version: '4.4.1' 
+          using: "composite"
+      - name: Set site library path
+        run: |
+          # Set site library path
+          cat("::group::Set site library path\n")
+          if (Sys.getenv("RENV_PROJECT") != "") {
+            message("renv project detected, no need to set R_LIBS_SITE")
+            cat(sprintf("R_LIB_FOR_PAK=%s\n", .libPaths()[1]), file = Sys.getenv("GITHUB_ENV"), append = TRUE)
+            q("no")
+          }
+          lib <- Sys.getenv("R_LIBS_SITE")
+          if (lib == "") {
+            lib <- file.path(dirname(.Library), "site-library")
+            cat(sprintf("R_LIBS_SITE=%s\n", lib), file = Sys.getenv("GITHUB_ENV"), append = TRUE)
+            cat(sprintf("R_LIB_FOR_PAK=%s\n", lib), file = Sys.getenv("GITHUB_ENV"), append = TRUE)
+            message("Setting R_LIBS_SITE to ", lib)
+          } else {
+            message("R_LIBS_SITE is already set to ", lib)
+            cat(sprintf("R_LIB_FOR_PAK=%s\n", strsplit(lib, .Platform$path.sep)[[1]][[1]]), file = Sys.getenv("GITHUB_ENV"), append = TRUE)
+          }
+          if (nchar("${{ env.R_LIBS_USER && 'ok' || '' }}") == 0) {
+            message("R_LIBS_USER GH env var is unset, setting now: ", Sys.getenv("R_LIBS_USER"))
+            cat(sprintf("R_LIBS_USER=%s\n", Sys.getenv("R_LIBS_USER")), file = Sys.getenv("GITHUB_ENV"), append = TRUE)
+          } else {
+            message("R_LIBS_USER GH env var is already set: ", Sys.getenv("R_LIBS_USER"))
+          }
+          cat("::endgroup::\n")
+        shell: Rscript {0}
 
-      - name: Install pak (Unix)
-        if: ${{ runner.os != 'Windows' && inputs.pak-version != 'none' }}
+
+      - name: Install pak
         run: |
           echo "::group::Install pak"
           if which sudo >/dev/null; then SUDO="sudo -E --preserve-env=PATH env"; else SUDO=""; fi
