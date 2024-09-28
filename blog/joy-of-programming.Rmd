@@ -3,7 +3,7 @@ title: The joy of programming
 date: 2023-06-28
 ---
 
-> We don’t really know where this goes -- and I’m not sure we really care. @bobross
+> We don’t really know where this goes -- and I’m not sure we really care.
 
 
 During the 80s and 90s there was a popular television show called "the joy of
@@ -19,7 +19,7 @@ this is the best approach, especially when performance is critical or when time
 is of essence. There is, however, certain circumstances in which we can
 take these moments to pursue *"the joy of programming"*
 
-> We don't make mistakes, just happy little accidents. @bobross
+> We don't make mistakes, just happy little accidents.
 
 The joy of programming is when you try to solve a relatively simple problem by
 writing a happy little program. It could be a script which checks the weather,
@@ -27,7 +27,7 @@ an application which converts currencies, or a dashboard where you analyze your
 gym routine. These "products" do not need to be perfect and will likely not
 be used by anyone but you. 
 
-> Let's build some happy little trees. @bobross
+> Let's build some happy little trees.
 
 These happy little programs are the perfect opportunity for you to learn
 something new and embrace the mindfulness of programming. Writing a program 
@@ -48,4 +48,4 @@ identifying a problem, and continuously adding features which makes it better
 and better. It is about becoming a better programmer and appreciating the *art*
 of programming.
 
-> We artists are a different breed of people. We’re a happy bunch. @bobross
+> We artists are a different breed of people. We’re a happy bunch.
