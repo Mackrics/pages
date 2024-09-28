@@ -49,7 +49,6 @@ jobs:
           R -q -e 'dir.create(Sys.getenv("R_LIB_FOR_PAK"), recursive = TRUE, showWarnings = FALSE)'
           R -q -e 'install.packages("pak", lib = Sys.getenv("R_LIB_FOR_PAK"), repos = "https://r-lib.github.io/p/pak/latest")'
           echo "::endgroup::"
-        shell: bash
 
       - name: Install dependencies
         run: |
@@ -58,7 +57,6 @@ jobs:
           Rscript -e 'library(pak, lib.loc = Sys.getenv("R_LIB_FOR_PAK"))'
           Rscript -e 'pak::lockfile_install()'
           Rscript -e 'message("::endgroup::")'
-        shell: bash
 
       - name: Render Markdown and Generate RSS Feed
         run: |
@@ -71,4 +69,11 @@ jobs:
           '
 
       - name: Commit and push changes to deploy branch
-        run:
+        run: |
+          git config --local user.email "hello@mackrics.com"
+          git config --local user.name "mackrics"
+          git add .
+          git commit -m "Update site"
+          git push origin HEAD:deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
