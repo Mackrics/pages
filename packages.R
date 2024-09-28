@@ -6,10 +6,11 @@ library(ricethemes)
 library(fs)
 library(patchwork)
 
-pak::lockfile_create(c(
-  "litedown",
-  "data.table",
-  "here",
-  "ggplot2",
-  "mackrics/ricethemes"
-))
+#pak::lockfile_create(c(
+#  "litedown",
+#  "data.table",
+#  "here",
+#  "ggplot2",
+#  "patchwork",
+#  "mackrics/ricethemes"
+#))
