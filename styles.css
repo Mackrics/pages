@@ -87,8 +87,13 @@ h2::before{
 }
 
 h3::before{
-	content: "### ";
-	color: #f38ba8;
+  content: "### ";
+  color: #f38ba8;
+}
+
+.date h3::before{
+  content: "Published: ";
+  color: inherit;
 }
 
 html {
