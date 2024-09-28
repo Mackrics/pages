@@ -19,6 +19,8 @@ jobs:
           R-version: '4.4.1'  # Specify R version 4.4.1
 
       - name: Install pak package
+        env:
+          PKG_SYSREQS: true  # Set environment variable to allow pak to install system requirements
         run: |
           Rscript -e 'install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch))'
 
