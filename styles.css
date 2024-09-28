@@ -119,3 +119,8 @@ footer {
   text-align: center; 
   padding: 20px; 
 }
+
+blockquote {
+  background-color: #1e1e2e;
+  margin: 30px; 
+}
