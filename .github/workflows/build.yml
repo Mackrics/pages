@@ -3,7 +3,7 @@ name: Build Site
 on:
   push:
     branches:
-      - litedown  # Trigger the workflow on pushes to the litedown branch
+      - litedown  
 
 jobs:
   build:
@@ -11,12 +11,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3 
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
         with:
-          R-version: '4.4.1'  # Specify R version 4.4.1
+          R-version: '4.4.1'  
 
       - name: Install pak package and project dependencies
         run: |
