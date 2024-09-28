@@ -32,13 +32,13 @@ Enjoy!
 
 ```{r}
 #| results = 'asis',
+#| echo = FALSE,
+#| message = FALSE
 
 source(here::here("packages.R"))
 
-
-plotlist2 <-
-  list(ctp_mocha, ctp_macchiato, ctp_frappe, ctp_latte) |>
-  lapply(\(ctp_theme)
+list(ctp_mocha, ctp_macchiato, ctp_frappe, ctp_latte) |>
+  lapply(function(ctp_theme) {
     ggplot(cars) +
     aes(speed, dist) +
     geom_point(color = {{ ctp_theme }}[["yellow"]]) +
@@ -50,10 +50,9 @@ plotlist2 <-
     ) +
     theme_ctp_grid({{ ctp_theme }}) +
     labs(x = "Speed", y = "Distance")
-  )
+}) |>
+  wrap_plots() +
+  plot_annotation() & 
+  theme(plot.margin = margin(0, 0, 0, 0))  # Set overall plot margins to zero
 
-for (i in seq(1, length(plotlist2))) {
-  cat("\n\n#", names(plotlist2)[[ i ]], "\n")
-  print(plotlist2[[ i ]])
-}
 ```

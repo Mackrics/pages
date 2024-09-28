@@ -28,7 +28,9 @@ source(here::here("packages.R"))
 
 list(ctp_mocha, ctp_macchiato, ctp_frappe, ctp_latte) |>
   lapply(show_ctp_theme) |>
-  patchwork::wrap_plots()
+  patchwork::wrap_plots() +
+  plot_annotation() & 
+  theme(plot.margin = margin(0, 0, 0, 0))  # Set overall plot margins to zero
 ```
 
 The classic `cars` correlation plot looks something like this for the four
@@ -51,7 +53,9 @@ list(ctp_mocha, ctp_macchiato, ctp_frappe, ctp_latte) |>
     theme_ctp({{ ctp_theme }}) +
     labs(x = "Speed", y = "Distance")
   ) |>
-  patchwork::wrap_plots()
+  patchwork::wrap_plots() +
+  plot_annotation() & 
+  theme(plot.margin = margin(0, 0, 0, 0))  # Set overall plot margins to zero
 ```
 
 Any feedback or request is much appreciated, preferably as a GitHub issue in
