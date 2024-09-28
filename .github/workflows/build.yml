@@ -21,7 +21,7 @@ jobs:
       uses: r-lib/actions/setup-r@v2
 
     - name: install sysreqss
-      run: sudo apt-get -y install fontconfig freetype cairo libpng libcurl openssl make pandoc v8 libxml2
+      run: sudo apt install -y fontconfig freetype cairo libpng libcurl openssl make pandoc v8 libxml2
     - name: Install pak
       run: |
         sudo Rscript -e 'install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch));
