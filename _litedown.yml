@@ -8,7 +8,7 @@ output:
       css: ["https://prismjs.catppuccin.com/mocha.css", "../styles.css"]
       js: "prism.js"
       include_before: "[Home](/index.html)"
-      include_after: "[mastodon](https://fosstodon.org/@mackrics) | [email](mailto:hello@mackrics.com) | [pgp](./publickey.txt) | [rss](./index.xml) | [github](https://github.com/mackrics)"
+      include_after: "[Mastodon](https://fosstodon.org/@mackrics) | [Email](mailto:hello@mackrics.com) | [PGP](https://mackrics.com/publickey.txt) | [RSS](https://mackrics.com/index.xml) | [GitHub](https://github.com/mackrics)"
     options:
       js_highlight:
         package: prism
