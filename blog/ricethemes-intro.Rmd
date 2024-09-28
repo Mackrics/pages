@@ -1,7 +1,6 @@
 ---
 title: Introducing `{ricethemes}`
 date: 2023-09-21
-date-format: iso
 ---
 
 I've written a R package with popular desktop themes for `{ggplot2}`. The idea
@@ -25,35 +24,20 @@ themes, and functions to display the colors.
 ```{r}
 #| echo = FALSE
 
-library(ricethemes)
-library(ggplot2)
-library(tibble)
+source(here::here("packages.R"))
 
-plotlist <-
-  tibble(ctp_mocha, ctp_macchiato, ctp_frappe, ctp_latte) |>
-  lapply(show_ctp_theme)
-
-plotlist |>
+list(ctp_mocha, ctp_macchiato, ctp_frappe, ctp_latte) |>
+  lapply(show_ctp_theme) |>
   patchwork::wrap_plots()
-
-#for (i in seq(1, length(plotlist))) {
-#  cat("\n\n##", names(plotlist)[[ i ]], "\n")
-#  print(plotlist[[ i ]])
-#}
-
 ```
 
 The classic `cars` correlation plot looks something like this for the four
 flavors:
 
-# next
-
 ```{r}
-#| results = 'asis',
 #| echo = FALSE
 
-plotlist2 <-
-  tibble(ctp_mocha, ctp_macchiato, ctp_frappe, ctp_latte) |>
+list(ctp_mocha, ctp_macchiato, ctp_frappe, ctp_latte) |>
   lapply(\(ctp_theme)
     ggplot(cars) +
     aes(speed, dist) +
@@ -66,14 +50,8 @@ plotlist2 <-
     ) +
     theme_ctp({{ ctp_theme }}) +
     labs(x = "Speed", y = "Distance")
-  )
-
-plotlist2 |>
+  ) |>
   patchwork::wrap_plots()
-#for (i in seq(1, length(plotlist2))) {
-#  cat("\n\n#", names(plotlist2)[[ i ]], "\n")
-#  print(plotlist2[[ i ]])
-#}
 ```
 
 Any feedback or request is much appreciated, preferably as a GitHub issue in

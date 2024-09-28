@@ -1,8 +1,6 @@
 ---
 title: "Neovim plugins: the folders"
 date: 2024-01-02
-date-format: iso
-draft: false
 ---
 
 ::: {.callout-note}

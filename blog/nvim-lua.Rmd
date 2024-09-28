@@ -1,8 +1,6 @@
 ---
 title: "Neovim plugins: calling lua"
 date: 2023-12-19
-date-format: iso
-draft: false
 ---
 
 I recently wrote my first Neovim plugin[^1] to learn more about how Neovim plugins

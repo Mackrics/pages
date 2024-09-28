@@ -1,7 +1,6 @@
 ---
 title: Introducing grid themes in `{ricethemes}`
 date: 2023-10-19
-date-format: iso
 ---
 
 If you have not already checked out [`{ricethemes}`](https://github.com/mackrics/ricethemes),
@@ -32,17 +31,13 @@ Enjoy!
 
 
 ```{r}
-#| panel: tabset
-#| output: asis
-#| fig-align: center
-#| out-width: "100%"
-library(ricethemes)
-library(ggplot2)
-library(tibble)
+#| results = 'asis',
+
+source(here::here("packages.R"))
 
 
 plotlist2 <-
-  tibble(ctp_mocha, ctp_macchiato, ctp_frappe, ctp_latte) |>
+  list(ctp_mocha, ctp_macchiato, ctp_frappe, ctp_latte) |>
   lapply(\(ctp_theme)
     ggplot(cars) +
     aes(speed, dist) +
