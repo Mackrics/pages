@@ -23,7 +23,7 @@ jobs:
     - name: install sysreqss
       run:
         sudo apt-get update;
-        sudo apt-get install -y fontconfig freetype-devel libcairo2-dev libpng-dev libcurl4-openssl-dev openssl make pandoc v8 libxml2
+        sudo apt-get install -y fontconfig libfreetype6 libcairo2-dev libpng-dev libcurl4-openssl-dev openssl make pandoc libv8-dev libxml2
     - name: Install pak
       run: |
         sudo Rscript -e 'install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch));
