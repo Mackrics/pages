@@ -6,15 +6,17 @@ output:
       css: ["index-style.css", "styles.css", "https://prismjs.catppuccin.com/mocha.css"]
 ---
 
+```{r, setup}
+#| echo = FALSE,
+#| message = FALSE
+
+source(here::here("packages.R"))
+source("./R/gen_rss_feed.R")
+```
+
 # Hello there,
 
-I am an quantitative analyst within competition economics. I enjoy solving 
-quantitative problems and automating "boring tasks" using my in-depth knowledge 
-of statistical programming languages (primarily [R](https://www.r-project.org/))
-and other open source tools such as [Git](https://git-scm.com/), 
-[Quarto](https://quarto.org/), and shell scripting.
-
-I enjoy working on small side project to learn more about programming, such as:
+I'm a R programmer and economist who enjoy exploring open source software.
 
 - [Ricethemes](https://github.com/Mackrics/ricethemes): an R package with cool
   ggplot2 themes.
@@ -28,12 +30,10 @@ I enjoy working on small side project to learn more about programming, such as:
 #| results = 'asis',
 #| echo = FALSE
 
-library(data.table)
-
 gen_blogroll <- function(nrow) {
   fs::dir_ls("blog", regex = "*.Rmd") |>
   data.table(path = _) |>
-  copy() |>
+  data.table::copy() |>
   _[path != "blog/index.Rmd"] |>
   _[, let(
       params = lapply(path, rmarkdown::yaml_front_matter)
@@ -55,11 +55,3 @@ gen_blogroll(5)
 ```
 
 [View all](./blog/index.html)
-
-
-```r
-source("./R/gen_rss_feed.R")
-get_rss_items("https://mackrics.com/blog") |>
-  gen_feed("Mackrics", "https://mackrics.com/blog") |>
-  write("index.xml")
-```
