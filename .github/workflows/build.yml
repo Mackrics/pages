@@ -35,6 +35,6 @@ jobs:
         mkdir site
         rm *.Rmd
         mv *.html site
-        rm blog/*.Rmd
-        mv blog/*/** site
+        rm blog/*.Rmd -fr
+        mv blog/*/** site -fr
         mv *.txt site
