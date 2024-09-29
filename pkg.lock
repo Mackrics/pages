@@ -1231,6 +1231,46 @@
       "sysreqs_packages": {}
     },
     {
+      "ref": "fs",
+      "package": "fs",
+      "version": "1.6.4",
+      "type": "standard",
+      "direct": true,
+      "binary": false,
+      "dependencies": [],
+      "vignettes": false,
+      "needscompilation": true,
+      "metadata": {
+        "RemoteType": "standard",
+        "RemotePkgRef": "fs",
+        "RemoteRef": "fs",
+        "RemoteRepos": "https://cran.rstudio.com",
+        "RemotePkgPlatform": "source",
+        "RemoteSha": "1.6.4"
+      },
+      "sources": ["https://cran.rstudio.com/src/contrib/fs_1.6.4.tar.gz", "https://cran.rstudio.com/src/contrib/Archive/fs/fs_1.6.4.tar.gz"],
+      "target": "src/contrib/fs_1.6.4.tar.gz",
+      "platform": "source",
+      "rversion": "*",
+      "directpkg": true,
+      "license": "MIT + file LICENSE",
+      "sha256": "7e06290f2dbe36f54fdf51b748a4b00b8b0f68967b5754e37e0c83df7fea5ac8",
+      "filesize": 1201506,
+      "dep_types": ["Depends", "Imports", "LinkingTo"],
+      "params": [],
+      "install_args": "",
+      "repotype": "cran",
+      "sysreqs": "GNU make",
+      "sysreqs_packages": [
+        {
+          "sysreq": "gnumake",
+          "packages": ["make"],
+          "pre_install": {},
+          "post_install": {}
+        }
+      ]
+    },
+    {
       "ref": "installed::/usr/lib64/R/library/lattice",
       "package": "lattice",
       "version": "0.22-6",

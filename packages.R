@@ -18,5 +18,6 @@ library(fs)
 #  "patchwork",
 #  "mackrics/ricethemes",
 #  "httpgd",
-#  "purrr"
+#  "purrr",
+#  "fs"
 #))
