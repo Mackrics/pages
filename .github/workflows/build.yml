@@ -46,6 +46,6 @@ jobs:
       env: 
         build: ${{ secrets.PRIVATE_SSH_KEY }}
     - name: Sync
-      run: sudo rsync -av --delete site/ $SSH_USER
+      run: sudo rsync -avx --delete site/ $SSH_USER
       env: 
         build: ${{ secrets.PRIVATE_SSH_KEY }}
