@@ -1,0 +1,60 @@
+name: build site
+
+on:
+  push:
+    branches:
+      - litedown
+  pull_request:
+    branches:
+      - litedown
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Checkout litedown branch
+      uses: actions/checkout@v4
+      with:
+        ref: litedown
+    - name: Configure Git
+      run: |
+        git config --global user.name "mackrics"
+        git config --global user.email "hello@mackrics.com"
+    - name: clean depoy branch
+      run: |
+        git fetch origin
+        git checkout -b deploy origin/deploy
+        rm *.html
+        rm blog -fr
+        git add -A
+        git commit -m 'remove old  files'
+        git push
+        git checkout litedown
+    - name: Set up R
+      uses: r-lib/actions/setup-r@v2
+    - name: install sysreqss
+      run:
+        sudo apt-get update;
+        sudo apt-get install -y fontconfig libfreetype6 libcairo2-dev libpng-dev libcurl4-openssl-dev openssl make pandoc libv8-dev libxml2
+    - name: Install pak, deps, render site.
+      run: |
+        sudo Rscript -e 'install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch));
+        Sys.setenv(PKG_SYSREQS = FALSE);
+        pak::lockfile_install();
+        litedown::fuse_site()'
+    - name: Checkout deploy branch
+      run: |
+        git fetch origin
+        git checkout deploy
+    - name: Commit changes
+      run: |
+        git clean -fdX
+        git merge litedown --allow-unrelated-histories
+        git add .
+        git commit -m "Update from litedown branch" || echo "No changes to commit"
+
+    - name: Push changes to deploy branch
+      run: git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/mackrics/litedown.git HEAD:litedown
+
