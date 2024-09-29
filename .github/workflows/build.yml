@@ -48,4 +48,4 @@ jobs:
     - name: Sync
       run: sudo rsync -avx --delete site/ $SSH_USER
       env: 
-        build: ${{ secrets.PRIVATE_SSH_KEY }}
+        build: ${{ secrets.SSH_USER }}
