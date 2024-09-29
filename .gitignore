@@ -59,3 +59,5 @@ github
 *.yml
 *.R
 R/
+_litedown.yml
+pkg.lock
