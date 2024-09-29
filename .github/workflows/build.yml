@@ -28,7 +28,6 @@ jobs:
         git checkout -b deploy origin/deploy
         rm *.html
         rm blog -fr
-        rm *.txt
         rm *.xml
         git add -A
         git commit -m 'remove old  files'
