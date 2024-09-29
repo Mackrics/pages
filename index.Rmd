@@ -33,7 +33,7 @@ Here are some programs I've written:
   code from the editor to a neovim terminal.
 
 
-# Latest posts
+# Latest blog posts
 
 ```{r}
 #| results = 'asis',
