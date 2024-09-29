@@ -23,7 +23,7 @@ source("./R/gen_rss_feed.R")
 
 # Hello there,
 
-I'm a R programmer and economist who enjoy exploring open source software.
+I'm a R programmer, economist, and open source enthusiast.
 
 Here are some programs I've written:
 
