@@ -44,4 +44,4 @@ jobs:
     - name:  Populate Key
       run: echo "${{ secrets.PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
     - name: Sync
-      run: sudo rsync -av --delete site/ "${{ secrets.SSH_USER }}"/litedown/
+      run: sudo rsync -av --delete site/ ${{ secrets.SSH_USER }}
