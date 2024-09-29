@@ -61,4 +61,4 @@ github
 R/
 _litedown.yml
 pkg.lock
-.github/
+.github/*
