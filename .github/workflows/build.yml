@@ -1,58 +1,47 @@
-name: Build Site
+name: build site
 
 on:
   push:
     branches:
-      - litedown  
+      - litedown
+  pull_request:
+    branches:
+      - litedown
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+    - name: Checkout litedown branch
+      uses: actions/checkout@v4
+      with:
+        ref: litedown
+    - name: Set up R
+      uses: r-lib/actions/setup-r@v2
 
-      - name: Set up R
-        uses: r-lib/actions/setup-r@v2
-        with:
-          R-version: '4.4.1'  
+    - name: install sysreqss
+      run:
+        sudo apt-get update;
+        sudo apt-get install -y fontconfig libfreetype6 libcairo2-dev libpng-dev libcurl4-openssl-dev openssl make pandoc libv8-dev libxml2
+    - name: Install pak, deps, render site.
+      run: |
+        sudo Rscript -e 'install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch));
+        Sys.setenv(PKG_SYSREQS = FALSE);
+        pak::lockfile_install();
+        litedown::fuse_site()'
+    - name: Checkout deploy branch
+      run: git checkout deploy
 
-      - name: Install pak (Unix)
-        if: ${{ runner.os != 'Windows' && inputs.pak-version != 'none' }}
-        run: |
-          echo "::group::Install pak"
-          if which sudo >/dev/null; then SUDO="sudo -E --preserve-env=PATH env"; else SUDO=""; fi
-          $SUDO R -q -e 'dir.create(Sys.getenv("R_LIB_FOR_PAK"), recursive = TRUE, showWarnings = FALSE)'
-          $SUDO R -q -e 'install.packages("pak", lib = Sys.getenv("R_LIB_FOR_PAK"), repos = sprintf("https://r-lib.github.io/p/pak/%s/%s/%s/%s", "${{ inputs.pak-version }}", .Platform$pkgType, R.Version()$os, R.Version()$arch))'
-          echo "::endgroup::"
-        shell: bash
+    - name: Configure Git
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
 
-      - name: Install dependencies
-        run: |
-          cat("::group::Install/update packages\n")
-          Sys.setenv("PKGCACHE_HTTP_VERSION" = "2")
-          library(pak, lib.loc = Sys.getenv("R_LIB_FOR_PAK"))
-          pak::lockfile_install()
-          cat("::endgroup::\n")
-        shell: Rscript {0}
+    - name: Commit changes
+      run: |
+        git add .
+        git commit -m "Update from litedown branch" || echo "No changes to commit"
 
-      - name: Render Markdown and Generate RSS Feed
-        run: |
-          Rscript -e 'litedown::fuse_site()'
-          Rscript -e '
-          source("R/gen_rss_feed.R")
-          get_rss_items("https://dev.mackrics.com/blog") |> 
-            gen_feed("Mackrics", "https://dev.mackrics.com/blog") |>
-            write("index.xml")
-          '
-
-      - name: Commit and push changes to deploy branch
-        run: |
-          git config --local user.email "hello@mackrics.com"
-          git config --local user.name "mackrics"
-          git add .
-          git commit -m "Update site"
-          git push origin HEAD:deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Push changes to deploy branch
+      run: git push origin deploy
