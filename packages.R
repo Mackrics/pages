@@ -8,6 +8,7 @@ library(patchwork)
 library(httpgd)
 library(purrr)
 library(fs)
+library(stringr)
 
 #pak::lockfile_create(c(
 #  "litedown",
@@ -19,5 +20,7 @@ library(fs)
 #  "mackrics/ricethemes",
 #  "httpgd",
 #  "purrr",
-#  "fs"
+#  "fs",
+#  "rmarkdown",
+#  "stringr"
 #))
