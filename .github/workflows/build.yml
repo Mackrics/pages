@@ -42,7 +42,7 @@ jobs:
     - name: Commit changes
       run: |
         git clean -fdX
-        git merge litedown
+        git merge litedown --allow-unrelated-histories
         git add .
         git commit -m "Update from litedown branch" || echo "No changes to commit"
 
