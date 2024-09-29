@@ -6,7 +6,6 @@ output:
   litedown::html_format:
     meta:
       css: ["https://prismjs.catppuccin.com/mocha.css", "../styles.css"]
-      header_includes: '<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable="no">'
       js: "prism.js"
       include_before: "[Home](/index.html)"
       include_after: "[Mastodon](https://fosstodon.org/@mackrics) | [Email](mailto:hello@mackrics.com) | [PGP](/publickey.txt) | [RSS](/index.xml) | [GitHub](https://github.com/mackrics)"

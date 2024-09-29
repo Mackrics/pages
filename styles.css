@@ -8,7 +8,21 @@
 body {
   font-family: 'IBM Blex mono', monospace;
   background-color: #11111b;
-  font-size: 16px
+  font-size: 16px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+html {
+    font-family: 'IBM Blex mono', monospace;
+    max-width: 850px; 
+    width: 90%; 
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px; 
+    white-space: normal;
 }
 
 
@@ -29,6 +43,7 @@ pre {
   background-color: #1e1e2e; 
   padding: 10px; 
   border: 1px solid #a6adc8; 
+  overflow-x: auto;
 }
 
 li, p, h1, h2, h3, h4, h5 {
@@ -97,13 +112,6 @@ h3::before{
   color: inherit;
 }
 
-html {
-    font-family: 'IBM Blex mono', monospace;
-    max-width: 800px; 
-    width: 100%; 
-    margin: 0 auto;
-    padding: 20px; 
-}
 
 img {
     display: block;
