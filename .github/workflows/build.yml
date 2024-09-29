@@ -33,7 +33,8 @@ jobs:
     - name: Setup dir
       run: |
         mkdir site
+        rm *.Rmd
         mv *.html site
-        rm blog/.Rmd
+        rm blog/*.Rmd
         mv blog/*/** site
         mv *.txt site
