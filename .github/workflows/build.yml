@@ -31,7 +31,7 @@ jobs:
         pak::lockfile_install();
         litedown::fuse_site()'
     - name: Checkout deploy branch
-      run: git checkout deploy
+      run: git checkout -b deploy origin/deploy
 
     - name: Configure Git
       run: |
@@ -40,8 +40,10 @@ jobs:
 
     - name: Commit changes
       run: |
+        git clean -fdX
+        git merge litedown
         git add .
         git commit -m "Update from litedown branch" || echo "No changes to commit"
 
     - name: Push changes to deploy branch
-      run: git push origin deploy
+      run: git push origin HEAD:deploy
