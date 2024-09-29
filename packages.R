@@ -6,6 +6,7 @@ library(ricethemes)
 library(fs)
 library(patchwork)
 library(httpgd)
+library(purrr)
 
 #pak::lockfile_create(c(
 #  "litedown",
@@ -14,5 +15,6 @@ library(httpgd)
 #  "ggplot2",
 #  "patchwork",
 #  "mackrics/ricethemes",
-#  "httpgd"
+#  "httpgd",
+#  "purrr"
 #))
