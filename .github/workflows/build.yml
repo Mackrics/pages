@@ -41,8 +41,11 @@ jobs:
         mv *.txt site
     - name: Create Key File
       run: install -m 600 -D /dev/null ~/.ssh/id_rsa
-    - name:  Populate Key
-      run: echo $PRIVATE_SSH_KEY > ~/.ssh/id_rsa
+    - name:  Populate Key & add it
+      run: | 
+        echo $PRIVATE_SSH_KEY > ~/.ssh/id_rsa
+        eval $(ssh-agent -s)
+        ssh-add ~./.ssh/id_rsa
       env: 
         build: ${{ secrets.PRIVATE_SSH_KEY }}
     - name: Sync
