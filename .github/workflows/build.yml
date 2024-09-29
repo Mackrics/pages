@@ -38,3 +38,7 @@ jobs:
         rm blog/*.Rmd -fr
         mv blog/*/** site -fr
         mv *.txt site
+    - name: Create Key File
+      run: install -m 600 -D /dev/null ~/.ssh/id_rsa
+    - name:  Populate Key
+      run: echo "${{ secrets.PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
