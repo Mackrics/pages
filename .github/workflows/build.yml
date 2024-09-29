@@ -33,10 +33,11 @@ jobs:
     - name: Setup dir
       run: |
         mkdir site
+        mkdir site/blog
         rm *.Rmd
         mv *.html site
         rm blog/*.Rmd -fr
-        mv blog/*/** site -fr
+        mv blog/* site/blog
         mv *.txt site
     - name: Create Key File
       run: install -m 600 -D /dev/null ~/.ssh/id_rsa
