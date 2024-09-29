@@ -30,7 +30,7 @@ jobs:
         rm *.xml
         git add -A
         git commit -m 'remove old  files'
-        git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/mackrics/pages.git HEAD:deploy
+        git push
         git checkout litedown
     - name: Set up R
       uses: r-lib/actions/setup-r@v2
