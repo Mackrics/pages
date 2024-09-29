@@ -31,8 +31,9 @@ jobs:
         pak::lockfile_install();
         litedown::fuse_site()'
     - name: Checkout deploy branch
-      run: git checkout -b deploy origin/deploy
-
+      run: |
+        git fetch origin
+        git checkout -b deploy origin/deploy
     - name: Configure Git
       run: |
         git config --global user.name "GitHub Actions"
