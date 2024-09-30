@@ -45,6 +45,7 @@ jobs:
       run: | 
         echo $PRIVATE_SSH_KEY > ~/.ssh/id_rsa
         eval $(ssh-agent -s)
+        ssh-add ~/.ssh/is_rsa
       env: 
         build: ${{ secrets.PRIVATE_SSH_KEY }}
     - name: Sync
