@@ -48,6 +48,8 @@ jobs:
       env: 
         build: ${{ secrets.PRIVATE_SSH_KEY }}
     - name: Sync
-      run: rsync -avx --delete site/ $SSH_USER
+      run: rsync -avx --delete site/ $SSH_USERERNAME@$SSH_HOST
       env: 
-        build: ${{ secrets.SSH_USER }}
+        build: 
+            ${{ secrets.SSH_USERNAME }}
+            ${{ secrets.SSH_HOST }}
