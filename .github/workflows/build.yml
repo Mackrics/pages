@@ -48,7 +48,7 @@ jobs:
       env: 
         build: ${{ secrets.PRIVATE_SSH_KEY }}
     - name: Sync
-      run: rsync -avx --delete site/ $SSH_USERERNAME@$SSH_HOST
+      run: rsync -avx --delete site/ $SSH_USERERNAME@$SSH_HOST:/var/www/litedown/
       env: 
         build: 
             ${{ secrets.SSH_USERNAME }}
