@@ -39,8 +39,6 @@ jobs:
         rm blog/*.Rmd -fr
         sudo mv blog/* site/blog
         mv *.txt site
-    - name: Create Key File
-      run: install -m 600 -D /dev/null ~/.ssh/id_rsa
     - name:  Setup ssh
       run: | 
           mkdir -p ~/.ssh
