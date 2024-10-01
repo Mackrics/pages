@@ -41,13 +41,19 @@ jobs:
         mv *.txt site
     - name: Create Key File
       run: install -m 600 -D /dev/null ~/.ssh/id_rsa
-    - name:  Populate Key & add it
+    - name:  Setup ssh
       run: | 
-        echo $PRIVATE_SSH_KEY > ~/.ssh/id_rsa
-        eval $(ssh-agent -s)
-        ssh-add ~/.ssh/is_rsa
+          mkdir -p ~/.ssh
+          echo $PRIVATE_SSH_KEY > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p 22 $SSH_HOST >> ~/.ssh/known_hosts
+          sudo apt-get install sshpass
+          eval $(ssh-agent -s)
+          ssh-add ~/.ssh/is_rsa
       env: 
-        build: ${{ secrets.PRIVATE_SSH_KEY }}
+        build: 
+          ${{ secrets.PRIVATE_SSH_KEY }}
+          ${{ secrets.SSH_HOST }}
     - name: Sync
       run: rsync -avx --delete site/ $SSH_USERERNAME@$SSH_HOST:$SSH_PATH
       env: 
