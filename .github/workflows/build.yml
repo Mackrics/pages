@@ -50,7 +50,6 @@ jobs:
     - name: Sync
       run: rsync -avx --delete site/ $SSH_USERERNAME@$SSH_HOST:$SSH_PATH
       env: 
-        build: 
-            ${{ secrets.SSH_USERNAME }}
-            ${{ secrets.SSH_HOST }}
-            ${{ secrets.SSH_PATH }}
+        SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+        SSH_HOST: ${{ secrets.SSH_HOST }}
+        SSH_PATH: ${{ secrets.SSH_PATH }}
