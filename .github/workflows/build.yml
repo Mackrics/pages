@@ -39,18 +39,14 @@ jobs:
         rm blog/*.Rmd -fr
         sudo mv blog/* site/blog
         mv *.txt site
+    - name: Initialize the ssh-agent
+      uses: webfactory/ssh-agent@v0.4.1
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
     - name:  Setup ssh
-      run: | 
-          mkdir -p ~/.ssh
-          echo $PRIVATE_SSH_KEY > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -p 22 $SSH_HOST >> ~/.ssh/known_hosts
-          sudo apt-get install sshpass
-          eval $(ssh-agent -s)
-          ssh-add ~/.ssh/is_rsa
+      run: mkdir -p ~/.ssh/ && ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
       env: 
         build: 
-          ${{ secrets.PRIVATE_SSH_KEY }}
           ${{ secrets.SSH_HOST }}
     - name: Sync
       run: rsync -avx --delete site/ $SSH_USERERNAME@$SSH_HOST:$SSH_PATH
