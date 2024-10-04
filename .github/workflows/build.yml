@@ -46,8 +46,7 @@ jobs:
     - name:  Setup ssh
       run: mkdir -p ~/.ssh/ && ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
       env: 
-        build: 
-          ${{ secrets.SSH_HOST }}
+        SSH_HOST: ${{ secrets.SSH_HOST }}
     - name: Sync
       run: rsync -avx --delete site/ $SSH_USERERNAME@$SSH_HOST:$SSH_PATH
       env: 
