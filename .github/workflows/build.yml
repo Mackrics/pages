@@ -40,7 +40,7 @@ jobs:
         sudo mv blog/* site/blog
         mv *.txt site
     - name: Initialize the ssh-agent
-      uses: webfactory/ssh-agent@latest
+      uses: webfactory/ssh-agent@v0.9.0
       with:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
     - name:  Setup ssh
