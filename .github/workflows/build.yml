@@ -44,9 +44,9 @@ jobs:
     - name:  Setup ssh
       run: |
         mkdir -p ~/.ssh/ && ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
-        echo $SSH_KEY > .ssh/key
+        echo $SSH_KEY > ~/.ssh/key
         eval $(ssh-agent -s)
-        ssh-add .ssh/key
+        ssh-add ~/.ssh/key
       env: 
         SSH_HOST: ${{ secrets.SSH_HOST }}
         SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
