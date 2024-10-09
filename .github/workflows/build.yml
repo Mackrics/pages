@@ -47,8 +47,7 @@ jobs:
         SSH_HOST: ${{ secrets.SSH_HOST }}
     - name: Sync
       run: >-
-        rsync -avx --delete --exclude '.ssh' site/ $SSH_USERERNAME@$SSH_HOST:$SSH_PATH
+        rsync -avx --delete --exclude '.ssh' site/ $SSH_USERERNAME@$SSH_HOST:./
       env: 
         SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
         SSH_HOST: ${{ secrets.SSH_HOST }}
-        SSH_PATH: ${{ secrets.SSH_PATH }}
