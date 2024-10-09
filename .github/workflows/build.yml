@@ -49,7 +49,7 @@ jobs:
         ssh-add .ssh/key
       env: 
         SSH_HOST: ${{ secrets.SSH_HOST }}
-        SSH_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
     - name: Sync
       run: >-
