@@ -41,6 +41,10 @@ jobs:
       uses: webfactory/ssh-agent@v0.9.0
       with:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+    - name: Scan the host key
+      run: mkdir -p ~/.ssh/ && ssh-keyscan -H $DEPLOY_SERVER >> ~/.ssh/known_hosts
+      env:
+        DEPLOY_SERVER: ${{ secrets.SSH_HOST }}
     - name: Sync
       run: >-
         rsync -avx --delete --exclude '.ssh' site/ $SSH_USERERNAME@$SSH_HOST:./
