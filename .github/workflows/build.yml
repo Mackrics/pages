@@ -42,9 +42,15 @@ jobs:
       with:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
     - name:  Setup ssh
-      run: mkdir -p ~/.ssh/ && ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
+      run: |
+        mkdir -p ~/.ssh/ && ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
+        echo $SSH_KEY > .ssh/key
+        eval $(ssh-agent -s)
+        ssh-add .ssh/key
       env: 
         SSH_HOST: ${{ secrets.SSH_HOST }}
+        SSH_key: ${{ secrets.SSH_PRIVATE_KEY }}
+
     - name: Sync
       run: >-
         rsync -avx --delete --exclude '.ssh' site/ $SSH_USERERNAME@$SSH_HOST:./
