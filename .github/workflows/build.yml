@@ -11,27 +11,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
     - name: Checkout litedown branch
       uses: actions/checkout@v4
       with:
         ref: litedown
-    - name: Configure Git
-      run: |
-        git config --global user.name "mackrics"
-        git config --global user.email "hello@mackrics.com"
-    - name: clean depoy branch
-      run: |
-        git fetch origin
-        git checkout -b deploy origin/deploy
-        rm *.html
-        rm blog -fr
-        git add -A
-        git commit -m 'remove old  files'
-        git push
-        git checkout litedown
     - name: Set up R
       uses: r-lib/actions/setup-r@v2
     - name: install sysreqss
@@ -44,17 +28,30 @@ jobs:
         Sys.setenv(PKG_SYSREQS = FALSE);
         pak::lockfile_install();
         litedown::fuse_site()'
-    - name: Checkout deploy branch
+    - name: Setup dir
       run: |
-        git fetch origin
-        git checkout deploy
-    - name: Commit changes
-      run: |
-        git clean -fdX
-        git merge litedown --allow-unrelated-histories
-        git add .
-        git commit -m "Update from litedown branch" || echo "No changes to commit"
-
-    - name: Push changes to deploy branch
-      run: git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/mackrics/litedown.git HEAD:litedown
-
+        mkdir site
+        mkdir site/blog
+        rm *.Rmd
+        mv *.html site
+        mv *.css site
+        rm blog/*.Rmd -fr
+        sudo mv blog/* site/blog
+        mv *.txt site
+    - name: Deploy to Staging server
+      uses: easingthemes/ssh-deploy@main
+      with:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        ARGS: "-avx --delete"
+        SOURCE: "site/"
+        REMOTE_HOST: ${{ secrets.SSH_HOST }}
+        REMOTE_USER: ${{ secrets.SSH_USERNAME }}
+        TARGET: ./
+        EXCLUDE: ".ssh"
+        SCRIPT_BEFORE: |
+          whoami
+          ls -al
+        SCRIPT_AFTER: |
+          whoami
+          ls -al
+          echo $RSYNC_STDOUT
