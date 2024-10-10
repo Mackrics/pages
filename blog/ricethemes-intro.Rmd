@@ -22,7 +22,8 @@ themes, and functions to display the colors.
 
 
 ```{r}
-#| echo = FALSE
+#| echo = FALSE,
+#| message = FALSE
 
 source(here::here("packages.R"))
 
