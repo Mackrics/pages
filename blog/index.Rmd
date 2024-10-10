@@ -5,6 +5,7 @@ title: All blog posts
 ```{r}
 #| results = 'asis',
 #| echo = FALSE
+#| message = FALSE
 source(here::here("packages.R"))
 
 dir_ls(here::here("blog"), regex = "*.Rmd") |>
