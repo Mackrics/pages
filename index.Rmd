@@ -24,7 +24,6 @@ source("./R/gen_rss_feed.R")
 # Welcome to my personal blog!
 
 I’m an economist (the original data science) exploring, tinkering, and creating open source software and hardware, powered by coffee.
-I'm a R programmer, economist, and open source enthusiast.
 
 Here are some programs I've written:
 
