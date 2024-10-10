@@ -50,11 +50,6 @@ li, p, h1, h2, h3, h4, h5 {
   color: #cdd6f4
 }
 
-.blockquote { 
-	color: #cdd6f4;
-	background: #1e1e2e;
-	border-left: 10px solid #8aadf4;
-}
 
 .figure-caption { 
 	color: #cdd6f4;
@@ -131,7 +126,11 @@ footer {
 
 blockquote {
   background-color: #1e1e2e;
-  margin: 30px; 
+  color: #cdd6f4;
+  background: #1e1e2e;
+  border-left: 2px solid #8aadf4;
+  margin: 15px;
+  padding: 10px;
 }
 
 .callout-warning {
