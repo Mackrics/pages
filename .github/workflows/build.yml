@@ -34,6 +34,7 @@ jobs:
         mkdir site/blog
         rm *.Rmd
         mv *.html site
+        mv *.css site
         rm blog/*.Rmd -fr
         sudo mv blog/* site/blog
         mv *.txt site
