@@ -5,7 +5,7 @@ date-format: iso
 ---
 
 If you have not already checked out [`{ricethemes}`](https://github.com/mackrics/ricethemes),
-check out my [blog post introducing it](./ricethemes-intro.qmd).
+check out my [blog post introducing it](./ricethemes-intro.html).
 
 Usually when making plots, I am not interested in the precise values on either
 the x or y axis -- only the general pattern or trend. Therefore, I do not
