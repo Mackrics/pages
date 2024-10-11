@@ -6,7 +6,7 @@ date: 2024-01-02
 ::: {.callout-note}
 This is a blog post in my series about what I wish I knew before I wrote my
 first Neovim plugin. If you have not already read part 1, check it out
-[here](./nvim-lua.qmd).
+[here](./nvim-lua.html).
 :::
 
 One of the most difficult things for me to find information about for my first
