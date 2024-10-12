@@ -41,6 +41,7 @@ jobs:
         rm *.Rmd
         mv *.html site
         mv *.css site
+        mv *.xml site
         rm blog/*.Rmd -fr
         sudo mv blog/* site/blog
         mv *.txt site
