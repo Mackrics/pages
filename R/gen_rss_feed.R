@@ -26,7 +26,7 @@ get_rss_items <- function(path_to_folder, base_url) {
   within({
       date  = paste0("    <pubDate>", as.Date(purrr::map_chr(params, \(x) x[[ "date" ]])), "</pubDate>")
       title = paste0("    <title>", purrr::map_chr(params, \(x) x[[ "title" ]]), "</title>")
-      link  = paste0("    <guid>", url, "/", stringr::str_replace(path, "Rmd", "html"), "</guid>")
+      link  = paste0("    <guid>", base_url, "/", stringr::str_replace(path, "Rmd", "html"), "</guid>")
       desc  = paste0("    <description>", purrr::map_chr(stringr::str_replace(path, "Rmd$", "html"), \(x) get_body(x, {{ path_to_folder }})), "</description>")
   }) 
   out_data <-
