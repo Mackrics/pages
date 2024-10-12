@@ -21,9 +21,9 @@ source(here::here("packages.R"))
 source("./R/gen_rss_feed.R")
 ```
 
-# Hello there,
+# Welcome to my personal blog!
 
-I'm a R programmer, economist, and open source enthusiast.
+I’m an economist (the original data science) exploring open source software and hardware, powered by coffee.
 
 Here are some programs I've written:
 
