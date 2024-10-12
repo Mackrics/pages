@@ -3,10 +3,10 @@ name: build site
 on:
   push:
     branches:
-      - litedown
+      - dev
   pull_request:
     branches:
-      - litedown
+      - dev
 
 jobs:
   build:
