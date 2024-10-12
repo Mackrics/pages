@@ -13,7 +13,7 @@ get_body <- function(file_path, url) {
   litedown::mark()
 }
 
-get_rss_items <- function(url) {
+get_rss_items <- function(path_to_folder, base_url) {
   path_data <-
     data.frame(
       path = list.files("blog", pattern = "*.Rmd", full.names = TRUE)
@@ -26,8 +26,8 @@ get_rss_items <- function(url) {
   within({
       date  = paste0("    <pubDate>", as.Date(purrr::map_chr(params, \(x) x[[ "date" ]])), "</pubDate>")
       title = paste0("    <title>", purrr::map_chr(params, \(x) x[[ "title" ]]), "</title>")
-      link  = paste0("    <guid>https://mackrics.com/", stringr::str_replace(path, "Rmd", "html"), "</guid>")
-      desc  = paste0("    <description>", purrr::map_chr(stringr::str_replace(path, "Rmd$", "html"), \(x) get_body(x, {{ url }})), "</description>")
+      link  = paste0("    <guid>", url, "/", stringr::str_replace(path, "Rmd", "html"), "</guid>")
+      desc  = paste0("    <description>", purrr::map_chr(stringr::str_replace(path, "Rmd$", "html"), \(x) get_body(x, {{ path_to_folder }})), "</description>")
   }) 
   out_data <-
   feed_data[order(feed_data$date), ] |>
