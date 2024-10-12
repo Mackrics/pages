@@ -24,10 +24,16 @@ jobs:
         sudo apt-get install -y fontconfig libfreetype6 libcairo2-dev libpng-dev libcurl4-openssl-dev openssl make pandoc libv8-dev libxml2
     - name: Install pak, deps, render site.
       run: |
-        sudo Rscript -e 'install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch));
+        sudo Rscript -e '
+        install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch));
         Sys.setenv(PKG_SYSREQS = FALSE);
         pak::lockfile_install();
-        litedown::fuse_site()'
+        litedown::fuse_site();
+        source("R/gen_rss_feed.R");
+        get_rss_items("https://dev.mackrics.com/blog", "https://dev.mackrics.com") |> 
+          gen_feed("Mackrics", "https://dev.mackrics.com/blog") |>
+          write("index.xml")
+        '
     - name: Setup dir
       run: |
         mkdir site
