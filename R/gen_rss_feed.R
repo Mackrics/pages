@@ -29,8 +29,7 @@ get_rss_items <- function(path_to_folder, base_url) {
       link  = paste0("    <guid>", base_url, "/", gsub("Rmd", "html", path), "</guid>\n")
       desc  = paste0("    <description>", lapply(gsub("Rmd$", "html", path), \(x) get_body(x, {{ path_to_folder }})), "</description>\n")
   }) 
-  o <-
-  feed_data[order(feed_data$date), ]
+  o <- feed_data[order(feed_data$date), ]
   o <-
   paste0(paste0("  <item>\n", o$title, o$link, o$date, o$desc, "  </item>"), collapse = "\n")
   return(o)
