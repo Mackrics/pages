@@ -23,8 +23,7 @@ source("./R/gen_rss_feed.R")
 
 # Welcome to my personal blog!
 
-I’m an economist (the original data science) exploring open source software and hardware, powered by coffee.
-
+I’m an economist (the original data science) exploring open source software and hardware.
 Here are some programs I've written:
 
 - [Ricethemes](https://github.com/Mackrics/ricethemes): an R package with cool
