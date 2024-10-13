@@ -12,7 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout litedown branch
+    - name: Checkout dev branch
       uses: actions/checkout@v4
       with:
         ref: litedown
@@ -22,6 +22,15 @@ jobs:
       run:
         sudo apt-get update;
         sudo apt-get install -y fontconfig libfreetype6 libcairo2-dev libpng-dev libcurl4-openssl-dev openssl make pandoc libv8-dev libxml2
+    - name: add note on development
+      run: |
+        echo "" >> index.Rmd
+        echo "::: {.callout-warning}" >> index.Rmd
+        echo "" >> index.Rmd
+        echo "**This is the development version of my website**" >> index.Rmd
+        echo "" >> index.Rmd
+        echo "Please go to <https://mackrics.com/> for the main version." >> index.Rmd
+        echo ":::" >> index.Rmd
     - name: Install pak, deps, render site.
       run: |
         sudo Rscript -e '
