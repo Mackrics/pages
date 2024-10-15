@@ -87,7 +87,12 @@ div.callout-note.callout-style-default {
 }
 
 .callout-note {
-  color: #cdd6f4;
+  color: #89b4fa;
+  background-color: #1e1e2e;
+  padding: 10px; 
+  border: 1px solid #89b4fa; 
+  border-radius: 5px;
+  margin: 30px; 
 }
 
 .callout-title-container {
