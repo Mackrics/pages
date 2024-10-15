@@ -39,7 +39,7 @@ jobs:
         pak::lockfile_install();
         litedown::fuse_site();
         source("R/gen_rss_feed.R");
-        get_rss_items("https://dev.mackrics.com/blog", "https://dev.mackrics.com") |> 
+        get_rss_items("blog", "https://dev.mackrics.com") |> 
           gen_feed("Mackrics", "https://dev.mackrics.com/blog") |>
           write("index.xml")
         '
