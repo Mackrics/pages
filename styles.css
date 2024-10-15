@@ -1,27 +1,75 @@
 @font-face {
-  font-family: "IBM Plex Mono";
-  src: url("media/plex/IBMPlexMono-Regular.woff2") format("woff2"),
-	url("media/plex/IBMPlexMono-Regular.woff")
-      format("woff");
+  font-family: "IBM Blex mono";
+  src: url("./media/blex/BlexmonoNerdFont-Regular.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-		font-family: 'IBM Plex Mono', monospace;
+  font-family: 'IBM Blex mono', monospace;
+  background-color: #11111b;
+  font-size: 16px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+html {
+    font-family: 'IBM Blex mono', monospace;
+    max-width: 850px; 
+    width: 90%; 
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px; 
+    white-space: normal;
 }
 
 
 a { 
-	color: #8aadf4;
-	text-decoration: none;
+  color: #89b4fa;
+  text-decoration: none;
 }
 
-.blockquote { 
-	color: #cdd6f4;
-	background: #1e1e2e;
-	border-left: 10px solid #8aadf4;
+code { 
+  color: #89b4fa;
+  text-decoration: none;
+  margin: 0px;
 }
+
+pre {
+  margin: 30px; 
+  border-radius: 10px; 
+  background-color: #1e1e2e; 
+  padding: 10px; 
+  border: 1px solid #a6adc8; 
+  overflow-x: auto;
+}
+
+li, p, h1, h2, h3, h4, h5 {
+  color: #cdd6f4
+}
+
+h1 {
+  font-size: 24px
+}
+
+h2 {
+  font-size: 22px
+}
+
+h3 {
+  font-size: 20px
+}
+
+h4 {
+  font-size: 18px
+}
+
+h5 {
+  font-size: 16px
+}
+
 
 .figure-caption { 
 	color: #cdd6f4;
@@ -39,7 +87,12 @@ div.callout-note.callout-style-default {
 }
 
 .callout-note {
-  color: #cdd6f4;
+  color: #89b4fa;
+  background-color: #1e1e2e;
+  padding: 10px; 
+  border: 1px solid #89b4fa; 
+  border-radius: 5px;
+  margin: 30px; 
 }
 
 .callout-title-container {
@@ -70,6 +123,54 @@ h2::before{
 }
 
 h3::before{
-	content: "### ";
-	color: #f38ba8;
+  content: "### ";
+  color: #f38ba8;
+}
+
+.date h3::before{
+  content: "Published: ";
+  color: inherit;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #89b4fa; 
+    border-radius: 15px;
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+footer {
+  text-align: center; 
+  padding: 20px; 
+}
+
+blockquote {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  background: #1e1e2e;
+  border-left: 2px solid #8aadf4;
+  margin: 15px;
+  padding: 10px;
+}
+
+.callout-warning {
+  background-color: #1e1e2e;
+  padding: 10px; 
+  border: 1px solid #f38ba8; 
+  border-radius: 5px;
+  margin: 30px; 
+}
+
+.callout-warning p {
+  color: #f38ba8;
+}
+
+.callout-warning a {
+  color: #f38ba8;
+  text-decoration: underline;
 }

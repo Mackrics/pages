@@ -1,0 +1,73 @@
+name: build site
+
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout dev branch
+      uses: actions/checkout@v4
+      with:
+        ref: dev
+    - name: Set up R
+      uses: r-lib/actions/setup-r@v2
+    - name: install sysreqss
+      run:
+        sudo apt-get update;
+        sudo apt-get install -y fontconfig libfreetype6 libcairo2-dev libpng-dev libcurl4-openssl-dev openssl make pandoc libv8-dev libxml2
+    - name: add note on development
+      run: |
+        echo "" >> index.Rmd
+        echo "::: {.callout-warning}" >> index.Rmd
+        echo "" >> index.Rmd
+        echo "**This is the development version of my website**" >> index.Rmd
+        echo "" >> index.Rmd
+        echo "Please go to <https://mackrics.com/> for the main version." >> index.Rmd
+        echo ":::" >> index.Rmd
+    - name: Install pak, deps, render site.
+      run: |
+        sudo Rscript -e '
+        install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch));
+        Sys.setenv(PKG_SYSREQS = FALSE);
+        pak::lockfile_install();
+        litedown::fuse_site();
+        source("R/gen_rss_feed.R");
+        get_rss_items("https://dev.mackrics.com/blog", "https://dev.mackrics.com") |> 
+          gen_feed("Mackrics", "https://dev.mackrics.com/blog") |>
+          write("index.xml")
+        '
+    - name: Setup dir
+      run: |
+        mkdir site
+        mkdir site/blog
+        rm *.Rmd
+        mv *.html site
+        mv *.css site
+        mv *.xml site
+        rm blog/*.Rmd -fr
+        sudo mv blog/* site/blog
+        mv *.txt site
+    - name: Deploy to Staging server
+      uses: easingthemes/ssh-deploy@main
+      with:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        ARGS: "-avx --delete"
+        SOURCE: "site/"
+        REMOTE_HOST: ${{ secrets.SSH_HOST }}
+        REMOTE_USER: ${{ secrets.SSH_USERNAME }}
+        TARGET: ./dev/
+        EXCLUDE: ".ssh"
+        SCRIPT_BEFORE: |
+          whoami
+          ls -al
+        SCRIPT_AFTER: |
+          whoami
+          ls -al
+          echo $RSYNC_STDOUT

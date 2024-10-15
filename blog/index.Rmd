@@ -1,0 +1,27 @@
+---
+title: All blog posts
+---
+
+```{r}
+#| results = 'asis',
+#| echo = FALSE,
+#| message = FALSE
+source(here::here("packages.R"))
+
+dir_ls(here::here("blog"), regex = "*.Rmd") |>
+  data.table(path = _) |>
+  copy() |>
+  _[!stringr::str_detect(path, "blog/index.Rmd")] |>
+  _[, let(
+      params = lapply(path, rmarkdown::yaml_front_matter)
+    )] |>
+  _[, let(
+        date = as.Date(purrr::map_chr(params, \(x) x[[ "date" ]])),
+        title = purrr::map_chr(params, \(x) x[[ "title" ]]),
+	link = stringr::str_replace(path, "Rmd", "html") |> stringr::str_remove(here::here())
+  )] |>
+  _[order(-date), let(
+    print = purrr::pmap_chr(list(date, title, link), \(date, title, link) glue::glue("\n\n**{date}**: [{title}]({link})\n\n")))
+  ][, print] |>
+  cat()
+```

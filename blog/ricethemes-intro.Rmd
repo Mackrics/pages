@@ -1,0 +1,63 @@
+---
+title: Introducing `{ricethemes}`
+date: 2023-09-21
+---
+
+I've written a R package with popular desktop themes for `{ggplot2}`. The idea
+is that the package will enable analysts to explore data using their preferred
+desktop theme and have a coherent development enviorment. For now, I've added
+the [Catppuccin](https://github.com/catppuccin/catppuccin) theme with four
+flavors: `latte`, `frappe`, `macchiato`, and `mocha`. I plan on adding more
+themes in the future, depending on the demand.
+
+I recommend using the [`pak`](https://pak.r-lib.org/) package to install
+ricethemes.
+
+```r
+pak::pkg_install("mackrics/ricethemes")
+```
+
+The package contain functions to obtain hex codes for the various colors,
+themes, and functions to display the colors.
+
+
+```{r}
+#| echo = FALSE,
+#| message = FALSE
+
+source(here::here("packages.R"))
+
+list(ctp_mocha, ctp_macchiato, ctp_frappe, ctp_latte) |>
+  lapply(show_ctp_theme) |>
+  patchwork::wrap_plots() +
+  plot_annotation() & 
+  theme(plot.margin = margin(0, 0, 0, 0))  # Set overall plot margins to zero
+```
+
+The classic `cars` correlation plot looks something like this for the four
+flavors:
+
+```{r}
+#| echo = FALSE
+
+list(ctp_mocha, ctp_macchiato, ctp_frappe, ctp_latte) |>
+  lapply(\(ctp_theme)
+    ggplot(cars) +
+    aes(speed, dist) +
+    geom_point(color = {{ ctp_theme }}[["yellow"]]) +
+    geom_smooth(
+      method = "lm",
+      se = FALSE,
+      formula = "y ~ x",
+      color = {{ ctp_theme }}[["peach"]]
+    ) +
+    theme_ctp({{ ctp_theme }}) +
+    labs(x = "Speed", y = "Distance")
+  ) |>
+  patchwork::wrap_plots() +
+  plot_annotation() & 
+  theme(plot.margin = margin(0, 0, 0, 0))  # Set overall plot margins to zero
+```
+
+Any feedback or request is much appreciated, preferably as a GitHub issue in
+[this repository](https://github.com/Mackrics/ricethemes/issues).

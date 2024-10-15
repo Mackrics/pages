@@ -1,0 +1,60 @@
+---
+title: Mackrics
+output:
+  litedown::html_format:
+    meta:
+      css: ["index-style.css", "styles.css", "https://prismjs.catppuccin.com/mocha.css"]
+---
+
+```{r, setup}
+#| echo = FALSE,
+#| message = FALSE
+
+source(here::here("packages.R"))
+source("./R/gen_rss_feed.R")
+```
+
+
+# Welcome to my personal blog!
+
+I’m an economist (the original data science) exploring open source software and hardware.
+
+Here are some programs I've written:
+
+- [Ricethemes](https://github.com/Mackrics/ricethemes): an R package with cool
+  ggplot2 themes.
+- [Neoslime](https://github.com/Mackrics/neoslime): a neovim plugin to send
+  code from the editor to a neovim terminal.
+
+
+# Latest blog posts
+
+```{r}
+#| results = 'asis',
+#| echo = FALSE
+
+gen_blogroll <- function(nrow) {
+  fs::dir_ls("blog", regex = "*.Rmd") |>
+  data.table(path = _) |>
+  data.table::copy() |>
+  _[path != "blog/index.Rmd"] |>
+  _[, let(
+      params = lapply(path, rmarkdown::yaml_front_matter)
+    )] |>
+  _[, let(
+        date = as.Date(purrr::map_chr(params, \(x) x[[ "date" ]])),
+        title = purrr::map_chr(params, \(x) x[[ "title" ]]),
+	link = stringr::str_replace(path, "Rmd", "html")
+  )] |>
+  _[,let(
+    print = purrr::pmap_chr(
+      list(date, title, link), 
+      \(date, title, link) glue::glue("\n\n**{date}**: [{title}]({link})\n\n")))
+  ][order(-date), print] |>
+  head(5) |>
+  cat()
+}
+gen_blogroll(5)
+```
+
+[View all](./blog/index.html)
