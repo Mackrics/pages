@@ -17,7 +17,7 @@ gen_blogroll <- function(path, nrow, exclude_files = "", pattern = "Rmd$", keep_
     files <- files[keep]
     yaml  <- yaml[keep]
   }
-  stopifnot("All valid files filtered out with tags" = length(yaml) > 0 & length(files) > 0)
+ # stopifnot("All files filtered out with tags" = length(yaml) > 0 & length(files) > 0)
 
   has_date_title <- unlist(lapply(yaml, \(x) all(c("date", "title") %in%  names(x))))
   stopifnot("All files does not have the necessary metadata (date and title)" = has_date_title)
