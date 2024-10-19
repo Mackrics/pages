@@ -1,4 +1,4 @@
-gen_blogroll <- function(path, nrow, exclude_files, pattern = "Rmd$", keep_tags = NULL, exclude_tags = NULL) {
+gen_blogroll <- function(path, nrow, exclude_files, pattern = "Rmd$", keep_tags = NULL, exclude_tags = NULL, decreasing_order = TRUE) {
 
   files <- dir({{ path }}, pattern = {{ pattern	}}, full.names = TRUE) 
   stopifnot("No valid files found" = length(files) > 0)
@@ -34,5 +34,5 @@ gen_blogroll <- function(path, nrow, exclude_files, pattern = "Rmd$", keep_tags 
     nrow <- length(entry)
   }
 
-  cat(entry[order(date, decreasing = TRUE)][seq(1, nrow)])
+  cat(entry[order(date, decreasing = {{decreasing_order}})][seq(1, nrow)])
 }
