@@ -11,5 +11,5 @@ dir(here("R"), full.names = TRUE) |>
   lapply(source) |>
   invisible()
 
-gen_blogroll(".", 10, "./index.Rmd")
+gen_blogroll(".", Inf, "./index.Rmd")
 ```
