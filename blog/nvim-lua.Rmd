@@ -1,6 +1,7 @@
 ---
 title: "Neovim plugins: calling lua"
 date: 2023-12-19
+tags: ["nvim", "lua"]
 ---
 
 I recently wrote my first Neovim plugin[^1] to learn more about how Neovim plugins
