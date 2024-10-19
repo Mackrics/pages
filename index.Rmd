@@ -11,7 +11,9 @@ output:
 #| message = FALSE
 
 source(here::here("packages.R"))
-source("./R/gen_rss_feed.R")
+dir(here("R"), full.names = TRUE) |>
+  lapply(source) |>
+  invisible()
 ```
 
 
@@ -32,29 +34,12 @@ Here are some programs I've written:
 ```{r}
 #| results = 'asis',
 #| echo = FALSE
+source(here::here("packages.R"))
+dir(here("R"), full.names = TRUE) |>
+  lapply(source) |>
+  invisible()
 
-gen_blogroll <- function(nrow) {
-  fs::dir_ls("blog", regex = "*.Rmd") |>
-  data.table(path = _) |>
-  data.table::copy() |>
-  _[path != "blog/index.Rmd"] |>
-  _[, let(
-      params = lapply(path, rmarkdown::yaml_front_matter)
-    )] |>
-  _[, let(
-        date = as.Date(purrr::map_chr(params, \(x) x[[ "date" ]])),
-        title = purrr::map_chr(params, \(x) x[[ "title" ]]),
-	link = stringr::str_replace(path, "Rmd", "html")
-  )] |>
-  _[,let(
-    print = purrr::pmap_chr(
-      list(date, title, link), 
-      \(date, title, link) glue::glue("\n\n**{date}**: [{title}]({link})\n\n")))
-  ][order(-date), print] |>
-  head(5) |>
-  cat()
-}
-gen_blogroll(5)
+gen_blogroll("blog", 5, "blog/index.Rmd")
 ```
 
 [View all](./blog/index.html)
