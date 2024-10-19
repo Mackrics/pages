@@ -43,6 +43,7 @@ jobs:
         mkdir site/blog
         rm *.Rmd
         mv *.html site
+        mv media site
         mv *.css site
         mv *.xml site
         rm blog/*.Rmd -fr
