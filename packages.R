@@ -8,7 +8,7 @@ library(httpgd)
 
 if (FALSE) {
   pak::lockfile_create(c(
-    "litedown",
+    "yihui/litedown",
     "data.table",
     "here",
     "ggplot2",
