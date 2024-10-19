@@ -17,7 +17,6 @@ get_rss_items <- function(path_to_folder, base_url, ignore_files = "blog/index.R
   documents <- list.files({{ path_to_folder }}, pattern = "*.Rmd", full.names = TRUE)
   documents <-  documents[!documents %in% {{ ignore_files }}]
   yaml <- lapply(documents, yaml_front_matter)
-  print(yaml)
   feed_data <-
   data.frame(
       date  = paste0("    <pubDate>", as.Date(as.character(lapply(yaml, \(x) x[[ "date" ]]))), "</pubDate>\n"),
