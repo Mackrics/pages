@@ -21,8 +21,8 @@ get_rss_items <- function(path_to_folder, base_url, ignore_files = "blog/index.R
   data.frame(
       date  = paste0("    <pubDate>", as.Date(as.character(lapply(yaml, \(x) x[[ "date" ]]))), "</pubDate>\n"),
       title = paste0("    <title>", lapply(yaml, \(x) x[[ "title" ]]), "</title>\n"),
-      link  = paste0("    <guid>", base_url, "/", gsub("Rmd", "html", yaml), "</guid>\n"),
-      desc  = paste0("    <description>", lapply(gsub("Rmd$", "html", yaml), \(x) get_body(x, {{ path_to_folder }})), "</description>\n")
+      link  = paste0("    <guid>", base_url, "/", gsub("Rmd", "html", documents), "</guid>\n"),
+      desc  = paste0("    <description>", lapply(gsub("Rmd$", "html", documents), \(x) get_body(x, {{ path_to_folder }})), "</description>\n")
   )
   o <- feed_data[order(feed_data$date), ]
   o <-
