@@ -19,6 +19,9 @@ gen_blogroll <- function(path, nrow, exclude_files, pattern = "Rmd$", keep_tags 
   }
   stopifnot("All valid files filtered out with tags" = length(yaml) > 0 & length(files) > 0)
 
+  has_date_title <- unlist(lapply(yaml, \(x) all(c("date", "title") %in%  names(x))))
+  stopifnot("All files does not have the neccessary metadata (date and title)" = has_date_title)
+
   # Get metadata
   date  <- as.Date(as.character(lapply(yaml, \(x) x[[ "date" ]])))
   title <- as.character(lapply(yaml, \(x) x[[ "title" ]]))
