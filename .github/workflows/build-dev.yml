@@ -1,4 +1,4 @@
-name: build site
+name: build dev site
 
 on:
   push:
