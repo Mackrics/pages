@@ -38,7 +38,10 @@ jobs:
         Sys.setenv(PKG_SYSREQS = FALSE);
         pak::lockfile_install();
         litedown::fuse_site();
-        source("R/gen_rss_feed.R");
+        source(here::here("packages.R"))
+        dir(here("R"), full.names = TRUE) |>
+          lapply(source) |>
+          invisible();
         get_rss_items("blog", "https://dev.mackrics.com") |> 
           gen_feed("Mackrics", "https://dev.mackrics.com/blog") |>
           write("index.xml")
