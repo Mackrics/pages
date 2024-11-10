@@ -31,7 +31,7 @@ gen_blogroll(".", Inf, exclude_files = "./index.Rmd")
 #| echo = FALSE,
 #| results = 'asis'
 
-gen_blogroll(".", Inf, keep_tags = "nvim")
+gen_blogroll(".", Inf, keep_tags = "nvim", exclude_files = "./index.Rmd")
 ```
 
 ### R
@@ -40,5 +40,5 @@ gen_blogroll(".", Inf, keep_tags = "nvim")
 #| echo = FALSE,
 #| results = 'asis'
 
-gen_blogroll(".", Inf,  keep_tags = "R")
+gen_blogroll(".", Inf,  keep_tags = "R", exclude_files = "./index.Rmd")
 ```
