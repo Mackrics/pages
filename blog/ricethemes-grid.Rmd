@@ -1,6 +1,7 @@
 ---
 title: Introducing grid themes in `{ricethemes}`
 date: 2023-10-19
+tags: "R"
 ---
 
 If you have not already checked out [`{ricethemes}`](https://github.com/mackrics/ricethemes),

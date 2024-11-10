@@ -13,16 +13,18 @@ get_body <- function(file_path, url) {
   litedown::mark()
 }
 
-get_rss_items <- function(path_to_folder, base_url, ignore_files = "blog/index.Rmd") {
-  documents <- list.files({{ path_to_folder }}, pattern = "*.Rmd", full.names = TRUE)
+
+get_rss_items <- function(path_to_folder, base_url, pattern = "Rmd$", ignore_files = "blog/index.Rmd") {
+  documents <- list.files({{ path_to_folder }}, pattern = {{ pattern }}, full.names = TRUE)
   documents <-  documents[!documents %in% {{ ignore_files }}]
   yaml <- lapply(documents, yaml_front_matter)
+  html_docs <- gsub({{ pattern }}, "html", documents)
   feed_data <-
   data.frame(
       date  = paste0("    <pubDate>", as.Date(as.character(lapply(yaml, \(x) x[[ "date" ]]))), "</pubDate>\n"),
       title = paste0("    <title>", lapply(yaml, \(x) x[[ "title" ]]), "</title>\n"),
-      link  = paste0("    <guid>", base_url, "/", gsub("Rmd", "html", documents), "</guid>\n"),
-      desc  = paste0("    <description>", lapply(gsub("Rmd$", "html", documents), \(x) get_body(x, {{ path_to_folder }})), "</description>\n")
+      link  = paste0("    <guid>", base_url, "/", html_docs, "</guid>\n"),
+      desc  = paste0("    <description>", lapply(html_docs, \(x) get_body(x, {{ path_to_folder }})), "</description>\n")
   )
   o <- feed_data[order(feed_data$date), ]
   o <-

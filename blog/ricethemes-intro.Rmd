@@ -1,6 +1,7 @@
 ---
 title: Introducing `{ricethemes}`
 date: 2023-09-21
+tags: "R"
 ---
 
 I've written a R package with popular desktop themes for `{ggplot2}`. The idea

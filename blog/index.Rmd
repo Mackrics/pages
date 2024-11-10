@@ -1,15 +1,44 @@
 ---
-title: "All blog posts"
+title: "Blog posts"
 ---
 
 ```{r}
-#| results = 'asis',
 #| echo = FALSE,
 #| message = FALSE
+
 source(here::here("packages.R"))
 dir(here("R"), full.names = TRUE) |>
   lapply(source) |>
   invisible()
 
-gen_blogroll(".", 10, "./index.Rmd")
+```
+
+
+## All
+
+```{r}
+#| echo = FALSE,
+#| results = 'asis'
+
+gen_blogroll(".", Inf, exclude_files = "./index.Rmd")
+```
+
+## By tags
+
+### Neovim
+
+```{r}
+#| echo = FALSE,
+#| results = 'asis'
+
+gen_blogroll(".", Inf, keep_tags = "nvim", exclude_files = "./index.Rmd")
+```
+
+### R
+
+```{r}
+#| echo = FALSE,
+#| results = 'asis'
+
+gen_blogroll(".", Inf,  keep_tags = "R", exclude_files = "./index.Rmd")
 ```
