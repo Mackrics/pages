@@ -40,5 +40,5 @@ gen_blogroll(".", Inf, keep_tags = "nvim")
 #| echo = FALSE,
 #| results = 'asis'
 
-#gen_blogroll(".", Inf,  keep_tags = "R")
+gen_blogroll(".", Inf,  keep_tags = "R")
 ```
