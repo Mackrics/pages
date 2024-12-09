@@ -16,12 +16,6 @@ jobs:
       uses: actions/checkout@v4
       with:
         ref: dev
-    - name: add note on development
-      run: |
-    - name: Install Zola
-      run: sudo snap install zola --edge 
-    - name: Build the website 
-      run: zola build
     - name: 'build'
       uses: shalzz/zola-deploy-action@master
       env:
