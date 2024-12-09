@@ -128,13 +128,13 @@ div.callout-note.callout {
 }
 
 h1::before{
-	content: "# ";
-	color: #f38ba8;
+  content: "# ";
+  color: #f38ba8;
 }
 
 h2::before{
-	content: "## ";
-	color: #f38ba8;
+  content: "## ";
+  color: #f38ba8;
 }
 
 h3::before{
@@ -149,19 +149,26 @@ h3::before{
 
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid #89b4fa; 
-    border-radius: 15px;
-    max-width: 100%; 
-    height: auto; 
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border: 2px solid #89b4fa; 
+   border-radius: 15px;
+   max-width: 100%; 
+   height: auto; 
 }
 
+svg.bi {
+  color: #cdd6f4
+}
 
 footer {
   text-align: center; 
   padding: 20px; 
+}
+
+a.social-link {
+  padding: 10px
 }
 
 blockquote {
