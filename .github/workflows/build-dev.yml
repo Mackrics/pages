@@ -22,6 +22,12 @@ jobs:
       run: sudo snap install zola --edge 
     - name: Build the website 
       run: zola build
+    - name: 'build'
+      uses: shalzz/zola-deploy-action@master
+      env:
+        BUILD_DIR: .
+        TOKEN: ${{ secrets.TOKEN }}
+        BUILD_ONLY: true
     - name: Deploy to Staging server
       uses: easingthemes/ssh-deploy@main
       with:
