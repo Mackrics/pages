@@ -3,7 +3,7 @@ base_url = "https://dev.mackrics.com"
 compile_sass = false
 build_search_index = false
 generate_feeds = true
-feed_filename = "index.xml"
+feed_filenames = ["index.xml"]
 
 [markdown]
 highlight_code = true
