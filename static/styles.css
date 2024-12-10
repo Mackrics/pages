@@ -42,25 +42,6 @@ a {
   text-decoration: none;
 }
 
-code { 
-  color: #89b4fa;
-  text-decoration: none;
-  margin: 0px;
-}
-
-pre {
-  margin: 30px; 
-  border-radius: 10px; 
-  background-color: #1e1e2e; 
-  padding: 10px; 
-  border: 1px solid #a6adc8; 
-  overflow-x: auto;
-}
-
-li, p, h1, h2, h3, h4, h5 {
-  color: #cdd6f4
-}
-
 h1, h2, h3, h4, h5, nav, footer, pre, code, p.post {
   font-family: "IBM Plex Mono";
 }
@@ -84,6 +65,26 @@ h4 {
 h5 {
   font-size: 16px
 }
+
+code { 
+  color: #89b4fa;
+  text-decoration: none;
+  margin: 0px;
+}
+
+pre {
+  margin: 30px; 
+  border-radius: 10px; 
+  background-color: #1e1e2e; 
+  padding: 10px; 
+  border: 1px solid #a6adc8; 
+  overflow-x: auto;
+}
+
+li, p, h1, h2, h3, h4, h5 {
+  color: #cdd6f4
+}
+
 
 
 .figure-caption { 
@@ -164,7 +165,8 @@ svg.bi {
 
 footer {
   text-align: center; 
-  padding: 20px; 
+  padding: 0px; 
+  margin: 0px
 }
 
 a.social-link {
