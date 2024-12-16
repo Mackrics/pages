@@ -71,47 +71,6 @@ li, p, h1, h2, h3, h4, h5 {
   color: #cdd6f4
 }
 
-.figure-caption { 
-	color: #cdd6f4;
-}
-
-.callout-header {
-  color: #cdd6f4;
-}
-
-
-div.callout-note.callout-style-default {
-  .callout-header {
-    background-color: #1e1e2e;
-  }
-}
-
-.callout-note {
-  color: #89b4fa;
-  background-color: #1e1e2e;
-  padding: 10px; 
-  border: 1px solid #89b4fa; 
-  border-radius: 5px;
-  margin: 30px; 
-}
-
-.callout-title-container {
-  background: #1e1e2e;
-}
-
-.align-content-center.d-flex.callout-header {
-  background: #1e1e2e;
-}
-
-div.callout-note.callout {
-  border-left-color: #89b4fa;
-}
-
-
-.callout-icon-container {
-  background: #1e1e2e;
-}
-
 h1::before{
   content: "# ";
   color: #f38ba8;
@@ -126,12 +85,6 @@ h3::before{
   content: "### ";
   color: #f38ba8;
 }
-
-.date h3::before{
-  content: "Published: ";
-  color: inherit;
-}
-
 
 img {
    display: block;
