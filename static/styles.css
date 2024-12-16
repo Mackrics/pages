@@ -53,6 +53,7 @@ h2, h3, h4, h5 {
 }
 
 code { 
+  font-size: 18px;
   color: #89b4fa;
   text-decoration: none;
   margin: 0px;
