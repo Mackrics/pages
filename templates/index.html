@@ -5,10 +5,4 @@
   {{ section.title }}
 </h1>
 {{ section.content | safe }}
-  {% set blog = get_section(path="blog/_index.md") %}
-  <h1>Recent posts</h1>
-  {% for post in blog.pages | slice(end=5) %}
-    <p class="post"> {{ post.date }} <a href="{{ post.permalink | safe }}">{{ post.title }}</a><p>
-  {% endfor %}
-  <p class="post"><a href="{{ blog.permalink }}">All posts</a></p>
 {% endblock content %}
