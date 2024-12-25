@@ -2,11 +2,9 @@ title = "Mackrics"
 base_url = "https://dev.mackrics.com"
 compile_sass = false
 build_search_index = false
-generate_feeds = true
-feed_filenames = ["index.xml"]
 
 [markdown]
-highlight_code = true
+highlight_code = false
 highlight_theme = "nord"
 
 [extra]
