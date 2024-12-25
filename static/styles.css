@@ -25,9 +25,15 @@ html {
 }
 
 body {
-  max-width: 900px; 
+  max-width: 600px; 
   padding: 0px auto; 
   margin: 0px auto;
+}
+
+@media (max-width: 900px) {
+  body {
+    width: 900px;
+  }
 }
 
 a { 
