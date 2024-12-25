@@ -1,11 +1,4 @@
 title = "Mackrics"
-base_url = "https://mackrics.com"
 compile_sass = false
 build_search_index = false
-
-[markdown]
-highlight_code = false
-highlight_theme = "nord"
-
-[extra]
-author = "Mackrics"
+base_url = "https://mackrics.com"
