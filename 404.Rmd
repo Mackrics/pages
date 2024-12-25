@@ -1,7 +1,0 @@
----
-title: Page not found :-(
-output:
-  litedown::html_format:
-    meta:
-      css: ["https://dev.mackrics.com/styles.css", "index-style.css","styles.css"]
----
