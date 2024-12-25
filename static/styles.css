@@ -25,17 +25,9 @@ html {
 }
 
 body {
-  max-width: 600px; 
-  padding: 0px; 
-  margin: 0px;
-}
-
-@media (min-width: 901px) {
-  body {
-    width: 900px;
-    padding: 0px auto; 
-    margin: 0px auto;
-  }
+  max-width: 900px; 
+  padding: 0px auto; 
+  margin: 0px auto;
 }
 
 a { 
