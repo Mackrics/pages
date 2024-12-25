@@ -30,7 +30,7 @@ body {
   margin: 0px auto;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 901px) {
   body {
     width: 900px;
   }
