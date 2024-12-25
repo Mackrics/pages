@@ -28,9 +28,9 @@ html {
     font-family: 'IBM Plex Sans';
     max-width: 700px; 
     width: 100%; 
-    margin: 0 auto;
+    margin: 0px auto;
     box-sizing: border-box;
-    padding: 0px; 
+    padding: 0px auto; 
     white-space: normal;
 }
 
@@ -134,13 +134,4 @@ blockquote {
 .callout-warning a {
   color: #f38ba8;
   text-decoration: underline;
-}
-
-@media only screen and (max-width: 750px) {
-   *, html, body, .row {
-      margin-left:0 !important;
-      margin-right:0 !important;
-      padding-left:10 !important;
-      padding-right:0 !important;
-   }
 }
