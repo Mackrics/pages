@@ -27,7 +27,7 @@ body {
 html {
     font-family: 'IBM Plex Sans';
     max-width: 700px; 
-    width: 95%; 
+    width: 100%; 
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0px; 
