@@ -18,20 +18,17 @@ body {
   font-family: 'IBM Plex Sans';
   background-color: #11111b;
   font-size: 20px;
-  white-space: normal;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-wrap: break-word;
 }
 
 html {
     font-family: 'IBM Plex Sans';
-    max-width: 700px; 
     width: 100%; 
-    margin: 0px auto;
-    box-sizing: border-box;
-    padding: 0px auto; 
-    white-space: normal;
+}
+
+body {
+  max-width: 700px; 
+  padding: 0px; 
+  margin: 0px auto;
 }
 
 a { 
@@ -43,12 +40,9 @@ h1, h2, h3, h4, h5, nav, footer, pre, code, p.post {
   font-family: "IBM Plex Mono";
 }
 
-h1 {
-  font-size: 24px
-}
 
-h2, h3, h4, h5 {
-  font-size: 22px
+h1, h2, h3, h4, h5 {
+  font-size: 24px
 }
 
 code { 
