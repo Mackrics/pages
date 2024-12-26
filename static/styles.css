@@ -24,12 +24,6 @@ html {
   font-family: 'IBM Plex Sans';
 }
 
-body {
-  max-width: 25em; 
-  padding: 0px auto; 
-  margin: 0px auto;
-}
-
 div {
   max-width: 25em;
   margin: 0 auto;
