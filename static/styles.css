@@ -21,13 +21,20 @@ body {
 }
 
 html {
-    font-family: 'IBM Plex Sans';
+  font-family: 'IBM Plex Sans';
 }
 
 body {
   max-width: 900px; 
   padding: 0px auto; 
   margin: 0px auto;
+}
+
+div {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1em;
+  line-height: 1.5;
 }
 
 a { 
