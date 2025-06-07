@@ -35,16 +35,37 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, nav, footer, pre, code {
+h1, h2, h3, h4, h5, nav, footer, pre, code, table {
   font-family: "IBM Plex Mono";
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, th {
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+th {
+  font-weight: bold;
+  border-bottom: 1px solid #cdd6f4;
+  border-top: 1px solid #cdd6f4;
+}
+
+/* Style the final row */
+tbody tr:last-child td {
+  border-bottom: 1px solid #cdd6f4; /* Adjust the color as needed */
 }
 
 h1, h2, h3, h4, h5 {
   font-size: 1.4em
 }
 
-li, p, h1, h2, h3, h4, h5 {
-  color: #cdd6f4
+li, p, h1, h2, h3, h4, h5, table, figure {
+  color: #cdd6f4;
 }
 
 h1::before{
@@ -61,3 +82,4 @@ h3::before{
   content: "### ";
   color: #f38ba8;
 }
+
