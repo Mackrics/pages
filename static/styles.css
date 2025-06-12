@@ -71,19 +71,3 @@ h1, h2, h3, h4, h5 {
 li, p, h1, h2, h3, h4, h5, table, figure {
   color: #cdd6f4;
 }
-
-h1::before{
-  content: "# ";
-  color: #f38ba8;
-}
-
-h2::before{
-  content: "## ";
-  color: #f38ba8;
-}
-
-h3::before{
-  content: "### ";
-  color: #f38ba8;
-}
-
